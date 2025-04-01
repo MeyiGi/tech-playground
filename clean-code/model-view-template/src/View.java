@@ -11,7 +11,6 @@ public class View extends JFrame {
         setTitle("Tic Tac Toe MVC");
         setSize(400, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new BorderLayout());
 
         // Панель для игрового поля (3х3 кнопки)
         JPanel boardPanel = new JPanel();
