@@ -1,4 +1,4 @@
-public class Notification {
+public abstract class Notification {
     private String recipient;
     private String message;
 
@@ -14,25 +14,11 @@ public class Notification {
         this.message = message;
     }
 
-    // Перегрузка send(): без параметров
-    public void send() {
-        System.out.println("Sending generic notification to " + recipient + ": " + message);
-    }
-
-    // Перегрузка send(): с приоритетом
-    public void send(String priority) {
-        System.out.println("[" + priority + "] Sending generic notification to " + recipient + ": " + message);
-    }
-
-    // Перегрузка schedule(): без параметров
-    public void schedule() {
-        System.out.println("Scheduling generic notification at default time.");
-    }
-
-    // Перегрузка schedule(): с указанием времени
-    public void schedule(String datetime) {
-        System.out.println("Scheduling generic notification at " + datetime);
-    }
+    // Абстрактные методы
+    public abstract void send();
+    public abstract void send(String priority);
+    public abstract void schedule();
+    public abstract void schedule(String datetime);
 
     // Геттеры/сеттеры
     public String getRecipient() { return recipient; }
