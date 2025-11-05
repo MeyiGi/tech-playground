@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Alert Example</title>
+  <script>
+    alert("Daniel Kanybekov 25118080902");
+  </script>
+</head>
+<body>
+  <img src="220401002.jpg" alt="Image" width="300">
+</body>
+</html>

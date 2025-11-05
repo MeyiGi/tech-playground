@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News Stack — Gazi Üniversitesi Duyurular</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#071427; --accent:#60a5fa; --text:#e6eef8; --muted:#9fb4cc;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#041020 0%, #071427 100%); color:var(--text);
+      display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px;
+    }
+    .wrap{width:min(920px,96%);}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius); padding:22px; box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    }
+    header{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#34d399);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#052331;font-size:18px;}
+    h1{margin:0;font-size:18px}
+    .lead{margin:0;color:var(--muted);font-size:13px}
+
+    /* Stack container */
+    .stack { position:relative; min-height:420px; display:flex; flex-direction:column; gap:12px; margin-top:10px; }
+    .post {
+      background:rgba(255,255,255,0.02); border-radius:10px; padding:16px; display:flex; flex-direction:column;
+      transition: transform 450ms cubic-bezier(.2,.9,.3,1), opacity 450ms ease, height 450ms ease;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+      overflow:hidden;
+    }
+    .post.hidden{opacity:0; transform:translateY(15px) scale(0.995); height:0; padding:0 16px; margin:0}
+    .post h2{margin:0 0 8px 0;font-size:18px}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:8px}
+    .desc{font-size:14px;color:var(--text);line-height:1.35;margin-bottom:6px; max-height: 58px; overflow: hidden;}
+    .link{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600}
+
+    .controls{display:flex;gap:8px;align-items:center;margin-top:14px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);padding:8px 12px;border-radius:10px;cursor:pointer}
+    footer{display:flex;justify-content:space-between;margin-top:12px;color:var(--muted);font-size:13px}
+    
+    /* Loading Animation */
+    #loader-container {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .loader {
+      border: 5px solid rgba(255,255,255,0.1);
+      border-top: 5px solid var(--accent);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    #loader-container.hidden { display: none; }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width:680px){
+      .stack{height:auto; min-height: 300px;}
+      .post{position:relative}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="region" aria-live="polite" aria-label="Stacked news rotator">
+      <header>
+        <div class="logo">GÜ</div>
+        <div>
+          <h1>Gazi Üniversitesi Duyurular</h1>
+          <p class="lead">Her 5 saniyede bir en alttaki duyuru kaldırılır ve en üste yeni bir duyuru eklenir.</p>
+        </div>
+      </header>
+
+      <div id="stack" class="stack" aria-atomic="true">
+        <div id="loader-container">
+            <div class="loader"></div>
+            <p id="loading-status">Parser working... Fetching page 1...</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="pauseBtn" class="btn">Pause</button>
+        <button id="prevBtn" class="btn">Önceki</button>
+        <button id="nextBtn" class="btn">Sonraki</button>
+      </div>
+
+      <footer>
+        <div id="status">Showing 0 / 0 (visible 0)</div>
+        <div>Source: gazi.edu.tr</div>
+      </footer>
+    </div>
+  </div>
+
+<script>
+// --- Global state variables ---
+let allItems = [];
+const VISIBLE = 3;
+let visible = []; // array of item objects currently visible top-to-bottom
+let nextIndex = 0; // index into allItems of next item to pull when rotating
+
+// --- DOM element references ---
+const stackEl = document.getElementById("stack");
+const loaderContainer = document.getElementById("loader-container");
+const loadingStatus = document.getElementById("loading-status");
+
+
+// --- Scraper/Parser Logic (Replaces main.py) ---
+async function fetchAndParseNews() {
+    // A CORS proxy is required because browser security policies prevent
+    // JavaScript from directly fetching content from a different domain.
+    const CORS_PROXY = "https://api.allorigins.win/raw?url=";
+    const BASE_URL = "https://gazi.edu.tr";
+    const announcementUrlTemplate = "https://gazi.edu.tr/view/announcement-list?id={}&type=1&SearchString=&dates=&date=";
+    const allAnnouncements = [];
+    const parser = new DOMParser();
+
+    try {
+        // Loop through pages 1 to 4, like in the Python script
+        for (let i = 1; i <= 4; i++) {
+            loadingStatus.textContent = `Parser working... Fetching announcement list page ${i}...`;
+            const listUrl = announcementUrlTemplate.replace("{}", i);
+            const proxyListUrl = `${CORS_PROXY}${encodeURIComponent(listUrl)}`;
+            
+            const response = await fetch(proxyListUrl);
+            if (!response.ok) {
+                console.error(`Failed to fetch page ${i}`);
+                continue; // Skip to next page on error
+            }
+            const htmlText = await response.text();
+            const doc = parser.parseFromString(htmlText, "text/html");
+
+            const announcements = doc.querySelectorAll(".row.subpage-ann-single.flex-nowrap");
+            
+            // Fetch details for all announcements on this page in parallel for speed
+            const pagePromises = Array.from(announcements).map(async (announcement) => {
+                try {
+                    const day = announcement.querySelector(".ann-day").textContent.trim();
+                    const month = announcement.querySelector(".ann-month").textContent.trim();
+                    const year = announcement.querySelector(".ann-year").textContent.trim();
+                    const date = `${day} ${month} ${year}`;
+                    
+                    const linkElement = announcement.querySelector(".subpage-ann-link > a");
+                    if (!linkElement) return null; // Skip if no link found
+                    
+                    const relativeLink = linkElement.getAttribute("href");
+                    const postUrl = new URL(relativeLink, BASE_URL).href;
+                    const title = announcement.querySelector(".subpage-ann-link").textContent.trim();
+
+                    // Fetch the detailed content page
+                    const proxyPostUrl = `${CORS_PROXY}${encodeURIComponent(postUrl)}`;
+                    const postResponse = await fetch(proxyPostUrl);
+                    if (!postResponse.ok) return null;
+
+                    const postHtmlText = await postResponse.text();
+                    const postDoc = parser.parseFromString(postHtmlText, "text/html");
+                    
+                    const contentP = postDoc.querySelectorAll(".subpage-content-txt p");
+                    const content = Array.from(contentP).map(p => p.textContent.trim()).join("\n");
+                    
+                    return { date, title, language: "tr-TR", link: postUrl, content };
+                } catch (e) {
+                    console.error("Error parsing a single announcement:", e);
+                    return null; // Return null for failed items
+                }
+            });
+            
+            const resultsOnPage = (await Promise.all(pagePromises)).filter(item => item !== null);
+            allAnnouncements.push(...resultsOnPage);
+        }
+        
+        return allAnnouncements;
+
+    } catch (error) {
+        console.error('Scraping failed:', error);
+        stackEl.innerHTML = `<div class="post" style="color:var(--muted); text-align:center;">Duyurular yüklenemedi. Tarayıcı konsolunu kontrol edin.</div>`;
+        document.getElementById("status").textContent = "Hata: Veri yüklenemedi.";
+        return []; // Return empty array on failure
+    }
+}
+
+
+// --- Rotator UI Logic ---
+
+function initVisible(){
+  visible = [];
+  for(let i=0; i < VISIBLE && i < allItems.length; i++){
+    visible.push(allItems[i]);
+  }
+  nextIndex = visible.length % allItems.length;
+}
+
+function renderStack(){
+  stackEl.innerHTML = "";
+  visible.forEach((it, idx)=>{
+    const post = createPostElement(it);
+    stackEl.appendChild(post);
+  });
+  updateStatus();
+}
+
+function escapeHtml(s){ return (s||"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;"); }
+
+function rotateOnce(animate=true){
+  if(allItems.length <= VISIBLE) return; // Don't rotate if not enough items
+  
+  const itemToInsert = allItems[nextIndex % allItems.length];
+  nextIndex = (nextIndex + 1) % allItems.length;
+
+  const posts = Array.from(stackEl.children);
+  const bottom = posts[posts.length - 1];
+  
+  const prependNew = () => {
+      const newPost = createPostElement(itemToInsert);
+      newPost.style.opacity = "0";
+      stackEl.insertBefore(newPost, stackEl.firstChild);
+      
+      requestAnimationFrame(()=>{
+        newPost.style.transition = "none";
+        newPost.style.transform = "translateY(-12px)";
+        requestAnimationFrame(()=>{
+          newPost.style.transition = "transform 450ms cubic-bezier(.2,.9,.3,1), opacity 450ms ease";
+          newPost.style.transform = "translateY(0)";
+          newPost.style.opacity = "1";
+        });
+      });
+      updateStatus();
+  };
+
+  if(animate && bottom){
+    bottom.classList.add("hidden");
+    setTimeout(()=>{
+      if(bottom.parentNode) bottom.parentNode.removeChild(bottom);
+      prependNew();
+    }, 480);
+  } else {
+    if(bottom && bottom.parentNode) bottom.parentNode.removeChild(bottom);
+    prependNew();
+  }
+}
+
+function createPostElement(it){
+  const post = document.createElement("article");
+  post.className = "post";
+  // Use the data keys from our scraper: title, link, date, content
+  post.innerHTML = `
+    <h2><a class="link" href="${escapeHtml(it.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(it.title)}</a></h2>
+    <div class="meta">${escapeHtml(it.date)}</div>
+    <div class="desc">${escapeHtml(it.content.substring(0, 200) + (it.content.length > 200 ? '...' : ''))}</div>
+  `;
+  return post;
+}
+
+function updateStatus(){
+  const status = document.getElementById("status");
+  status.textContent = `Sıradaki: ${nextIndex} / ${allItems.length} · Görünen: ${Math.min(VISIBLE, allItems.length)}`;
+}
+
+let timer = null;
+const DISPLAY_MS = 5000;
+
+function startAuto(){
+  stopAuto();
+  if (allItems.length > VISIBLE) {
+    timer = setInterval(()=> rotateOnce(true), DISPLAY_MS);
+  }
+}
+function stopAuto(){
+  if(timer){ clearInterval(timer); timer = null; }
+}
+
+document.getElementById("pauseBtn").addEventListener("click", ()=>{
+  const btn = document.getElementById("pauseBtn");
+  if(timer){ stopAuto(); btn.textContent = "Resume"; }
+  else { startAuto(); btn.textContent = "Pause"; }
+});
+document.getElementById("nextBtn").addEventListener("click", ()=>{ rotateOnce(true); if(timer){ startAuto(); } });
+document.getElementById("prevBtn").addEventListener("click", ()=>{
+    // This is a complex operation. For simplicity, we'll just go to the next item.
+    // A true "previous" would require more complex state management.
+    rotateOnce(true); 
+    if(timer){ startAuto(); }
+});
+
+stackEl.addEventListener("mouseenter", stopAuto);
+stackEl.addEventListener("mouseleave", () => {
+    if(document.getElementById("pauseBtn").textContent === "Pause") {
+        startAuto();
+    }
+});
+
+// --- App Initialization ---
+async function initializeApp() {
+    const scrapedItems = await fetchAndParseNews();
+    allItems = scrapedItems;
+    
+    loaderContainer.classList.add("hidden");
+
+    if(allItems.length > 0) {
+        initVisible();
+        renderStack();
+        if (allItems.length > VISIBLE) {
+            startAuto();
+        }
+    } else {
+        if (!stackEl.innerHTML) { // Don't overwrite an existing error message
+            stackEl.innerHTML = `<div class="post" style="color:var(--muted); text-align:center;">Hiç duyuru bulunamadı.</div>`;
+            updateStatus();
+        }
+    }
+}
+
+// Start the application
+initializeApp();
+
+</script>
+</body>
+</html>

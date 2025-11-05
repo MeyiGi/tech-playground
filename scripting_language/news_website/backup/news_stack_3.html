@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News Stack — 3 Visible, Rotate by Replacing Bottom with Next at Top</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#071427; --accent:#60a5fa; --text:#e6eef8; --muted:#9fb4cc;
+      --radius:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#041020 0%, #071427 100%); color:var(--text);
+      display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px;
+    }
+    .wrap{width:min(920px,96%);}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius); padding:22px; box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    }
+    header{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#34d399);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#052331;font-size:18px;}
+    h1{margin:0;font-size:18px}
+    .lead{margin:0;color:var(--muted);font-size:13px}
+
+    /* Stack container */
+    .stack { position:relative; height:420px; display:flex; flex-direction:column; gap:12px; margin-top:10px; }
+    .post {
+      background:rgba(255,255,255,0.02); border-radius:10px; padding:16px; display:flex; flex-direction:column;
+      transition: transform 450ms cubic-bezier(.2,.9,.3,1), opacity 450ms ease, height 450ms ease;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+      overflow:hidden;
+    }
+    .post.hidden{opacity:0; transform:translateY(15px) scale(0.995); height:0; padding:0 16px; margin:0}
+    .post h2{margin:0 0 8px 0;font-size:18px}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:8px}
+    .desc{font-size:14px;color:var(--text);line-height:1.35;margin-bottom:6px}
+    .link{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600}
+
+    .controls{display:flex;gap:8px;align-items:center;margin-top:14px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);padding:8px 12px;border-radius:10px;cursor:pointer}
+    footer{display:flex;justify-content:space-between;margin-top:12px;color:var(--muted);font-size:13px}
+
+    @media (max-width:680px){
+      .stack{height:auto}
+      .post{position:relative}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="region" aria-live="polite" aria-label="Stacked news rotator">
+      <header>
+        <div class="logo">NN</div>
+        <div>
+          <h1>News Stack</h1>
+          <p class="lead">Three posts visible at once. Every 5 seconds the bottom post is removed and the next feed item is added to the top.</p>
+        </div>
+      </header>
+
+      <div id="stack" class="stack" aria-atomic="true"></div>
+
+      <div class="controls">
+        <button id="pauseBtn" class="btn">Pause</button>
+        <button id="prevBtn" class="btn">Show previous (manually)</button>
+        <button id="nextBtn" class="btn">Advance now</button>
+      </div>
+
+      <footer>
+        <div id="status">Showing 0 / 0 (visible 0)</div>
+        <div>Source: embedded XML feed</div>
+      </footer>
+    </div>
+  </div>
+
+<script>
+// --- Embedded XML feed (full list). You can replace or fetch externally if you prefer. ---
+const xmlString = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Real News Feed</title>
+    <link>https://example-news-aggregate.local/</link>
+    <description>Aggregated real news items (8) — generated on request.</description>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 03 Nov 2025 12:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>Brazil opens three weeks of COP30-linked climate events</title>
+      <link>https://www.reuters.com/sustainability/cop/brazil-kicks-off-cop30-climate-events-year-distractions-2025-11-03/</link>
+      <description>Brazil has opened three weeks of events linked to the COP30 climate summit, aiming to showcase climate action and host international delegations.</description>
+      <author>Reuters</author>
+      <category>World</category>
+      <pubDate>Mon, 03 Nov 2025 08:00:00 +0000</pubDate>
+      <guid isPermaLink="false">reuters-20251103-001</guid>
+    </item>
+
+    <item>
+      <title>London stocks ease after recent rally; focus shifts to budget</title>
+      <link>https://www.reuters.com/world/uk/london-stocks-ease-after-recent-rally-focus-shifts-budget-bank-england-2025-10-31/</link>
+      <description>London's stock market cooled after a recent run-up as attention turned to the upcoming UK budget and Bank of England commentary.</description>
+      <author>Reuters</author>
+      <category>Business</category>
+      <pubDate>Fri, 31 Oct 2025 10:30:00 +0000</pubDate>
+      <guid isPermaLink="false">reuters-20251031-002</guid>
+    </item>
+
+    <item>
+      <title>Fast-charging battery firm Nyobolt raises $30 million for expansion</title>
+      <link>https://www.reuters.com/technology/fast-charging-battery-firm-nyobolt-raises-30-million-expansion-2025-04-16/</link>
+      <description>UK-based battery technology company Nyobolt secured funding to expand work on ultra-fast charging batteries that can charge to 80% in minutes in prototype tests.</description>
+      <author>Reuters</author>
+      <category>Technology</category>
+      <pubDate>Wed, 16 Apr 2025 12:00:00 +0000</pubDate>
+      <guid isPermaLink="false">reuters-20250416-003</guid>
+    </item>
+
+    <item>
+      <title>Early flu wave could lead to 'long and drawn-out' winter for NHS</title>
+      <link>https://www.england.nhs.uk/2025/10/early-flu-wave-could-lead-to-long-and-drawn-out-winter-for-nhs/</link>
+      <description>NHS England warned of an early flu wave and urged eligible groups to take up vaccination to reduce pressure on health services this winter.</description>
+      <author>NHS England</author>
+      <category>Health</category>
+      <pubDate>Thu, 30 Oct 2025 08:00:00 +0000</pubDate>
+      <guid isPermaLink="false">nhs-20251030-004</guid>
+    </item>
+
+    <item>
+      <title>Cambridge scheme proposes fewer but bigger council homes</title>
+      <link>https://housingdigital.co.uk/cambridge-scheme-proposes-fewer-but-bigger-council-homes/</link>
+      <description>Plans submitted in Cambridge would deliver a mix of council and private homes as part of a new development proposal.</description>
+      <author>Housing Digital</author>
+      <category>Local</category>
+      <pubDate>Mon, 03 Nov 2025 10:00:00 +0000</pubDate>
+      <guid isPermaLink="false">housingdigital-20251103-005</guid>
+    </item>
+
+    <item>
+      <title>New coral gardens and hydrothermal vents found near South Sandwich Islands</title>
+      <link>https://schmidtocean.org/new-coral-gardens-hydrothermal-vents-found-south-sandwich-islands/</link>
+      <description>An Ocean Census Flagship expedition found new coral gardens, hydrothermal vents and possible new species in the remote South Sandwich Islands region.</description>
+      <author>Schmidt Ocean Institute / GoSouth expedition</author>
+      <category>Science</category>
+      <pubDate>Thu, 15 May 2025 09:00:00 +0000</pubDate>
+      <guid isPermaLink="false">schmidtocean-20250515-006</guid>
+    </item>
+
+    <item>
+      <title>The Top Exhibitions To See In London: October 2025</title>
+      <link>https://londonist.com/london/museums-and-galleries/the-top-exhibitions-to-see-in-london-october-2025</link>
+      <description>Londonist's picks for the best exhibitions to see in London during October 2025, covering galleries and museum highlights.</description>
+      <author>Londonist</author>
+      <category>Culture</category>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0000</pubDate>
+      <guid isPermaLink="false">londonist-20251002-007</guid>
+    </item>
+
+    <item>
+      <title>England beat Spain in Euro 2025 final (penalty shootout)</title>
+      <link>https://www.reuters.com/sports/soccer/england-beat-spain-penalty-shootout-win-euro-2025-2025-07-27/</link>
+      <description>England triumphed over Spain in a dramatic penalty shootout to win Euro 2025, with the match ending 1-1 and England winning on penalties.</description>
+      <author>Reuters</author>
+      <category>Sports</category>
+      <pubDate>Sun, 27 Jul 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">reuters-20250727-008</guid>
+    </item>
+
+  </channel>
+</rss>`;
+
+// parse XML
+function parseFeed(xmlStr){
+  const p = new DOMParser();
+  const xml = p.parseFromString(xmlStr, "application/xml");
+  const items = Array.from(xml.querySelectorAll("channel > item")).map(node=>{
+    const get = tag => node.querySelector(tag) ? node.querySelector(tag).textContent.trim() : "";
+    return {
+      title: get("title"),
+      link: get("link") || "",
+      description: get("description"),
+      author: get("author"),
+      category: get("category"),
+      pubDate: get("pubDate"),
+      guid: node.querySelector("guid") ? node.querySelector("guid").textContent.trim() : ""
+    };
+  });
+  return items;
+}
+
+const allItems = parseFeed(xmlString);
+
+// Set up visible stack: show first 3 items (or fewer if feed <3)
+const VISIBLE = 3;
+let visible = []; // array of item objects currently visible top-to-bottom
+let nextIndex = 0; // index into allItems of next item to pull when rotating
+
+// initialize visible from the start of allItems
+function initVisible(){
+  visible = [];
+  for(let i=0;i<VISIBLE && i<allItems.length;i++){
+    visible.push(allItems[i]);
+    nextIndex = i+1;
+  }
+  // if fewer than VISIBLE and there are more items later, nextIndex still correct.
+  if(visible.length < VISIBLE) nextIndex = visible.length;
+}
+
+// render stack DOM
+const stackEl = document.getElementById("stack");
+function renderStack(){
+  stackEl.innerHTML = "";
+  // top should be first element in visible, bottom last
+  visible.forEach((it, idx)=>{
+    const post = document.createElement("article");
+    post.className = "post";
+    post.setAttribute("data-idx", idx);
+    post.innerHTML = `
+      <h2><a class="link" href="${escapeHtml(it.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(it.title)}</a></h2>
+      <div class="meta">${escapeHtml(it.category)} · ${escapeHtml(it.pubDate)}${it.author ? " · " + escapeHtml(it.author) : ""}</div>
+      <div class="desc">${escapeHtml(it.description)}</div>
+    `;
+    stackEl.appendChild(post);
+  });
+  updateStatus();
+}
+
+// sanitize
+function escapeHtml(s){ return (s||"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;"); }
+
+// Rotate: remove bottom element, insert nextIndex item at top
+function rotateOnce(animate=true){
+  if(allItems.length === 0) return;
+  // If there are fewer total items than VISIBLE, cycle within them
+  // Pull the item to insert: it's allItems[nextIndex] or if beyond length, wrap to 0
+  const itemToInsert = allItems[nextIndex % allItems.length];
+  nextIndex = (nextIndex + 1) % allItems.length;
+
+  // animate removal of bottom
+  const posts = Array.from(stackEl.children);
+  const bottom = posts[posts.length - 1];
+  if(animate){
+    bottom.classList.add("hidden");
+    // after animation, remove and prepend new
+    setTimeout(()=>{
+      if(bottom && bottom.parentNode) bottom.parentNode.removeChild(bottom);
+      // prepend new element at top (hidden then show for entrance)
+      const newPost = createPostElement(itemToInsert);
+      newPost.style.opacity = "0";
+      stackEl.insertBefore(newPost, stackEl.firstChild);
+      // layer: briefly set transform to slide down then animate
+      requestAnimationFrame(()=>{
+        newPost.style.transition = "none";
+        newPost.style.transform = "translateY(-12px)";
+        newPost.style.opacity = "0";
+        requestAnimationFrame(()=>{
+          newPost.style.transition = "transform 450ms cubic-bezier(.2,.9,.3,1), opacity 450ms ease";
+          newPost.style.transform = "translateY(0)";
+          newPost.style.opacity = "1";
+        });
+      });
+      // also ensure we keep visible length at VISIBLE
+      // (already removed bottom then inserted top)
+      updateStatus();
+    }, 480);
+  } else {
+    // immediate replace
+    // remove bottom
+    if(bottom && bottom.parentNode) bottom.parentNode.removeChild(bottom);
+    // insert top
+    const newPost = createPostElement(itemToInsert);
+    stackEl.insertBefore(newPost, stackEl.firstChild);
+    updateStatus();
+  }
+}
+
+// create DOM element for a post
+function createPostElement(it){
+  const post = document.createElement("article");
+  post.className = "post";
+  post.innerHTML = `
+    <h2><a class="link" href="${escapeHtml(it.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(it.title)}</a></h2>
+    <div class="meta">${escapeHtml(it.category)} · ${escapeHtml(it.pubDate)}${it.author ? " · " + escapeHtml(it.author) : ""}</div>
+    <div class="desc">${escapeHtml(it.description)}</div>
+  `;
+  return post;
+}
+
+function updateStatus(){
+  const status = document.getElementById("status");
+  status.textContent = `Next item index: ${nextIndex} · Total feed items: ${allItems.length} · Visible: ${Math.min(VISIBLE, allItems.length)}`;
+}
+
+// Controls & auto-rotation
+let timer = null;
+const DISPLAY_MS = 5000;
+
+function startAuto(){
+  stopAuto();
+  timer = setInterval(()=> rotateOnce(true), DISPLAY_MS);
+}
+function stopAuto(){
+  if(timer){ clearInterval(timer); timer = null; }
+}
+
+// button handlers
+document.getElementById("pauseBtn").addEventListener("click", ()=>{
+  const btn = document.getElementById("pauseBtn");
+  if(timer){ stopAuto(); btn.textContent = "Resume"; }
+  else { startAuto(); btn.textContent = "Pause"; }
+});
+document.getElementById("nextBtn").addEventListener("click", ()=>{ rotateOnce(true); if(timer){ startAuto(); } });
+document.getElementById("prevBtn").addEventListener("click", ()=>{
+  // Manual previous: undo one rotation by putting previous top to bottom.
+  // For simplicity, simulate reverse by moving top to bottom using last inserted index.
+  // Compute previousIndex (the one we just used)
+  if(allItems.length === 0) return;
+  // Determine index of item that was last inserted: (nextIndex - 1 + n) % n
+  const n = allItems.length;
+  const lastInsertedIndex = (nextIndex - 1 + n) % n;
+  const lastInsertedGuid = allItems[lastInsertedIndex].guid;
+  // Find top element and move it to bottom
+  const posts = Array.from(stackEl.children);
+  const top = posts[0];
+  if(top){
+    // animate top moving up and out, then append as bottom but show content of previous bottom.
+    top.classList.add("hidden");
+    setTimeout(()=>{
+      if(top && top.parentNode){
+        top.parentNode.removeChild(top);
+        // determine which item to append: use the item that was previously bottom before last rotate.
+        // We'll append the item that is immediately before lastInsertedIndex in allItems
+        const itemToAppendIndex = (lastInsertedIndex - VISIBLE + allItems.length) % allItems.length;
+        const itemToAppend = allItems[itemToAppendIndex];
+        const newBottom = createPostElement(itemToAppend);
+        // append to bottom
+        stackEl.appendChild(newBottom);
+        // adjust nextIndex backward because we undone one rotation
+        nextIndex = (nextIndex - 1 + n) % n;
+        updateStatus();
+      }
+    }, 480);
+  }
+  if(timer){ startAuto(); }
+});
+
+// Initialize stack and start auto rotation
+initVisible();
+renderStack();
+if(allItems.length > VISIBLE){
+  startAuto();
+}
+
+// Accessibility: pause on hover
+stackEl.addEventListener("mouseenter", ()=>{ if(timer) stopAuto(); });
+stackEl.addEventListener("mouseleave", ()=>{ if(!timer) startAuto(); });
+
+</script>
+</body>
+</html>

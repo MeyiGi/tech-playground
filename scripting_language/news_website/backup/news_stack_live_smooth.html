@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News Stack — Smooth Rotate</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#071427; --accent:#60a5fa; --text:#e6eef8; --muted:#9fb4cc;
+      --radius:12px; --gap:12px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#041020 0%, #071427 100%); color:var(--text);
+      display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px;
+    }
+    .wrap{width:min(920px,96%);}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius); padding:22px; box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+    }
+    header{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#34d399);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#052331;font-size:18px;}
+    h1{margin:0;font-size:18px}
+    .lead{margin:0;color:var(--muted);font-size:13px}
+
+    /* Stack container */
+    .stack-wrap{overflow:hidden} /* hide moving content */
+    .stack { position:relative; display:flex; flex-direction:column; gap:var(--gap); margin-top:10px; }
+    .post {
+      background:rgba(255,255,255,0.02); border-radius:10px; padding:16px; display:flex; flex-direction:column;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+      overflow:hidden;
+      will-change: transform, opacity;
+    }
+    .post .title{margin:0 0 8px 0;font-size:18px;color:var(--text); text-decoration:none}
+    .meta{font-size:12px;color:var(--muted);margin-bottom:8px}
+    .desc{font-size:14px;color:var(--text);line-height:1.35;margin-bottom:6px}
+    .link{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600}
+
+    /* small visual tweak for incoming item */
+    .incoming { transform: translateY(-6px); opacity:0.95; box-shadow:0 8px 28px rgba(2,6,23,0.45); }
+
+    .controls{display:flex;gap:8px;align-items:center;margin-top:14px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);padding:8px 12px;border-radius:10px;cursor:pointer}
+    footer{display:flex;justify-content:space-between;margin-top:12px;color:var(--muted);font-size:13px}
+
+    @media (max-width:680px){
+      .post{position:relative}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="region" aria-live="polite" aria-label="Stacked news rotator">
+      <header>
+        <div class="logo">NN</div>
+        <div>
+          <h1>News Stack — Smooth Rotate</h1>
+          <p class="lead">Three posts visible. Every 5 seconds bottom is removed and the next feed item slides in at the top.</p>
+        </div>
+      </header>
+
+      <div class="stack-wrap" aria-atomic="true" style="min-height:240px;">
+        <div id="stack" class="stack"></div>
+      </div>
+
+      <div class="controls">
+        <button id="pauseBtn" class="btn">Pause</button>
+        <button id="prevBtn" class="btn">Previous (undo)</button>
+        <button id="nextBtn" class="btn">Advance</button>
+      </div>
+
+      <footer>
+        <div id="status">Status: initializing...</div>
+        <div>Source: news_real.xml (same folder)</div>
+      </footer>
+    </div>
+  </div>
+
+<script>
+// configuration
+const XML_URL = 'news_real.xml';
+const DISPLAY_MS = 5000;
+const VISIBLE = 3;
+const ANIM_DUR = 450; // match CSS timing
+
+// elements
+const stackEl = document.getElementById('stack');
+const statusEl = document.getElementById('status');
+const pauseBtn = document.getElementById('pauseBtn');
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+
+let allItems = [];
+let timer = null;
+let nextIndex = 0;
+let autoRunning = true;
+let lastInsertedIndex = -1;
+
+// parse feed
+function parseFeedFromString(xmlStr){
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(xmlStr, 'application/xml');
+  const nodeItems = Array.from(xml.querySelectorAll('channel > item'));
+  return nodeItems.map(node=>({
+    title: text(node,'title'),
+    link: text(node,'link'),
+    description: text(node,'description'),
+    author: text(node,'author'),
+    category: text(node,'category'),
+    pubDate: text(node,'pubDate'),
+    guid: node.querySelector('guid') ? node.querySelector('guid').textContent.trim() : ''
+  }));
+}
+function text(node, tag){ const el = node.querySelector(tag); return el ? el.textContent.trim() : ''; }
+
+// load feed (fetch or fallback)
+function loadFeed(){
+  statusEl.textContent = 'Fetching ' + XML_URL + ' …';
+  fetch(XML_URL, {cache:'no-store'})
+    .then(r=>{ if(!r.ok) throw new Error(r.status); return r.text(); })
+    .then(txt=>{ allItems = parseFeedFromString(txt); if(!allItems.length) throw new Error('empty'); statusEl.textContent = `Loaded ${allItems.length} items`; start(); })
+    .catch(err=>{
+      console.warn('fetch fail', err);
+      statusEl.textContent = 'Failed to fetch news_real.xml — using embedded feed';
+      // embedded fallback (shortened for brevity)
+      const fallback = `<rss><channel>${document.getElementById('stack').dataset.fallback || ''}</channel></rss>`;
+      // but earlier versions use embedded XML; here just show message and abort
+      allItems = [];
+      statusEl.textContent += ' — no feed available in this build. Replace with your news_real.xml or open via localhost server.';
+      // stop here; user likely will serve files locally
+      // still initialize empty view
+      initEmpty();
+    });
+}
+
+// Create DOM node for an item
+function createPost(item){
+  const el = document.createElement('article');
+  el.className = 'post';
+  el.innerHTML = `<h2 class="title"><a class="link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h2>
+    <div class="meta">${escapeHtml(item.category)} · ${escapeHtml(item.pubDate)}${item.author ? ' · ' + escapeHtml(item.author) : ''}</div>
+    <div class="desc">${escapeHtml(item.description)}</div>`;
+  return el;
+}
+
+function escapeHtml(s){ return (s||'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;'); }
+
+// initialize with first VISIBLE items
+function initStack(){
+  stackEl.innerHTML = '';
+  const count = Math.min(VISIBLE, allItems.length);
+  for(let i=0;i<count;i++) stackEl.appendChild(createPost(allItems[i]));
+  nextIndex = count % allItems.length;
+  updateStatus();
+}
+
+// fallback init when no feed
+function initEmpty(){
+  stackEl.innerHTML = `<div class="post"><div class="meta">No feed loaded.</div></div>`;
+  updateStatus();
+}
+
+// Smooth rotate: insert new top, translate stack up then animate down
+function smoothRotate(){
+  if(!allItems.length) return;
+  // determine next item and update lastInsertedIndex
+  const item = allItems[nextIndex % allItems.length];
+  lastInsertedIndex = nextIndex % allItems.length;
+  nextIndex = (nextIndex + 1) % allItems.length;
+
+  // create newTop and insert at top
+  const newTop = createPost(item);
+  newTop.classList.add('incoming');
+  // ensure it's laid out before measuring
+  stackEl.insertBefore(newTop, stackEl.firstChild);
+
+  // measure offset = height of newTop + gap
+  const gap = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gap')) || 12;
+  // use bounding rect to compute height including gap
+  const rect = newTop.getBoundingClientRect();
+  const offset = Math.round(rect.height + gap);
+
+  // set stack transform to -offset (so visuals appear unchanged)
+  stackEl.style.transition = 'none';
+  stackEl.style.transform = `translateY(-${offset}px)`;
+  // force reflow
+  void stackEl.offsetHeight;
+
+  // animate transform to 0 so everything slides down revealing newTop
+  stackEl.style.transition = `transform ${ANIM_DUR}ms cubic-bezier(.2,.9,.3,1)`;
+  stackEl.style.transform = 'translateY(0)';
+
+  // after animation, clean up: remove extras to keep VISIBLE items and clear inline styles
+  const onDone = ()=>{
+    stackEl.removeEventListener('transitionend', onDone);
+    // remove any 'incoming' class
+    newTop.classList.remove('incoming');
+    // remove bottom items until only VISIBLE remain
+    while(stackEl.children.length > VISIBLE) stackEl.removeChild(stackEl.lastElementChild);
+    // clear inline transform/transition for clean state
+    stackEl.style.transition = '';
+    stackEl.style.transform = '';
+    updateStatus();
+  };
+  stackEl.addEventListener('transitionend', onDone);
+}
+
+// Undo last rotate: move top to bottom and rewind nextIndex
+function undoRotate(){
+  if(!allItems.length) return;
+  // compute previous inserted index
+  nextIndex = (nextIndex - 1 + allItems.length) % allItems.length;
+  // animate top moving up and then append appropriate previous item at bottom
+  const top = stackEl.firstElementChild;
+  if(!top) return;
+  top.style.transition = `transform ${ANIM_DUR}ms ease, opacity ${ANIM_DUR}ms ease`;
+  top.style.transform = 'translateY(-12px)';
+  top.style.opacity = '0';
+  setTimeout(()=>{
+    if(top && top.parentNode) top.parentNode.removeChild(top);
+    // compute which item to append: the one preceding nextIndex by VISIBLE positions
+    const appendIndex = (nextIndex - VISIBLE + allItems.length) % allItems.length;
+    const itemToAppend = allItems[appendIndex];
+    stackEl.appendChild(createPost(itemToAppend));
+    // ensure length is VISIBLE
+    while(stackEl.children.length > VISIBLE) stackEl.removeChild(stackEl.lastElementChild);
+    updateStatus();
+  }, ANIM_DUR + 20);
+}
+
+// auto controls
+function startAuto(){ stopAuto(); autoRunning = true; timer = setInterval(smoothRotate, DISPLAY_MS); updateStatus(); }
+function stopAuto(){ if(timer){ clearInterval(timer); timer = null; } autoRunning = false; updateStatus(); }
+
+pauseBtn.addEventListener('click', ()=>{
+  if(autoRunning){ stopAuto(); pauseBtn.textContent = 'Resume'; }
+  else { startAuto(); pauseBtn.textContent = 'Pause'; }
+});
+nextBtn.addEventListener('click', ()=>{ smoothRotate(); if(autoRunning) startAuto(); });
+prevBtn.addEventListener('click', ()=>{ undoRotate(); if(autoRunning) startAuto(); });
+
+// hover to pause
+stackEl.parentElement.addEventListener('mouseenter', ()=>{ if(autoRunning) stopAuto(); });
+stackEl.parentElement.addEventListener('mouseleave', ()=>{ if(!autoRunning) startAuto(); });
+
+function updateStatus(){ statusEl.textContent = `Next index: ${nextIndex} · Total: ${allItems.length} · Auto: ${autoRunning ? 'on' : 'off'}`; }
+
+// initialize
+loadFeed();
+
+// Service note for local file access
+// If opening via file:// some browsers block fetch. Serve with a local server:
+// python -m http.server 8000  then open http://localhost:8000/news_stack_live_smooth.html
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Real News Feed</title>
+    <link>https://example-news-aggregate.local/</link>
+    <description>Aggregated real news items (8) — generated on request.</description>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 03 Nov 2025 12:00:00 +0000</lastBuildDate>
+
+    <item>
+      <title>Brazil opens three weeks of COP30-linked climate events</title>
+      <link>https://www.reuters.com/sustainability/cop/brazil-kicks-off-cop30-climate-events-year-distractions-2025-11-03/</link>
+      <description>Brazil has opened three weeks of events linked to the COP30 climate summit, aiming to showcase climate action and host international delegations.</description>
+      <author>Reuters</author>
+      <category>World</category>
+      <pubDate>Mon, 03 Nov 2025 08:00:00 +0000</pubDate>
+      <guid isPermaLink="false">reuters-20251103-001</guid>
+    </item>
+
+    <item>
+      <title>London stocks ease after recent rally; focus shifts to budget</title>
+      <link>https://www.reuters.com/world/uk/london-stocks-ease-after-recent-rally-focus-shifts-budget-bank-england-2025-10-31/</link>
+      <description>London's stock market cooled after a recent run-up as attention turned to the upcoming UK budget and Bank of England commentary.</description>
+      <author>Reuters</author>
+      <category>Business</category>
+      <pubDate>Fri, 31 Oct 2025 10:30:00 +0000</pubDate>
+      <guid isPermaLink="false">reuters-20251031-002</guid>
+    </item>
+
+    <item>
+      <title>Fast-charging battery firm Nyobolt raises $30 million for expansion</title>
+      <link>https://www.reuters.com/technology/fast-charging-battery-firm-nyobolt-raises-30-million-expansion-2025-04-16/</link>
+      <description>UK-based battery technology company Nyobolt secured funding to expand work on ultra-fast charging batteries that can charge to 80% in minutes in prototype tests.</description>
+      <author>Reuters</author>
+      <category>Technology</category>
+      <pubDate>Wed, 16 Apr 2025 12:00:00 +0000</pubDate>
+      <guid isPermaLink="false">reuters-20250416-003</guid>
+    </item>
+
+    <item>
+      <title>Early flu wave could lead to 'long and drawn-out' winter for NHS</title>
+      <link>https://www.england.nhs.uk/2025/10/early-flu-wave-could-lead-to-long-and-drawn-out-winter-for-nhs/</link>
+      <description>NHS England warned of an early flu wave and urged eligible groups to take up vaccination to reduce pressure on health services this winter.</description>
+      <author>NHS England</author>
+      <category>Health</category>
+      <pubDate>Thu, 30 Oct 2025 08:00:00 +0000</pubDate>
+      <guid isPermaLink="false">nhs-20251030-004</guid>
+    </item>
+
+    <item>
+      <title>Cambridge scheme proposes fewer but bigger council homes</title>
+      <link>https://housingdigital.co.uk/cambridge-scheme-proposes-fewer-but-bigger-council-homes/</link>
+      <description>Plans submitted in Cambridge would deliver a mix of council and private homes as part of a new development proposal.</description>
+      <author>Housing Digital</author>
+      <category>Local</category>
+      <pubDate>Mon, 03 Nov 2025 10:00:00 +0000</pubDate>
+      <guid isPermaLink="false">housingdigital-20251103-005</guid>
+    </item>
+
+    <item>
+      <title>New coral gardens and hydrothermal vents found near South Sandwich Islands</title>
+      <link>https://schmidtocean.org/new-coral-gardens-hydrothermal-vents-found-south-sandwich-islands/</link>
+      <description>An Ocean Census Flagship expedition found new coral gardens, hydrothermal vents and possible new species in the remote South Sandwich Islands region.</description>
+      <author>Schmidt Ocean Institute / GoSouth expedition</author>
+      <category>Science</category>
+      <pubDate>Thu, 15 May 2025 09:00:00 +0000</pubDate>
+      <guid isPermaLink="false">schmidtocean-20250515-006</guid>
+    </item>
+
+    <item>
+      <title>The Top Exhibitions To See In London: October 2025</title>
+      <link>https://londonist.com/london/museums-and-galleries/the-top-exhibitions-to-see-in-london-october-2025</link>
+      <description>Londonist's picks for the best exhibitions to see in London during October 2025, covering galleries and museum highlights.</description>
+      <author>Londonist</author>
+      <category>Culture</category>
+      <pubDate>Thu, 02 Oct 2025 09:00:00 +0000</pubDate>
+      <guid isPermaLink="false">londonist-20251002-007</guid>
+    </item>
+
+    <item>
+      <title>England beat Spain in Euro 2025 final (penalty shootout)</title>
+      <link>https://www.reuters.com/sports/soccer/england-beat-spain-penalty-shootout-win-euro-2025-2025-07-27/</link>
+      <description>England triumphed over Spain in a dramatic penalty shootout to win Euro 2025, with the match ending 1-1 and England winning on penalties.</description>
+      <author>Reuters</author>
+      <category>Sports</category>
+      <pubDate>Sun, 27 Jul 2025 20:00:00 +0000</pubDate>
+      <guid isPermaLink="false">reuters-20250727-008</guid>
+    </item>
+
+  </channel>
+</rss>
