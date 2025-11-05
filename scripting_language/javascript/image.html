@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smooth Responsive Image Without requestAnimationFrame</title>
+</head>
+<body>
+
+<img id="myImage" src="big_image.jpg" alt="Big Image">
+
+<script>
+const img = document.getElementById('myImage');
+
+// Original image size
+const naturalWidth = 1800;
+const naturalHeight = 1400;
+
+// Current displayed size
+let currentWidth = naturalWidth;
+let currentHeight = naturalHeight;
+
+// Variables for wavy effect you can undestand it basicaly is a sine wave
+let wave = 0; // value which is taking sin() function you can remember it is making cycle so for that reason we are increasing it as we want
+let waveSpeed = 0.03;
+let growthFactor = 0.05; // how fast it approaches target size when we are resizing window
+
+function smoothResize() {
+  const windowWidth = window.innerWidth; // current window width when we resized or invoked by Run every 16ms (~60fps)
+  const windowHeight = window.innerHeight; // current window height when we resized or invoked by Run every 16ms (~60fps)
+  const aspectRatio = naturalWidth / naturalHeight; // basically needs to calculate target height from target width
+
+  // Base target size (91% of window)
+  let targetWidth = windowWidth * 0.91; // 91% of window width pixels accurate
+  let targetHeight = targetWidth / aspectRatio; // calculate height from width using aspect ratio
+
+
+  if (targetHeight > windowHeight * 0.91) { // if height is more than 91% of window height then we need to make less width from height
+    targetHeight = windowHeight * 0.91; // 91% of window height pixels accurate
+    targetWidth = targetHeight * aspectRatio; // calculate width from height using aspect ratio
+  }
+
+  // Nonlinear wavy effect
+  wave += waveSpeed; // incrementing value that will be taken with sin() function to make wave effect 
+  const waveEffect = Math.sin(wave) * 50; // amplitude of wave effect 50px
+  targetWidth += waveEffect; // apply wave effect to width
+  targetHeight = targetWidth / aspectRatio; // recalculate height from new width to maintain aspect ratio
+
+  // Smoothly approach target
+  currentWidth += (targetWidth - currentWidth) * growthFactor; // smooth approach to target width  by growthFactor
+  currentHeight += (targetHeight - currentHeight) * growthFactor; // smooth approach to target height by growthFactor
+
+  img.width = currentWidth; // changing image width
+  img.height = currentHeight; // changing image height
+}
+
+// Run every 16ms (~60fps)
+setInterval(smoothResize, 16); // making bouncing effect because of invoking every 16ms
+
+// Also update immediately when window resizes
+window.addEventListener('resize', smoothResize); // when window is resized it will invoke smoothResize function
+</script>
+
+</body>
+</html>

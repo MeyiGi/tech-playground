@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gazi Üniversitesi Duyurular</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>duyuru</h1>
+            <p>Son 5 duyuru sırasız SONUNA KADAR SABERDİN GELECEK BAĞLANTI DENÜYÜR</p>
+        </div>
+        
+        <div>
+            <div></div>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <div></div>
+                    Duyurular yükleniyor
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p>Sayfa <span>1</span> / <span>5</span> | Her 5 saniyede otomatik yenilenir</p>
+        </div>
+    </div>
+
+    <script>
+        let allAnnouncements = [];
+        let currentPageIndex = 0;
+        const itemsPerPage = 5;
+        let autoScrollInterval;
+        let progressInterval;
+        const TIMEOUT = 8000; // 8 saniye timeout
+
+        // Duyuruları yükle
+        async function loadAnnouncements() {
+            const container = document.querySelector('body > div > div:nth-child(3) > div'); // announcements-container div'i
+            
+            // Timeout ile promise
+            const fetchWithTimeout = (url, timeout) => {
+                return Promise.race([
+                    fetch(url),
+                    new Promise((_, reject) => 
+                        setTimeout(() => reject(new Error('Timeout')), timeout)
+                    )
+                ]);
+            };
+
+            const proxies = [
+                'https://api.allorigins.win/raw?url=',
+                'https://corsproxy.io/?',
+                'https://api.codetabs.com/v1/proxy?quest='
+            ];
+
+            const targetUrl = 'https://gazi.edu.tr/view/announcement-list?id=2&type=1&SearchString=&dates=&date=';
+
+            // Direkt deneme
+            try {
+                updateStatus('Gazi Üniversitesi sitesine bağlanılıyor...');
+                const response = await fetchWithTimeout(targetUrl, TIMEOUT);
+                if (response.ok) {
+                    const html = await response.text();
+                    if (html.length > 1000) {
+                        parseAnnouncements(html);
+                        return;
+                    }
+                }
+            } catch (error) {
+                console.log('Direkt bağlantı başarısız:', error.message);
+            }
+
+            // Proxy'leri sırayla dene
+            for (let i = 0; i < proxies.length; i++) {
+                try {
+                    updateStatus(`Alternatif bağlantı deneniyor (${i + 1}/${proxies.length})...`);
+                    const proxyUrl = proxies[i] + encodeURIComponent(targetUrl);
+                    const response = await fetchWithTimeout(proxyUrl, TIMEOUT);
+                    
+                    if (response.ok) {
+                        const html = await response.text();
+                        if (html.length > 1000) {
+                            parseAnnouncements(html);
+                            return;
+                        }
+                    }
+                } catch (error) {
+                    console.log(`Proxy ${i + 1} başarısız:`, error.message);
+                }
+            }
+
+            // Hiçbiri çalışmazsa demo yükle
+            updateStatus('Bağlantı kurulamadı, demo veriler yükleniyor...');
+            setTimeout(() => {
+                showError();
+            }, 1000);
+        }
+
+        function updateStatus(message) {
+            const container = document.querySelector('body > div > div:nth-child(3) > div');
+            container.innerHTML = `
+                <div>
+                    <div></div>
+                    ${message}
+                </div>
+            `;
+        }
+
+        // HTML'den duyuruları çıkar
+        function parseAnnouncements(html) {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            
+            // Gazi Üniversitesi özel seçiciler
+            let announcementElements = doc.querySelectorAll('.duyuru-item, .announcement-item, .duyuru-liste-item, tr[onclick*="announcement"]');
+            
+            if (announcementElements.length === 0) {
+                // Tablo satırlarını kontrol et
+                announcementElements = doc.querySelectorAll('table tr');
+            }
+            
+            if (announcementElements.length === 0) {
+                // Linkleri kontrol et
+                announcementElements = doc.querySelectorAll('a[href*="announcement"], a[href*="duyuru"]');
+            }
+
+            announcementElements.forEach((element, index) => {
+                if (index < 25 && index > 0) { // İlk satırı atla (başlık olabilir)
+                    let title = '';
+                    let date = '';
+                    let category = 'Genel Duyuru';
+
+                    // Farklı yapıları dene
+                    const titleEl = element.querySelector('.duyuru-baslik, .title, h3, h4, td:nth-child(2), td:nth-child(1)');
+                    const dateEl = element.querySelector('.tarih, .date, time, td:last-child');
+                    const categoryEl = element.querySelector('.kategori, .category, .badge');
+
+                    if (titleEl) {
+                        title = titleEl.textContent.trim();
+                    } else {
+                        const text = element.textContent.trim();
+                        if (text.length > 10 && text.length < 300) {
+                            title = text;
+                        }
+                    }
+
+                    if (dateEl) {
+                        date = dateEl.textContent.trim();
+                    } else {
+                        const dateMatch = element.textContent.match(/(\d{1,2}[./-]\d{1,2}[./-]\d{2,4})/);
+                        if (dateMatch) date = dateMatch[1];
+                    }
+
+                    if (categoryEl) {
+                        category = categoryEl.textContent.trim();
+                    }
+
+                    if (title && title.length > 10) {
+                        allAnnouncements.push({
+                            title: title.substring(0, 250),
+                            date: date || 'Tarih belirtilmemiş',
+                            category: category
+                        });
+                    }
+                }
+            });
+
+            if (allAnnouncements.length === 0) {
+                showError();
+                return;
+            }
+
+            updateStatus(`${allAnnouncements.length} duyuru başarıyla yüklendi!`);
+            setTimeout(() => {
+                displayPage(0);
+                startAutoScroll();
+            }, 1000);
+        }
+
+        // Hata mesajı göster ve demo yükle
+        function showError() {
+            const container = document.querySelector('body > div > div:nth-child(3) > div');
+            container.innerHTML = `
+                <div>
+                    <h3>⚠️ Canlı Verilere Erişilemiyor</h3>
+                    <p><strong>Neden?</strong> Gazi Üniversitesi web sitesi güvenlik politikası nedeniyle dış kaynaklardan veri çekilmesine izin vermiyor (CORS).</p>
+                    <p><strong>Çözüm:</strong></p>
+                    <ul>
+                        <li><strong>Python ile:</strong> <code>python -m http.server 8000</code> komutuyla yerel sunucu başlatın</li>
+                        <li><strong>XAMPP/WAMP:</strong> Dosyayı htdocs klasörüne koyun</li>
+                        <li><strong>VS Code:</strong> Live Server eklentisini kullanın</li>
+                    </ul>
+                </div>
+            `;
+        }
+
+        // Sayfa göster
+        function displayPage(pageIndex) {
+            const container = document.querySelector('body > div > div:nth-child(3) > div');
+            const start = pageIndex * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageAnnouncements = allAnnouncements.slice(start, end);
+            
+            if (pageAnnouncements.length === 0) {
+                currentPageIndex = 0;
+                displayPage(0);
+                return;
+            }
+            
+            container.innerHTML = '';
+            
+            pageAnnouncements.forEach(ann => {
+                const div = document.createElement('div');
+                div.innerHTML = `
+                    <div>${ann.category}</div>
+                    <h3>${ann.title}</h3>
+                    <div>📅 ${ann.date}</div>
+                `;
+                container.appendChild(div);
+            });
+            
+            const totalPages = Math.ceil(allAnnouncements.length / itemsPerPage);
+            document.querySelector('body > div > div:nth-child(4) > p > span:nth-child(1)').textContent = pageIndex + 1; // currentPage
+            document.querySelector('body > div > div:nth-child(4) > p > span:nth-child(2)').textContent = totalPages; // totalPages
+        }
+
+        // Otomatik kaydırma başlat
+        function startAutoScroll() {
+            const totalPages = Math.ceil(allAnnouncements.length / itemsPerPage);
+            
+            if (autoScrollInterval) clearInterval(autoScrollInterval);
+            if (progressInterval) clearInterval(progressInterval);
+            
+            function resetProgress() {
+                const progressBar = document.querySelector('body > div > div:nth-child(2) > div'); // progress-fill div'i
+                // Stil niteliklerini değiştiren JavaScript kodları sadeleştirilmiş HTML'de çalışmaz, ancak fonksiyonu koruyorum.
+            }
+            
+            resetProgress();
+            
+            autoScrollInterval = setInterval(() => {
+                currentPageIndex = (currentPageIndex + 1) % totalPages;
+                displayPage(currentPageIndex);
+                resetProgress();
+            }, 5000);
+        }
+
+        // Sayfa yüklendiğinde başlat
+        window.onload = () => {
+            loadAnnouncements();
+        };
+    </script>
+</body>
+</html>

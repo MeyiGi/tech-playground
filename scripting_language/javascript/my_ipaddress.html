@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Persistent IP Logger</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0; 
+    }
+  </style>
+</head>
+<body>
+
+<h2>Persistent IP Logger</h2>
+<p>Each refresh logs your public IP automatically. Data persists in the browser. You can download or clear it.</p>
+
+<button id="downloadBtn">Download TXT</button>
+<button id="clearBtn">Clear All</button>
+
+<img src="big_image.jpg" alt="">
+
+<pre id="logArea">Loading...</pre>
+
+<script>
+const logKey = "ipLogList";
+
+function loadLog() {
+  const data = localStorage.getItem(logKey);
+  return data ? JSON.parse(data) : [];
+}
+
+function saveLog(list) {
+  localStorage.setItem(logKey, JSON.stringify(list));
+}
+
+function displayLog(list) {
+  const logArea = document.getElementById("logArea");
+  if (list.length === 0) {
+    logArea.textContent = "No data yet.";
+  } else {
+    logArea.textContent = list.map(item => `IP: ${item.ip} — ${item.time}`).join("\n");
+  }
+}
+
+async function logCurrentIP() {
+    const res = await fetch("https://api.ipify.org?format=json");
+    const data = await res.json();
+    const ip = data.ip;
+    const list = loadLog();
+    list.push({ ip, time: new Date().toLocaleString() });
+    saveLog(list);
+    displayLog(list);
+}
+
+function downloadFile(filename, text) {
+  const blob = new Blob([text], { type: "text/plain" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+document.getElementById("downloadBtn").addEventListener("click", () => {
+  const list = loadLog();
+  if (list.length === 0) {
+    alert("No entries to download!");
+    return;
+  }
+  const content = list.map(item => `IP: ${item.ip} — ${item.time}`).join("\r\n");
+  downloadFile("ip-log.txt", content);
+});
+
+document.getElementById("clearBtn").addEventListener("click", () => {
+  if (confirm("Are you sure you want to clear all logs?")) {
+    localStorage.removeItem(logKey);
+    displayLog([]);
+  }
+});
+
+// Automatically log IP on page load
+logCurrentIP();
+</script>
+
+</body>
+</html>
