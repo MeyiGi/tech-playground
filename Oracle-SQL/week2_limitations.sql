@@ -55,6 +55,9 @@ SELECT * FROM Employees
 ORDER BY 0
 
 SELECT * FROM Employees
+ORDER BY 'kotokbas' // won't affect to the corresponding order think about it like nothing doing special
+
+SELECT * FROM Employees
 WHERE salary < &salary
 
 SELECT * FROM Employees
@@ -62,6 +65,9 @@ WHERE salary + 20 < '123123' - 10
 
 SELECT &&column_name FROM Employees
 WHERE salary < 10000 // it will save what kind of column name I chosen before
+
+SELECT * FROM &Table
+SELECT &column FROm Employees
 
 DEFINE employee_num = 200 // like that we can create variable that we can use
 SELECT employee_id, last_name, salary FROM Employees

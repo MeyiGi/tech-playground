@@ -2,7 +2,7 @@ SELECT * FROM Employees
 
 // QUESTIONS
 // what is explicit and inplicit data type conversions
-// how it is working data type conversions in NVL2(a, b, c) in the output
+// how it is working data type conversions in NVL2(a, b, c) in the output [implicit]
 // what is DML, DCL and DDL
 // what is transaction
 // containing of transactions ?
@@ -124,7 +124,7 @@ SET (job_id, salary) = (
     SELECT job_id, salary FROM Employees
     WHERE employee_id = 205
 )
-WHERE employee_id = 113 // it have to been worked but because of contraints it is not will work
+WHERE employee_id = 113 // it have to been worked but because of contraints it won't work in my case
 
 // DELETE used to removing row(s)
 DELETE FROM Departments 

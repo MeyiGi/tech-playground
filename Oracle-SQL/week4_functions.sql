@@ -1,6 +1,7 @@
 SELECT * FROM Posts;
 
 SELECT username, TO_CHAR(created_at, 'DD "of" Month YYYY HH:MI:SS') AS created_date FROM Users;
+SELECT first_name, TO_CHAR(hire_date, 'DD "of" Month MONTH mon yyyy DY DAY DD HH:MI:SS') AS created_date FROM Employees;
 
 SELECT TO_CHAR(created_at, '$99,999.00') FROM Users
 
@@ -39,5 +40,7 @@ FROM DUAL
 
 // DEFINITION: there two type of data conversion Implicit(automatically will be converted with SQL) and Explicit(we need make data conversion)
 SELECT first_name, hire_date, TO_CHAR(hire_date, 'YYYY-YEAR') FROM Employee
+SELECT first_name, hire_date FROM Employees
+WHERE hire_date > '01^Jan^5'
 
 
