@@ -1,0 +1,3 @@
+interface WizardAdapter {
+    void attack();
+}
