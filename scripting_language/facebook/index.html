@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Facebook (simple)</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: Arial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+      }
+      main {
+        width: 800px;
+        margin: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+      }
+      h1 {
+        color: blue;
+        font-size: 56px;      
+      }
+
+      .card {
+        width: 360px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input,
+      button {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      }
+      button {
+        cursor: pointer;
+        color: white;
+        border: 0;
+      }
+      .login {
+        background: blue;
+      }
+      .create {
+        background: green;
+      }
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid #eee;
+        margin: 8px 0;
+      }
+      footer {
+        text-align: center;
+        color: #555;
+        font-size: 12px;
+        margin: 40px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>facebook</h1>
+        <p>
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </div>
+
+      <aside class="card">
+        <form>
+          <input placeholder="Email or phone" required />
+          <input type="password" placeholder="Password" required />
+          <button class="login" type="submit">Log in</button>
+          <a href="#">Forgotten password?</a>
+          <hr />
+          <button class="create" type="button">Create new account</button>
+        </form>
+        <p style="margin-top: 12px">
+          <b>Create a Page</b> for a celebrity, brand or business.
+        </p>
+      </aside>
+    </main>
+
+    <footer>
+      English · Türkçe · العربية · Deutsch · Español · Português<br />Meta ©
+      2025
+    </footer>
+  </body>
+</html>
