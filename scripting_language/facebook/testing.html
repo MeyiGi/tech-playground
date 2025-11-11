@@ -1,0 +1,102 @@
+<!DOCTYPE html/>
+<head>
+    <title>Facebook</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            font-family:Arial;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 100px 0;
+            gap: 24px;
+            width: 800px;
+        }
+        h1 { 
+            color: blue;
+            font-size: 56px;
+        }
+        p {
+            font-size: 16px;
+        }
+        aside { 
+            text-align: center;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            width: 360px
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, button {
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid grey;
+        }
+        button {
+            border: 0;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .login {
+            background-color: blue;
+        }
+        
+        .create {
+            background-color: green;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid grey;
+            margin: 8px 0; 
+        }
+
+        footer {
+            text-align: center;
+            color: #555;
+            font-size: 12px;
+            margin: 40px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="left">
+            <h1>Facebook</h1>
+            <p>Hello to the facebook page</p>
+        </div>
+
+        <aside>
+            <form>
+                <input type="text" placeholder="Email or phone number" />
+                <input type="password" placeholder="Password" />
+                <button class="login">Log in</button>
+                <a href="#">Forgotten passord</a>
+                <hr>
+                <button class="create">Create New Account</button>
+            </form>
+        </aside>
+    </main>
+    <footer>
+        English ~ Espanol ~ Russia ~ Turkish
+    </footer>
+</body>
