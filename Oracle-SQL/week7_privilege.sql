@@ -1,5 +1,5 @@
-// database security can be classified in two system and data
-// system access to data and use of data like username and password
+// database security can be classified in two system security and data security
+// system securyty control access to data and use of data like username and password
 // data security securing the data inside the table inside the database
 
 // priviliges it means write in sql to particular ....
@@ -22,10 +22,10 @@ IDENTIFIED BY demo // this demo user do not have any priviligies, password is ca
 // TO GRANT priviliges
 GRANT privilege [, privilege...]
 TO USER [, user] role, PUBLIC...] // with PUBLIC we mean giving privilige to all users
-// type of priviligies examples
+// system privilege examples
 CREATE SESSION
 CREATE TABLE
-CREATE TABLE CREATE SEQUENCE
+CREATE SEQUENCE
 CREATE VIEW
 CREATE PROCEDURE
 
@@ -40,7 +40,7 @@ CREATE ROLE manager
 GRANT create table, create view
 TO MANAGER
 
-GRANT MANAGER TO  alice // what if we make operation with manager but nobory is granted to manager role
+GRANT MANAGER TO  demo // what if we make operation with manager but nobory is granted to manager role
 
 // Changing passowrd
 ALTER USER demo
@@ -66,7 +66,6 @@ WITH GRANT OPTION; // demo can give this privelege to other users
 GRANT select
 ON alice.departments // departments table in alice user
 TO PUBLIC // all user can use select to alice.departments table, PUBLIC assess can give only DBA
-
 
 REVOKE [privilege [, privilege...]|ALL]
 ON object
