@@ -54,15 +54,15 @@ SET HIRE_DATE = 124
 WHERE employee_id = 1
 
 UPDATE Employees
-SET HIRE_DATE = 124, DEPARTMENT_ID = 10000
+SET DEPARTMENT_ID = 10000
 WHERE employee_id = 1
 
-UPDATE Employees e
+UPDATE Employees
 SET (job_id, salary) = (
     SELECT job_id, salary FROM Employees
     WHERE employee_id = 10
 )
-WHERE e.employee_id = 1
+WHERE employee_id = 1
 // what if select statement returning more than one record
 // how to make bunch updating in SQL
 
@@ -142,3 +142,9 @@ DELETE FROM Departments // will remove all data from table
 // Before COMMIT or ROLLBACK data can be recovered, previewed but won't affect to another peoples viewing it is changed only your session
 // DEFINITION: is a single DML statement fails during execution, only that statement will be rolled back
 // Read Consistency means when changes was made with one user won't confict with changes made by another user, with another words when one user making SELECT * FROM ... and it is taking around 2 minutes and within 2 minutes was made changes with another user it will not affect to already started SELECT statement
+// DEFINITION: FOR UPDATE is locking rows to further modification on execution if any changes will come they will wait for processing
+
+SELECT employee_id, salary, commission_pct, job_id FROM employees
+WHERE job_id = 'SA_REP
+ORDER BY employee_id
+FOR UPDATE // FOR UPDATE must be after WHERE clause

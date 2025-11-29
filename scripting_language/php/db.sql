@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS reddit_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    url VARCHAR(500) NOT NULL,
+    found_keywords VARCHAR(255) NOT NULL,
+    comment_content TEXT,
+    analysis_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

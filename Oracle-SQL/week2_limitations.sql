@@ -3,9 +3,24 @@ WHERE last_name = "Whalen"; // where clause can not use double quotation
 SELECT * FROM Employees
 SELECT  last_name FROM Employees
 WHERE last_name = 'Whalen';
+--
+--1)Arithmetic operation
+--2)Concatination operand
+--3)compare operation
+--4)IS [NOT] LIKE
+--5)[NOT] BETWEEN ... AND ...
+--6)not equal to
+--7)NOT
+--8)AND
+--9)OR
+
+SELECT &&name, &id FROM Employees
+
 
 // DD-MON-RR -> you wonder why instead of YYYY there RR, it is automatically detect which current centure if it RR = 50 it means 1950 in contract RR = 23 means 2023
 // DD-MON-YY -> here YY just truncating YYYY to last two digits if it is 80 it means 2080 year
+SELECT last_name, employee_id FROM Employees
+WHERE employee_id IN (100, 102, '103', 'huy') // implicit conversion is working but huy can not be converted to number
 
 SELECT last_name FROM Employees
 WHERE salary < 'h'; // implicitly conversion working in where clause but it is impossible convert h to number
@@ -61,7 +76,7 @@ SELECT * FROM Employees
 WHERE salary < &salary
 
 SELECT * FROM Employees
-WHERE salary + 20 < '123123' - 10
+WHERE salary + 20 < 10 - '123123'
 
 SELECT &&column_name FROM Employees
 WHERE salary < 10000 // it will save what kind of column name I chosen before
@@ -73,7 +88,7 @@ DEFINE employee_num = 200 // like that we can create variable that we can use
 SELECT employee_id, last_name, salary FROM Employees
 WHERE employee_id = &employee_num
 UNDEFINE employee_num // malloc for defining
-
-SET VERIFY ON // by using this we can see in the "Script Output" full query and what kind of substitutional variables was used
+// by using this we can see in the "Script Output" full query and what kind of substitutional variables was used
+SET VERIFY ON 
 SELECT employee_id, last_name, salary FROM Employees
 WHERE employee_id = &employee_num
