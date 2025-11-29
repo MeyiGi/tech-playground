@@ -41,7 +41,7 @@ GRANT create table, create view
 TO MANAGER
 
 GRANT MANAGER TO  demo // what if we make operation with manager but nobory is granted to manager role
-
+SELECT * FROM dba_sys_privs
 // Changing passowrd
 ALTER USER demo
 IDENTIFIED BY new_password // can I use numbers

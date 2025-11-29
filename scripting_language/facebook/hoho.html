@@ -1,24 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+        body {
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 70vh;
+          justify-content: center;
         }
+        * {
+          box-sizing: border-box;
+        }
+
+        main {
+          width: 1080px;
+        }
+        .hero {
+          display: flex;
+          justify-content: space-around;
+        }
+        .left {
+          width: 65%;
+          text-align: left;
+          padding-right: 50px;
+        }
+
+        .left h1 {
+          font-size: 35px;
+          color: blue;
+        }
+        .left p {
+          font-size: 22px;
+        }
+
+        .right {
+          width: 35%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 1px solid #999999;
+          box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
+
+          border-radius: 5px;
+          padding: 10px;
+        }
+        .right form {
+          width: 100%; 
+        }
+        .right input {
+          width: 100%;
+          padding: 10px 20px;
+          margin-bottom: 20px;
+        }
+        .log-in-button {
+          background-color: blue;
+          color: white;
+          border-radius: 5px;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .forgotten-password {
+          font-size: 8px;
+          text-decoration: none;
+          margin-bottom: 35px;
+          border-bottom: 1px solid #666666;
+          color: blue;
+        }
+        .create-new-account-button {
+          width: 60%;
+          background: green;
+          color: white;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          
+        }
+      </style>
+    </head>
+    <body>
+      <main>
+        <section class="hero">
+          <div class="left">
+            <h1>facebook</h1>
+            <p>Facebook helps you connect and share</p>
+          </div>
+          <div class="right">
+            <form>
+              <input type="text" placeholder="Email address or phone number" />
+              <input type="password" placeholder="Password" />
+              <button class="log-in-button">Log in</button>
+              
+              <!-- add separator to the bottom-->
+
+              
+            </form>
+            <a href="" class="forgotten-password">Forgotten password?</a>
+            <button class="create-new-account-button">Create new account</button>
+            <p>Create a Page for a celebrity, brand or business</p>
+          </div>
+        </section>
         
-    </style>
-</head>
-<body>
-    <table align="center" cellpadding="0" cellspacing="0" width="300px">
-        <tr>
-            <td>hohoho</td>
-            <td>hohoho</td>
-            <td>hohoho</td>
-        </tr>
-    </table>
-</body>
-</html>
+      </main>
+
+      <footer>
+          <span>English</span> &nbsp; &nbsp;
+          <span>Turkish</span>&nbsp; &nbsp;
+          <span>Kurdi</span>&nbsp; &nbsp;
+          <span>Zaza</span>&nbsp; &nbsp;
+          <span>Deutch</span>
+        <!-- add separator to the bottom-->
+
+        <br>
+          <span>Sign up</span> &nbsp; &nbsp;
+          <span>Log in</span>&nbsp; &nbsp;
+          <span>Messanger</span>&nbsp; &nbsp;
+          <span>Facebook Lite</span>&nbsp; &nbsp;
+          <span>Video</span>&nbsp; &nbsp;
+      </footer>
+    </body>
+  </html>

@@ -3,7 +3,7 @@
 // DEFINITION: foreighn key is a column that creates a link between two tables
 // DEFINITION: query is a question of requests for information
 // DEFINITION: SQL is ansi standard language for operational relational databases is efficient easy to learn and use with sql we can do everything needed to work with databases, it is query, declarative language, it is designed to only interact with databases
-// DEFINITION: DML stands for data manipulation language [update, delete, select, merge, insert]
+// DEFINITION: DML stands for data manipulation language [update, delete, merge, insert]
 // DEFINITION: DDL stands for data definitoin language it is autocommit language
 // DEFINITION: projections is when we are retrieving precise columns retrieve specific columns in contract selection retrieving all rows that satisfy condition
 // DEFINIITON: writing sql statements: sql statements are not case sensitive, can not be abbreviated, can be in multiple lines, indentation or placing in separate lines are optional used for readibility, sql statement can be terminated with ';' enabling execution of several sql statements 
@@ -24,7 +24,7 @@ SELECT hire_date || salary FROM Employees
 SELECT 'salary' FROM Employees
 SELECT 'hello ' || 'you're pretty' FROM dual
 SELECT 'hello ' || q'[you're pretty]' FROM dual 
-// DEFINITION: literal character strings can not bewith double quates
+// DEFINITION: literal character strings can not be with double quates
 // DEFINITOIN: alias can not be with single quotes
 
 SELECT first_name || ' ' || last_name || ' ' || hire_date FROM Employees 
@@ -33,7 +33,10 @@ SELECT first_name + last_name FROM Employees
 // why in this code one is causing error while another working fine?
 SELECT first_name || hire_date FROM Employees;
 SELECT hire_date || first_name FROM Employees:
-
+SELECT salary || first_name FROM Employees
+SELECT salary || hire_date FROM Employees
+SELECT hire_date || salary FROM Employees
+SELECT salary huy hoho FROM Employees
 
 DESCRIBE Employees // letting use to know structure of table
 

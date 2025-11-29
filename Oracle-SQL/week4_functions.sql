@@ -18,6 +18,14 @@ SELECT NVL(image_url, 'Пошел нахуй!') FROM Posts
 
 SELECT ('hoho' * 3) FROM DUAL
 
+SELECT
+  TO_CHAR(12345.67, '99,9999.99')   AS formatted_number,
+  TO_CHAR(12345.67, '000,000.00')   AS with_leading_zeros,
+  TO_CHAR(12345.67, '$999,999.00')  AS floating_dollar_sign,
+  TO_CHAR(12345.67, 'L999,999.00')  AS local_currency
+FROM
+  dual
+
 SELECT NVL2('Пошел нахуЙ', NVL2('ШЛА НАХУЙ', 809, 999), 321) FROM DUAL // it is like ternary operation [ condition ? ho : jo ]
 SELECT NVL2(image_url, 'Пошел нахуй!', TO_DATE('03-JAN-2025')) FROM Posts
 
@@ -32,7 +40,7 @@ SELECT COALESCE('HOHOHO', '123', '567') FROM DUAL
 SELECT 
     CASE 123 
         WHEN LENTH('hoho') > 3 THEN 10
-        ELSE 3
+        ELSE 3 // without wiht defaul it won't work
     END AS jpjp
 FROM DUAL
 // CONDITIONS AND RETURN TYPES SHOULD BE SIMILAR TO EACH OTHERS

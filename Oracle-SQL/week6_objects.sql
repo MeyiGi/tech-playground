@@ -1,4 +1,4 @@
-// DEFINITION: views - is a logical table, logically repressents subsets logical table based on physical data, it doesn't contain data itself, it is stored as select select statement, it does not store data physically
+z// DEFINITION: views - is a logical table, logically repressents subsets logical table based on physical data, it doesn't contain data itself, it is stored as select select statement, it does not store data physically
 // Advantages of views: restricting data access to physical table, to make complex queries easy, ... [another two ones] 
 // simple views contain one, do not contain function, groups does not present, DML
 // complext views, contain one or more, contain functionsm grups, do not contain DML
@@ -63,6 +63,16 @@ AS  SELECT department_id, MIN(salary)
 DELETE FROM empvn
 WHERE department_id = 100 // why not department???
 
+CREATE OR REPLACE VIEW empvn (employee_id, anually)
+AS  SELECT employee_id, salary * 12 FROM employees
+
+CREATE OR REPLACE VIEW empvn AS
+SELECT employee_id, salary * 12 AS annual_salary
+FROM employees;
+
+DELETE FROM empvn
+WHERE employee_id = 100
+
 CREATE OR REPLACE VIEW empv AS
 SELECT DISTINCT(department_id), first_name FROM Employees
 CREATE OR REPLACE VIEW empv (hoho, kotok) AS 
@@ -82,7 +92,7 @@ AS  SELECT DISTINCT first_name, employee_id
 CREATE VIEW empvn2
 AS  SELECT employee_id, last_name
     FROM employees
-    WHERE ROWNUM <= 3 // ROWNUM counting as complext VIEW thereby we can not remove rows in VIEW, why? 
+    WHERE ROWNUM <= 3 // ROWNUM counting as complext VIEW thereby we can not remove rows in VIEW? 
 
 
 // group functions, GROUP BY, JOIN, DISTINCT, ROWNUM --> Can not be implemented REMOVE
