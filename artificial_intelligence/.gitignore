@@ -1,0 +1,58 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python version manager
+.python-version
+
+# Lock files (если не хочешь коммитить)
+uv.lock
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Backup files
+# =========================
+backup/
+*.docx
+*.pdf
+
+# =========================
+# Testing / coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
