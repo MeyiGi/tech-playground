@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ip"></p>
+    <p id="date"></p>
+
+    <script>
+        function loadData() {
+
+            fetch("http://localhost:3000/")
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("ip").innerText = data.ip;
+                    document.getElementById("date").innerText = data.date;
+                })
+            .catch(() => {
+                document.getElementById("ip").innerText = "error";
+                    document.getElementById("date").innerText = "error"
+            })
+            }
+            loadData()
+    </script>
+</body>
+</html>
