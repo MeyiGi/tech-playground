@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Градиентный спуск 3D — Flask</title>
+
+  <!-- Plotly.js для 3D -->
+  <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Наш CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+<!-- ───────────── HEADER ───────────── -->
+<header class="header">
+  <div class="header-logo">
+    <div class="logo-icon">∇</div>
+    <span class="header-title">Gradient Descent <span class="badge">3D</span></span>
+  </div>
+
+  <div class="formula-strip">
+    <span class="formula-label">Формула профессора:</span>
+    <span class="formula-math">
+      ∂f(x<sub>0</sub>)/∂x ≈ [f(x<sub>0</sub>+Δx) − f(x<sub>0</sub>−Δx)] / 2Δx
+    </span>
+  </div>
+
+  <div class="header-right">
+    <div class="status-indicator" id="status-dot"></div>
+    <span class="status-label" id="status-label">ожидание</span>
+  </div>
+</header>
+
+<!-- ───────────── MAIN LAYOUT ───────────── -->
+<div class="layout">
+
+  <!-- ═══ SIDEBAR ═══ -->
+  <aside class="sidebar">
+
+    <!-- Функция -->
+    <div class="panel">
+      <div class="panel-title">Функция f(x, y)</div>
+      <div class="fn-grid">
+        {% for key, info in functions.items() %}
+        <button class="fn-btn {% if loop.first %}active{% endif %}"
+                data-fn="{{ key }}"
+                onclick="selectFn('{{ key }}', this)">
+          {{ info.label }}
+        </button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Алгоритм -->
+    <div class="panel">
+      <div class="panel-title">Алгоритм</div>
+      <select id="algo" class="select">
+        <option value="gd">Vanilla GD</option>
+        <option value="momentum">GD + Momentum</option>
+        <option value="adagrad">AdaGrad</option>
+        <option value="adam">Adam ★</option>
+        <option value="rmsprop">RMSProp</option>
+      </select>
+      <div id="beta-row" class="slider-row hidden">
+        <div class="slider-header">
+          <span>Momentum β</span><span class="sval" id="beta-val">0.90</span>
+        </div>
+        <input type="range" id="beta" min="0" max="0.99" step="0.01" value="0.9"
+               oninput="document.getElementById('beta-val').textContent=parseFloat(this.value).toFixed(2)">
+      </div>
+    </div>
+
+    <!-- Стартовая точка -->
+    <div class="panel">
+      <div class="panel-title">Стартовая точка</div>
+      <div class="xy-inputs">
+        <div class="xy-field">
+          <label>X₀</label>
+          <input type="number" id="start-x" value="2.5" step="0.1" class="num-input">
+        </div>
+        <div class="xy-field">
+          <label>Y₀</label>
+          <input type="number" id="start-y" value="2.0" step="0.1" class="num-input">
+        </div>
+      </div>
+      <div class="hint-text">Или кликните по 3D-поверхности</div>
+    </div>
+
+    <!-- Параметры -->
+    <div class="panel">
+      <div class="panel-title">Параметры</div>
+
+      <div class="slider-row">
+        <div class="slider-header">
+          <span>Learning rate α</span>
+          <span class="sval" id="lr-val">0.050</span>
+        </div>
+        <input type="range" id="lr" min="0.001" max="0.5" step="0.001" value="0.05"
+               oninput="document.getElementById('lr-val').textContent=parseFloat(this.value).toFixed(3)">
+      </div>
+
+      <div class="slider-row">
+        <div class="slider-header">
+          <span>Шаг Δx (градиент)</span>
+          <span class="sval" id="dx-val">1e-4</span>
+        </div>
+        <input type="range" id="dx-exp" min="-8" max="-2" step="0.5" value="-4"
+               oninput="updateDx()">
+        <div class="dx-display" id="dx-display">Δx = 0.0001</div>
+      </div>
+
+      <div class="slider-row">
+        <div class="slider-header">
+          <span>Итерации</span>
+          <span class="sval" id="iter-val">300</span>
+        </div>
+        <input type="range" id="iters" min="10" max="1000" step="10" value="300"
+               oninput="document.getElementById('iter-val').textContent=this.value">
+      </div>
+
+      <div class="slider-row">
+        <div class="slider-header">
+          <span>Задержка анимации мс</span>
+          <span class="sval" id="spd-val">80</span>
+        </div>
+        <input type="range" id="spd" min="5" max="500" step="5" value="80"
+               oninput="document.getElementById('spd-val').textContent=this.value">
+      </div>
+    </div>
+
+    <!-- Управление -->
+    <div class="panel">
+      <div class="panel-title">Управление</div>
+      <div class="btn-row">
+        <button class="btn btn-start" onclick="startRun()">▶ Старт</button>
+        <button class="btn btn-pause" onclick="pauseRun()">⏸ Пауза</button>
+        <button class="btn btn-reset" onclick="resetRun()">↺ Сброс</button>
+      </div>
+    </div>
+
+    <!-- Статистика -->
+    <div class="panel">
+      <div class="panel-title">Состояние</div>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="sc-label">Итерация</div><div class="sc-val" id="s-iter">—</div></div>
+        <div class="stat-card accent-red"><div class="sc-label">f(x,y)</div><div class="sc-val" id="s-fval">—</div></div>
+        <div class="stat-card accent-yellow"><div class="sc-label">x</div><div class="sc-val" id="s-x">—</div></div>
+        <div class="stat-card accent-yellow"><div class="sc-label">y</div><div class="sc-val" id="s-y">—</div></div>
+        <div class="stat-card accent-blue"><div class="sc-label">|∇f|</div><div class="sc-val" id="s-grad">—</div></div>
+        <div class="stat-card"><div class="sc-label">Шагов</div><div class="sc-val" id="s-total">—</div></div>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+    </div>
+
+    <!-- Лог -->
+    <div class="panel panel-log">
+      <div class="panel-title">Журнал <span id="log-count"></span></div>
+      <div class="log-box" id="log"></div>
+    </div>
+
+  </aside>
+
+  <!-- ═══ 3D CANVAS ═══ -->
+  <main class="canvas-wrap">
+    <div id="plot3d"></div>
+    <div class="plot-overlay" id="plot-overlay">
+      <div class="overlay-icon">⬆</div>
+      <div>Нажмите «Старт» или кликните по поверхности</div>
+    </div>
+  </main>
+
+</div>
+
+<!-- Наш JS -->
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
