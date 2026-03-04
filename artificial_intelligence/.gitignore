@@ -56,3 +56,4 @@ backup/
 .coverage
 htmlcov/
 .pytest_cache/
+**/*.csv
