@@ -1,0 +1,2598 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "shapes",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shapes",
+        "description": "shapes",
+        "detail": "shapes",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "my_functions",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "my_functions",
+        "description": "my_functions",
+        "detail": "my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "unittest.mock",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "service",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "service",
+        "description": "service",
+        "detail": "service",
+        "documentation": {}
+    },
+    {
+        "label": "pika",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pika",
+        "description": "pika",
+        "detail": "pika",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "ExchangeType",
+        "importPath": "pika.exchange_type",
+        "description": "pika.exchange_type",
+        "isExtraImport": true,
+        "detail": "pika.exchange_type",
+        "documentation": {}
+    },
+    {
+        "label": "BasicProperties",
+        "importPath": "pika.spec",
+        "description": "pika.spec",
+        "isExtraImport": true,
+        "detail": "pika.spec",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerRepositoryPort",
+        "importPath": "core.application.ports",
+        "description": "core.application.ports",
+        "isExtraImport": true,
+        "detail": "core.application.ports",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerRepositoryPort",
+        "importPath": "core.application.ports",
+        "description": "core.application.ports",
+        "isExtraImport": true,
+        "detail": "core.application.ports",
+        "documentation": {}
+    },
+    {
+        "label": "Sentence",
+        "importPath": "core.domain.entities",
+        "description": "core.domain.entities",
+        "isExtraImport": true,
+        "detail": "core.domain.entities",
+        "documentation": {}
+    },
+    {
+        "label": "Sentence",
+        "importPath": "core.domain.entities",
+        "description": "core.domain.entities",
+        "isExtraImport": true,
+        "detail": "core.domain.entities",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractclassmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "BestMatchService",
+        "importPath": "core.domain.services",
+        "description": "core.domain.services",
+        "isExtraImport": true,
+        "detail": "core.domain.services",
+        "documentation": {}
+    },
+    {
+        "label": "InMemoryAnswersRepository",
+        "importPath": "adapters.infrastructure.answer_repository",
+        "description": "adapters.infrastructure.answer_repository",
+        "isExtraImport": true,
+        "detail": "adapters.infrastructure.answer_repository",
+        "documentation": {}
+    },
+    {
+        "label": "CliController",
+        "importPath": "adapters.interface.cli_controller",
+        "description": "adapters.interface.cli_controller",
+        "isExtraImport": true,
+        "detail": "adapters.interface.cli_controller",
+        "documentation": {}
+    },
+    {
+        "label": "GetAnswerUseCase",
+        "importPath": "core.application.use_cases",
+        "description": "core.application.use_cases",
+        "isExtraImport": true,
+        "detail": "core.application.use_cases",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Set",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "FrozenSet",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "solve_puzzle",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "PuzzleState",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "SlidingPuzzleSolver",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "solve_puzzle",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "visualize_solution",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "PuzzleState",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "SlidingPuzzleSolver",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "Direction",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "PuzzleState",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "Direction",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "SlidingPuzzleSolver",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "solve_puzzle",
+        "importPath": "sliding_puzzle_solver",
+        "description": "sliding_puzzle_solver",
+        "isExtraImport": true,
+        "detail": "sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "heapq",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "heapq",
+        "description": "heapq",
+        "detail": "heapq",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "urljoin",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"100-pandas-puzzles\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"100-pandas-puzzles\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"100-pandas-puzzles\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"100-pandas-puzzles\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"100-pandas-puzzles\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "100-pandas-problems..venv.bin.activate_this",
+        "description": "100-pandas-problems..venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "Shape",
+        "kind": 6,
+        "importPath": "PyTest.CLASS-BASED-TEST.shapes",
+        "description": "PyTest.CLASS-BASED-TEST.shapes",
+        "peekOfCode": "class Shape:\n    def area(self):\n        pass\n    def perimeter(self):\n        pass\nclass Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n    def area(self):\n        return math.pi * self.radius**2",
+        "detail": "PyTest.CLASS-BASED-TEST.shapes",
+        "documentation": {}
+    },
+    {
+        "label": "Circle",
+        "kind": 6,
+        "importPath": "PyTest.CLASS-BASED-TEST.shapes",
+        "description": "PyTest.CLASS-BASED-TEST.shapes",
+        "peekOfCode": "class Circle(Shape):\n    def __init__(self, radius):\n        self.radius = radius\n    def area(self):\n        return math.pi * self.radius**2\n    def perimeter(self):\n        return 2 * math.pi * self.radius",
+        "detail": "PyTest.CLASS-BASED-TEST.shapes",
+        "documentation": {}
+    },
+    {
+        "label": "TestCircle",
+        "kind": 6,
+        "importPath": "PyTest.CLASS-BASED-TEST.test_my_functions",
+        "description": "PyTest.CLASS-BASED-TEST.test_my_functions",
+        "peekOfCode": "class TestCircle:\n    def setup_method(self, method):\n        print(f\"setting up {method}\")\n        self.circle = shapes.Circle(10)\n    def teardown_method(self, method):\n        print(f\"Tearing down {method}\")\n        del self.circle\n    def test_area(self):\n        result = self.circle.area()\n        expected = math.pi * self.circle.radius ** 2",
+        "detail": "PyTest.CLASS-BASED-TEST.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "PyTest.FIRST-TEST.my_functions",
+        "description": "PyTest.FIRST-TEST.my_functions",
+        "peekOfCode": "def add(num1: int, num2: int):\n    return num1 + num2\ndef divide(num1: int, num2: int):\n    return num1 / num2",
+        "detail": "PyTest.FIRST-TEST.my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "PyTest.FIRST-TEST.my_functions",
+        "description": "PyTest.FIRST-TEST.my_functions",
+        "peekOfCode": "def divide(num1: int, num2: int):\n    return num1 / num2",
+        "detail": "PyTest.FIRST-TEST.my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_add",
+        "kind": 2,
+        "importPath": "PyTest.FIRST-TEST.test_my_functions",
+        "description": "PyTest.FIRST-TEST.test_my_functions",
+        "peekOfCode": "def test_add():\n    result = my_functions.add(1, 4)\n    assert result == 5\ndef test_add_strings():\n    result = my_functions.add(\"I like\", \" burgers\")\n    assert result == \"I like burgers\"\ndef test_divide():\n    result = my_functions.divide(4, 2)\n    assert result == 2\ndef test_divide_by_zero():",
+        "detail": "PyTest.FIRST-TEST.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_add_strings",
+        "kind": 2,
+        "importPath": "PyTest.FIRST-TEST.test_my_functions",
+        "description": "PyTest.FIRST-TEST.test_my_functions",
+        "peekOfCode": "def test_add_strings():\n    result = my_functions.add(\"I like\", \" burgers\")\n    assert result == \"I like burgers\"\ndef test_divide():\n    result = my_functions.divide(4, 2)\n    assert result == 2\ndef test_divide_by_zero():\n    with pytest.raises(ZeroDivisionError):\n        result = my_functions.divide(10, 0)",
+        "detail": "PyTest.FIRST-TEST.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_divide",
+        "kind": 2,
+        "importPath": "PyTest.FIRST-TEST.test_my_functions",
+        "description": "PyTest.FIRST-TEST.test_my_functions",
+        "peekOfCode": "def test_divide():\n    result = my_functions.divide(4, 2)\n    assert result == 2\ndef test_divide_by_zero():\n    with pytest.raises(ZeroDivisionError):\n        result = my_functions.divide(10, 0)",
+        "detail": "PyTest.FIRST-TEST.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_divide_by_zero",
+        "kind": 2,
+        "importPath": "PyTest.FIRST-TEST.test_my_functions",
+        "description": "PyTest.FIRST-TEST.test_my_functions",
+        "peekOfCode": "def test_divide_by_zero():\n    with pytest.raises(ZeroDivisionError):\n        result = my_functions.divide(10, 0)",
+        "detail": "PyTest.FIRST-TEST.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle",
+        "kind": 2,
+        "importPath": "PyTest.FIXTURES.conftest",
+        "description": "PyTest.FIXTURES.conftest",
+        "peekOfCode": "def my_rectangle():\n    return shapes.Rectangle(10, 20)\n@pytest.fixture\ndef weird_rectangle():\n    return shapes.Rectangle(5, 6)",
+        "detail": "PyTest.FIXTURES.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "weird_rectangle",
+        "kind": 2,
+        "importPath": "PyTest.FIXTURES.conftest",
+        "description": "PyTest.FIXTURES.conftest",
+        "peekOfCode": "def weird_rectangle():\n    return shapes.Rectangle(5, 6)",
+        "detail": "PyTest.FIXTURES.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "Shape",
+        "kind": 6,
+        "importPath": "PyTest.FIXTURES.shapes",
+        "description": "PyTest.FIXTURES.shapes",
+        "peekOfCode": "class Shape:\n    def area(self):\n        pass\n    def perimeter(self):\n        pass\nclass Rectangle(Shape):\n    def __init__(self, length, width):\n        self.length = length\n        self.width = width\n    def area(self):",
+        "detail": "PyTest.FIXTURES.shapes",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "PyTest.FIXTURES.shapes",
+        "description": "PyTest.FIXTURES.shapes",
+        "peekOfCode": "class Rectangle(Shape):\n    def __init__(self, length, width):\n        self.length = length\n        self.width = width\n    def area(self):\n        return self.width * self.length\n    def perimeter(self):\n        return (self.width * 2) + (self.length * 2)\n    def __eq__(self, other) -> bool:\n        if not isinstance(other, Rectangle):",
+        "detail": "PyTest.FIXTURES.shapes",
+        "documentation": {}
+    },
+    {
+        "label": "test_rectangle_area",
+        "kind": 2,
+        "importPath": "PyTest.FIXTURES.test_my_functions",
+        "description": "PyTest.FIXTURES.test_my_functions",
+        "peekOfCode": "def test_rectangle_area(my_rectangle):\n    assert my_rectangle.area() ==  10 * 20\ndef test_rectangle_perimeter(my_rectangle):\n    assert my_rectangle.perimeter() == (10 * 2) + (20 * 2)\ndef test_not_equal(my_rectangle, weird_rectangle):\n    assert my_rectangle != weird_rectangle",
+        "detail": "PyTest.FIXTURES.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_rectangle_perimeter",
+        "kind": 2,
+        "importPath": "PyTest.FIXTURES.test_my_functions",
+        "description": "PyTest.FIXTURES.test_my_functions",
+        "peekOfCode": "def test_rectangle_perimeter(my_rectangle):\n    assert my_rectangle.perimeter() == (10 * 2) + (20 * 2)\ndef test_not_equal(my_rectangle, weird_rectangle):\n    assert my_rectangle != weird_rectangle",
+        "detail": "PyTest.FIXTURES.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_not_equal",
+        "kind": 2,
+        "importPath": "PyTest.FIXTURES.test_my_functions",
+        "description": "PyTest.FIXTURES.test_my_functions",
+        "peekOfCode": "def test_not_equal(my_rectangle, weird_rectangle):\n    assert my_rectangle != weird_rectangle",
+        "detail": "PyTest.FIXTURES.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "PyTest.MARKS.my_functions",
+        "description": "PyTest.MARKS.my_functions",
+        "peekOfCode": "def add(num1: int, num2: int):\n    return num1 + num2\ndef divide(num1: int, num2: int):\n    return num1 / num2",
+        "detail": "PyTest.MARKS.my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "PyTest.MARKS.my_functions",
+        "description": "PyTest.MARKS.my_functions",
+        "peekOfCode": "def divide(num1: int, num2: int):\n    return num1 / num2",
+        "detail": "PyTest.MARKS.my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_add",
+        "kind": 2,
+        "importPath": "PyTest.MARKS.test_my_functions",
+        "description": "PyTest.MARKS.test_my_functions",
+        "peekOfCode": "def test_add():\n    result = my_functions.add(1, 4)\n    assert result == 5\ndef test_add_strings():\n    result = my_functions.add(\"I like\", \" burgers\")\n    assert result == \"I like burgers\"\ndef test_divide():\n    result = my_functions.divide(4, 2)\n    assert result == 2\n@pytest.mark.xfail(reason=\"we know number can not be divide by zero\")",
+        "detail": "PyTest.MARKS.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_add_strings",
+        "kind": 2,
+        "importPath": "PyTest.MARKS.test_my_functions",
+        "description": "PyTest.MARKS.test_my_functions",
+        "peekOfCode": "def test_add_strings():\n    result = my_functions.add(\"I like\", \" burgers\")\n    assert result == \"I like burgers\"\ndef test_divide():\n    result = my_functions.divide(4, 2)\n    assert result == 2\n@pytest.mark.xfail(reason=\"we know number can not be divide by zero\")\ndef test_divide_by_zero():\n    with pytest.raises(ZeroDivisionError):\n        result = my_functions.divide(10, 0)",
+        "detail": "PyTest.MARKS.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_divide",
+        "kind": 2,
+        "importPath": "PyTest.MARKS.test_my_functions",
+        "description": "PyTest.MARKS.test_my_functions",
+        "peekOfCode": "def test_divide():\n    result = my_functions.divide(4, 2)\n    assert result == 2\n@pytest.mark.xfail(reason=\"we know number can not be divide by zero\")\ndef test_divide_by_zero():\n    with pytest.raises(ZeroDivisionError):\n        result = my_functions.divide(10, 0)\n@pytest.mark.slow\ndef test_slow():\n    time.sleep(5)",
+        "detail": "PyTest.MARKS.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_divide_by_zero",
+        "kind": 2,
+        "importPath": "PyTest.MARKS.test_my_functions",
+        "description": "PyTest.MARKS.test_my_functions",
+        "peekOfCode": "def test_divide_by_zero():\n    with pytest.raises(ZeroDivisionError):\n        result = my_functions.divide(10, 0)\n@pytest.mark.slow\ndef test_slow():\n    time.sleep(5)\n    result = my_functions.divide(4, 2)\n    assert result == 2\n@pytest.mark.skip(reason=\"this testcase is broken\")\ndef test_skip():",
+        "detail": "PyTest.MARKS.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_slow",
+        "kind": 2,
+        "importPath": "PyTest.MARKS.test_my_functions",
+        "description": "PyTest.MARKS.test_my_functions",
+        "peekOfCode": "def test_slow():\n    time.sleep(5)\n    result = my_functions.divide(4, 2)\n    assert result == 2\n@pytest.mark.skip(reason=\"this testcase is broken\")\ndef test_skip():\n    time.sleep(5)\n    result = my_functions.divide(4, 2)\n    assert result == 2",
+        "detail": "PyTest.MARKS.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_skip",
+        "kind": 2,
+        "importPath": "PyTest.MARKS.test_my_functions",
+        "description": "PyTest.MARKS.test_my_functions",
+        "peekOfCode": "def test_skip():\n    time.sleep(5)\n    result = my_functions.divide(4, 2)\n    assert result == 2",
+        "detail": "PyTest.MARKS.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_from_db",
+        "kind": 2,
+        "importPath": "PyTest.MOCK.service",
+        "description": "PyTest.MOCK.service",
+        "peekOfCode": "def get_user_from_db(user_id):\n    return database.get(user_id)\ndef get_users():\n    response = requests.get(\"https://jsonplaceholder.typicode.com/users\")\n    if response.status_code == 200:\n        return response.json()\n    return requests.HTTPError",
+        "detail": "PyTest.MOCK.service",
+        "documentation": {}
+    },
+    {
+        "label": "get_users",
+        "kind": 2,
+        "importPath": "PyTest.MOCK.service",
+        "description": "PyTest.MOCK.service",
+        "peekOfCode": "def get_users():\n    response = requests.get(\"https://jsonplaceholder.typicode.com/users\")\n    if response.status_code == 200:\n        return response.json()\n    return requests.HTTPError",
+        "detail": "PyTest.MOCK.service",
+        "documentation": {}
+    },
+    {
+        "label": "database",
+        "kind": 5,
+        "importPath": "PyTest.MOCK.service",
+        "description": "PyTest.MOCK.service",
+        "peekOfCode": "database = {\n    1: \"MeyiGi\",\n    2: \"MeyiGi\",\n    3: \"MeyiGi\",\n}\ndef get_user_from_db(user_id):\n    return database.get(user_id)\ndef get_users():\n    response = requests.get(\"https://jsonplaceholder.typicode.com/users\")\n    if response.status_code == 200:",
+        "detail": "PyTest.MOCK.service",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_user_from_db",
+        "kind": 2,
+        "importPath": "PyTest.MOCK.test_service",
+        "description": "PyTest.MOCK.test_service",
+        "peekOfCode": "def test_get_user_from_db(mock_get_user_from_db):\n    mock_get_user_from_db.return_value = \"Mocked MeyiGi\"\n    username = service.get_user_from_db(2)\n    assert username == \"Mocked MeyiGi\"\n@mock.patch(\"requests.get\")\ndef test_get_users(mock_get):\n    mock_response = mock.Mock()\n    mock_response.status_code = 200\n    mock_response.json.return_value = {\"id\" : 1, \"name\" : \"MeyiGi\"}\n    mock_get.return_value = mock_response",
+        "detail": "PyTest.MOCK.test_service",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_users",
+        "kind": 2,
+        "importPath": "PyTest.MOCK.test_service",
+        "description": "PyTest.MOCK.test_service",
+        "peekOfCode": "def test_get_users(mock_get):\n    mock_response = mock.Mock()\n    mock_response.status_code = 200\n    mock_response.json.return_value = {\"id\" : 1, \"name\" : \"MeyiGi\"}\n    mock_get.return_value = mock_response\n    data = service.get_users()\n    assert data == {\"id\" : 1, \"name\" : \"MeyiGi\"}",
+        "detail": "PyTest.MOCK.test_service",
+        "documentation": {}
+    },
+    {
+        "label": "Shape",
+        "kind": 6,
+        "importPath": "PyTest.PARAMATRIZE.shapes",
+        "description": "PyTest.PARAMATRIZE.shapes",
+        "peekOfCode": "class Shape:\n    def area(self):\n        pass\n    def perimeter(self):\n        pass\nclass Rectangle(Shape):\n    def __init__(self, length, width):\n        self.length = length\n        self.width = width\n    def area(self):",
+        "detail": "PyTest.PARAMATRIZE.shapes",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "PyTest.PARAMATRIZE.shapes",
+        "description": "PyTest.PARAMATRIZE.shapes",
+        "peekOfCode": "class Rectangle(Shape):\n    def __init__(self, length, width):\n        self.length = length\n        self.width = width\n    def area(self):\n        return self.width * self.length\n    def perimeter(self):\n        return (2 * self.width) + (2 * self.length)\nclass Square(Rectangle):\n    def __init__(self, side_length):",
+        "detail": "PyTest.PARAMATRIZE.shapes",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "PyTest.PARAMATRIZE.shapes",
+        "description": "PyTest.PARAMATRIZE.shapes",
+        "peekOfCode": "class Square(Rectangle):\n    def __init__(self, side_length):\n        super().__init__(side_length, side_length)",
+        "detail": "PyTest.PARAMATRIZE.shapes",
+        "documentation": {}
+    },
+    {
+        "label": "test_multiple_square_area",
+        "kind": 2,
+        "importPath": "PyTest.PARAMATRIZE.test_my_functions",
+        "description": "PyTest.PARAMATRIZE.test_my_functions",
+        "peekOfCode": "def test_multiple_square_area(side_length, expected_area):\n    assert shapes.Square(side_length=side_length).area() == expected_area\n@pytest.mark.parametrize(\"side_length, expected_perimeter\", [(5, 20), (4, 16), (3, 12)])\ndef test_multiple_perimeters(side_length, expected_perimeter):\n    assert shapes.Square(side_length=side_length).perimeter() == expected_perimeter",
+        "detail": "PyTest.PARAMATRIZE.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "test_multiple_perimeters",
+        "kind": 2,
+        "importPath": "PyTest.PARAMATRIZE.test_my_functions",
+        "description": "PyTest.PARAMATRIZE.test_my_functions",
+        "peekOfCode": "def test_multiple_perimeters(side_length, expected_perimeter):\n    assert shapes.Square(side_length=side_length).perimeter() == expected_perimeter",
+        "detail": "PyTest.PARAMATRIZE.test_my_functions",
+        "documentation": {}
+    },
+    {
+        "label": "on_message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "description": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "peekOfCode": "def on_message_recieved(ch, method,properies, body):\n    process_time = random.randint(1, 6)    \n    print(f\"received: {body}, processing will take {time}\")\n    time.sleep(process_time)\n    ch.basic_ack(delivery_tag=method.delivery_tag)\n    print(\"Finished processing\")\nconnection_parameters = pika.ConnectionParameters(\"localhost\")\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\", durable=True)",
+        "detail": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "description": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters(\"localhost\")\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nchannel.basic_qos(prefetch_count=1)\nchannel.basic_consume(queue=\"letterbox\", on_message_callback=on_message_recieved)\nprint(\"Starting Consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "description": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nchannel.basic_qos(prefetch_count=1)\nchannel.basic_consume(queue=\"letterbox\", on_message_callback=on_message_recieved)\nprint(\"Starting Consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "description": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "peekOfCode": "channel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nchannel.basic_qos(prefetch_count=1)\nchannel.basic_consume(queue=\"letterbox\", on_message_callback=on_message_recieved)\nprint(\"Starting Consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "description": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters(\"localhost\")\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nmessage_id = 1\nwhile True:\n    message = f\"Hello from RabbitMQ {message_id}\" \n    channel.basic_publish(exchange=\"\", routing_key=\"letterbox\", body=message)\n    print(f\"sent message {message}\")\n    time.sleep(random.randint(1, 4))",
+        "detail": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "description": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nmessage_id = 1\nwhile True:\n    message = f\"Hello from RabbitMQ {message_id}\" \n    channel.basic_publish(exchange=\"\", routing_key=\"letterbox\", body=message)\n    print(f\"sent message {message}\")\n    time.sleep(random.randint(1, 4))\n    message_id += 1",
+        "detail": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "description": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "peekOfCode": "channel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nmessage_id = 1\nwhile True:\n    message = f\"Hello from RabbitMQ {message_id}\" \n    channel.basic_publish(exchange=\"\", routing_key=\"letterbox\", body=message)\n    print(f\"sent message {message}\")\n    time.sleep(random.randint(1, 4))\n    message_id += 1",
+        "detail": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message_id",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "description": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "peekOfCode": "message_id = 1\nwhile True:\n    message = f\"Hello from RabbitMQ {message_id}\" \n    channel.basic_publish(exchange=\"\", routing_key=\"letterbox\", body=message)\n    print(f\"sent message {message}\")\n    time.sleep(random.randint(1, 4))\n    message_id += 1",
+        "detail": "RabbitMQ-Patterns.COMPETTING_SONSUME_PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "on_message1_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "peekOfCode": "def on_message1_recieved(ch, method, properties, body):\n    print(f\"recieved message from 1: {body}\")\ndef on_message2_recieved(ch, method, properties, body):\n    print(f\"recieved message from 2: {body}\")\nconnection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(\"simplehash\", \"x-consistent-hash\")\nchannel.queue_declare(queue=\"letterbox1\")\nchannel.queue_bind(\"letterbox1\", \"simplehash\", routing_key='1')",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "on_message2_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "peekOfCode": "def on_message2_recieved(ch, method, properties, body):\n    print(f\"recieved message from 2: {body}\")\nconnection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(\"simplehash\", \"x-consistent-hash\")\nchannel.queue_declare(queue=\"letterbox1\")\nchannel.queue_bind(\"letterbox1\", \"simplehash\", routing_key='1')\nchannel.basic_consume(queue=\"letterbox1\", auto_ack=True, on_message_callback=on_message1_recieved)\nchannel.queue_declare(queue=\"letterbox2\")",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(\"simplehash\", \"x-consistent-hash\")\nchannel.queue_declare(queue=\"letterbox1\")\nchannel.queue_bind(\"letterbox1\", \"simplehash\", routing_key='1')\nchannel.basic_consume(queue=\"letterbox1\", auto_ack=True, on_message_callback=on_message1_recieved)\nchannel.queue_declare(queue=\"letterbox2\")\nchannel.queue_bind(\"letterbox2\", \"simplehash\", routing_key='4')\nchannel.basic_consume(queue=\"letterbox2\", auto_ack=True, on_message_callback=on_message2_recieved)",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(\"simplehash\", \"x-consistent-hash\")\nchannel.queue_declare(queue=\"letterbox1\")\nchannel.queue_bind(\"letterbox1\", \"simplehash\", routing_key='1')\nchannel.basic_consume(queue=\"letterbox1\", auto_ack=True, on_message_callback=on_message1_recieved)\nchannel.queue_declare(queue=\"letterbox2\")\nchannel.queue_bind(\"letterbox2\", \"simplehash\", routing_key='4')\nchannel.basic_consume(queue=\"letterbox2\", auto_ack=True, on_message_callback=on_message2_recieved)\nprint(\"start consuming\")",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(\"simplehash\", \"x-consistent-hash\")\nchannel.queue_declare(queue=\"letterbox1\")\nchannel.queue_bind(\"letterbox1\", \"simplehash\", routing_key='1')\nchannel.basic_consume(queue=\"letterbox1\", auto_ack=True, on_message_callback=on_message1_recieved)\nchannel.queue_declare(queue=\"letterbox2\")\nchannel.queue_bind(\"letterbox2\", \"simplehash\", routing_key='4')\nchannel.basic_consume(queue=\"letterbox2\", auto_ack=True, on_message_callback=on_message2_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(\"simplehash\", \"x-consistent-hash\")\nrouting_key = \"Hash me!\"\nmessage = \"this is core message\"\nchannel.basic_publish(\n    exchange=\"simplehash\",\n    routing_key=routing_key,\n    body=message,",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(\"simplehash\", \"x-consistent-hash\")\nrouting_key = \"Hash me!\"\nmessage = \"this is core message\"\nchannel.basic_publish(\n    exchange=\"simplehash\",\n    routing_key=routing_key,\n    body=message,\n    properties=pika.BasicProperties(headers={\"name\" : \"brian\"})",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(\"simplehash\", \"x-consistent-hash\")\nrouting_key = \"Hash me!\"\nmessage = \"this is core message\"\nchannel.basic_publish(\n    exchange=\"simplehash\",\n    routing_key=routing_key,\n    body=message,\n    properties=pika.BasicProperties(headers={\"name\" : \"brian\"})\n)",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "routing_key",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "peekOfCode": "routing_key = \"Hash me!\"\nmessage = \"this is core message\"\nchannel.basic_publish(\n    exchange=\"simplehash\",\n    routing_key=routing_key,\n    body=message,\n    properties=pika.BasicProperties(headers={\"name\" : \"brian\"})\n)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "peekOfCode": "message = \"this is core message\"\nchannel.basic_publish(\n    exchange=\"simplehash\",\n    routing_key=routing_key,\n    body=message,\n    properties=pika.BasicProperties(headers={\"name\" : \"brian\"})\n)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.CONSISTENT-HASHING_EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "on_message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "description": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "peekOfCode": "def on_message_recieved(ch, method, properties, body):\n    print(f\"recieved message: {body}\")\nconnection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"secondexchange\", exchange_type=ExchangeType.fanout)\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nchannel.queue_bind(queue=\"letterbox\", exchange=\"secondexchange\")\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_recieved)\nprint(\"starting consuming\")",
+        "detail": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "description": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"secondexchange\", exchange_type=ExchangeType.fanout)\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nchannel.queue_bind(queue=\"letterbox\", exchange=\"secondexchange\")\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_recieved)\nprint(\"starting consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "description": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"secondexchange\", exchange_type=ExchangeType.fanout)\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nchannel.queue_bind(queue=\"letterbox\", exchange=\"secondexchange\")\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_recieved)\nprint(\"starting consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "description": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(exchange=\"secondexchange\", exchange_type=ExchangeType.fanout)\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nchannel.queue_bind(queue=\"letterbox\", exchange=\"secondexchange\")\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_recieved)\nprint(\"starting consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "description": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"firstexchange\", exchange_type=ExchangeType.direct)\nchannel.exchange_declare(exchange=\"secondexchange\", exchange_type=ExchangeType.fanout)\nchannel.exchange_bind(\"secondexchange\", \"firstexchange\")\nmessage = \"This message has gone through multiple exchanges\"\nchannel.basic_publish(exchange=\"firstexchange\", routing_key=\"\", body=message)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "description": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"firstexchange\", exchange_type=ExchangeType.direct)\nchannel.exchange_declare(exchange=\"secondexchange\", exchange_type=ExchangeType.fanout)\nchannel.exchange_bind(\"secondexchange\", \"firstexchange\")\nmessage = \"This message has gone through multiple exchanges\"\nchannel.basic_publish(exchange=\"firstexchange\", routing_key=\"\", body=message)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "description": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(exchange=\"firstexchange\", exchange_type=ExchangeType.direct)\nchannel.exchange_declare(exchange=\"secondexchange\", exchange_type=ExchangeType.fanout)\nchannel.exchange_bind(\"secondexchange\", \"firstexchange\")\nmessage = \"This message has gone through multiple exchanges\"\nchannel.basic_publish(exchange=\"firstexchange\", routing_key=\"\", body=message)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "description": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "peekOfCode": "message = \"This message has gone through multiple exchanges\"\nchannel.basic_publish(exchange=\"firstexchange\", routing_key=\"\", body=message)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.EXCHANGE-EXCHANGE-PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "on_message_callback",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "description": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "peekOfCode": "def on_message_callback(ch, method, properties, body):\n    print(f\"recieved messeage: {body}\")\nconnections_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connections_parameters)\nchannel = connection.channel()\nchannel.queue_declare(\"letterbox\")\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_callback)\nprint(\"starting consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connections_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "description": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "peekOfCode": "connections_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connections_parameters)\nchannel = connection.channel()\nchannel.queue_declare(\"letterbox\")\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_callback)\nprint(\"starting consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "description": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "peekOfCode": "connection = pika.BlockingConnection(connections_parameters)\nchannel = connection.channel()\nchannel.queue_declare(\"letterbox\")\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_callback)\nprint(\"starting consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "description": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "peekOfCode": "channel = connection.channel()\nchannel.queue_declare(\"letterbox\")\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_callback)\nprint(\"starting consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "description": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters(\"localhost\")\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\")\nmessage = \"Hello! This is my first message!\"\nchannel.basic_publish(exchange=\"\", routing_key=\"letterbox\", body=message)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "description": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\")\nmessage = \"Hello! This is my first message!\"\nchannel.basic_publish(exchange=\"\", routing_key=\"letterbox\", body=message)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "description": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "peekOfCode": "channel = connection.channel()\nchannel.queue_declare(queue=\"letterbox\")\nmessage = \"Hello! This is my first message!\"\nchannel.basic_publish(exchange=\"\", routing_key=\"letterbox\", body=message)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "description": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "peekOfCode": "message = \"Hello! This is my first message!\"\nchannel.basic_publish(exchange=\"\", routing_key=\"letterbox\", body=message)\nprint(f\"sent message: {message}\")\nconnection.close()",
+        "detail": "RabbitMQ-Patterns.FIRST-RABBITMQ-APP.producer",
+        "documentation": {}
+    },
+    {
+        "label": "on_message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "peekOfCode": "def on_message_recieved(ch, method, properties, body):\n    print(f\"recieved message: {body}\")\nconnection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"headersexchange\", exchange_type=ExchangeType.headers)\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nbind_arg = {\n    \"x-match\" : \"any\",\n    \"name\" : \"Daniel\",",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"headersexchange\", exchange_type=ExchangeType.headers)\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nbind_arg = {\n    \"x-match\" : \"any\",\n    \"name\" : \"Daniel\",\n    \"age\" : 53,\n}",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"headersexchange\", exchange_type=ExchangeType.headers)\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nbind_arg = {\n    \"x-match\" : \"any\",\n    \"name\" : \"Daniel\",\n    \"age\" : 53,\n}\nchannel.queue_bind(queue=\"letterbox\", exchange=\"headersexchange\", arguments=bind_arg)",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(exchange=\"headersexchange\", exchange_type=ExchangeType.headers)\nchannel.queue_declare(queue=\"letterbox\", durable=True)\nbind_arg = {\n    \"x-match\" : \"any\",\n    \"name\" : \"Daniel\",\n    \"age\" : 53,\n}\nchannel.queue_bind(queue=\"letterbox\", exchange=\"headersexchange\", arguments=bind_arg)\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_recieved)",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "bind_arg",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "peekOfCode": "bind_arg = {\n    \"x-match\" : \"any\",\n    \"name\" : \"Daniel\",\n    \"age\" : 53,\n}\nchannel.queue_bind(queue=\"letterbox\", exchange=\"headersexchange\", arguments=bind_arg)\nchannel.basic_consume(queue=\"letterbox\", auto_ack=True, on_message_callback=on_message_recieved)\nprint(\"starting consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.consumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"headersexchange\", exchange_type=ExchangeType.headers)\nmessage = \"This message will be sent with headers\"\nchannel.basic_publish(\n    exchange=\"headersexchange\", \n    routing_key=\"\", \n    body=message,\n    properties=BasicProperties(",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"headersexchange\", exchange_type=ExchangeType.headers)\nmessage = \"This message will be sent with headers\"\nchannel.basic_publish(\n    exchange=\"headersexchange\", \n    routing_key=\"\", \n    body=message,\n    properties=BasicProperties(\n        headers = {",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(exchange=\"headersexchange\", exchange_type=ExchangeType.headers)\nmessage = \"This message will be sent with headers\"\nchannel.basic_publish(\n    exchange=\"headersexchange\", \n    routing_key=\"\", \n    body=message,\n    properties=BasicProperties(\n        headers = {\n            \"name\" : \"Daniel\"",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "description": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "peekOfCode": "message = \"This message will be sent with headers\"\nchannel.basic_publish(\n    exchange=\"headersexchange\", \n    routing_key=\"\", \n    body=message,\n    properties=BasicProperties(\n        headers = {\n            \"name\" : \"Daniel\"\n        }\n    )",
+        "detail": "RabbitMQ-Patterns.HEADERS-EXCHANGE.producer",
+        "documentation": {}
+    },
+    {
+        "label": "on_reply_message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "peekOfCode": "def on_reply_message_recieved(ch, method, properties, body):\n    print(f\"reply recieved: {body}\")\nconnection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nreply_queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.basic_consume(queue=reply_queue.method.queue, auto_ack=True, on_message_callback=on_reply_message_recieved)\nchannel.queue_declare(queue=\"request-queue\")\nmessage = \"Can I request a reply?\"\ncor_id = str(uuid.uuid4())",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nreply_queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.basic_consume(queue=reply_queue.method.queue, auto_ack=True, on_message_callback=on_reply_message_recieved)\nchannel.queue_declare(queue=\"request-queue\")\nmessage = \"Can I request a reply?\"\ncor_id = str(uuid.uuid4())\nprint(f\"sending reqeust: {cor_id}\")\nchannel.basic_publish(",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nreply_queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.basic_consume(queue=reply_queue.method.queue, auto_ack=True, on_message_callback=on_reply_message_recieved)\nchannel.queue_declare(queue=\"request-queue\")\nmessage = \"Can I request a reply?\"\ncor_id = str(uuid.uuid4())\nprint(f\"sending reqeust: {cor_id}\")\nchannel.basic_publish(\n    exchange=\"\", ",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "peekOfCode": "channel = connection.channel()\nreply_queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.basic_consume(queue=reply_queue.method.queue, auto_ack=True, on_message_callback=on_reply_message_recieved)\nchannel.queue_declare(queue=\"request-queue\")\nmessage = \"Can I request a reply?\"\ncor_id = str(uuid.uuid4())\nprint(f\"sending reqeust: {cor_id}\")\nchannel.basic_publish(\n    exchange=\"\", \n    routing_key=\"request-queue\", ",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "documentation": {}
+    },
+    {
+        "label": "reply_queue",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "peekOfCode": "reply_queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.basic_consume(queue=reply_queue.method.queue, auto_ack=True, on_message_callback=on_reply_message_recieved)\nchannel.queue_declare(queue=\"request-queue\")\nmessage = \"Can I request a reply?\"\ncor_id = str(uuid.uuid4())\nprint(f\"sending reqeust: {cor_id}\")\nchannel.basic_publish(\n    exchange=\"\", \n    routing_key=\"request-queue\", \n    properties=pika.BasicProperties(",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "peekOfCode": "message = \"Can I request a reply?\"\ncor_id = str(uuid.uuid4())\nprint(f\"sending reqeust: {cor_id}\")\nchannel.basic_publish(\n    exchange=\"\", \n    routing_key=\"request-queue\", \n    properties=pika.BasicProperties(\n        reply_to=reply_queue.method.queue,\n        correlation_id=cor_id,\n    ),",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "documentation": {}
+    },
+    {
+        "label": "cor_id",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "peekOfCode": "cor_id = str(uuid.uuid4())\nprint(f\"sending reqeust: {cor_id}\")\nchannel.basic_publish(\n    exchange=\"\", \n    routing_key=\"request-queue\", \n    properties=pika.BasicProperties(\n        reply_to=reply_queue.method.queue,\n        correlation_id=cor_id,\n    ),\n    body=message",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.client",
+        "documentation": {}
+    },
+    {
+        "label": "on_request_message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "peekOfCode": "def on_request_message_recieved(ch, method, properties, body):\n    print(f\"request message {properties.correlation_id}\")\n    reply = \"No, You can't request a reply\"\n    print(str(body))\n    if str(body) == \"b'Can I request a reply?'\":\n        reply = \"Yes, You can request a reply\"\n    ch.basic_publish(\"\", routing_key=properties.reply_to, body=reply)\nconnection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"request-queue\")\nmessage = \"Hello world!\"\nchannel.basic_consume(queue=\"request-queue\", auto_ack=True, on_message_callback=on_request_message_recieved)\nprint(f\"starting server\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"request-queue\")\nmessage = \"Hello world!\"\nchannel.basic_consume(queue=\"request-queue\", auto_ack=True, on_message_callback=on_request_message_recieved)\nprint(f\"starting server\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "peekOfCode": "channel = connection.channel()\nchannel.queue_declare(queue=\"request-queue\")\nmessage = \"Hello world!\"\nchannel.basic_consume(queue=\"request-queue\", auto_ack=True, on_message_callback=on_request_message_recieved)\nprint(f\"starting server\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "description": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "peekOfCode": "message = \"Hello world!\"\nchannel.basic_consume(queue=\"request-queue\", auto_ack=True, on_message_callback=on_request_message_recieved)\nprint(f\"starting server\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.REQUEST-REPLY-PATTERN.server",
+        "documentation": {}
+    },
+    {
+        "label": "message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "peekOfCode": "def message_recieved(ch, method, properties, body):\n    print(f\"Analytics service - recieved messsage: {body}\")\nconnection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"analytics\")\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")",
+        "detail": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"analytics\")\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"analytics\")\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"analytics\")\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "peekOfCode": "queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"analytics\")\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.ROUTING.analyticsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "peekOfCode": "def message_recieved(ch, method, properties, body):\n    print(f\"Payment service - recieved messsage: {body}\")\nconnection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"payments\")\nchannel.basic_consume(queue=queue.method.queue , auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")",
+        "detail": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"payments\")\nchannel.basic_consume(queue=queue.method.queue , auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"payments\")\nchannel.basic_consume(queue=queue.method.queue , auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"payments\")\nchannel.basic_consume(queue=queue.method.queue , auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "description": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "peekOfCode": "queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"routing\", queue=queue.method.queue, routing_key=\"payments\")\nchannel.basic_consume(queue=queue.method.queue , auto_ack=True, on_message_callback=message_recieved)\nprint(\"start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.ROUTING.paymentsconsumer",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.producer",
+        "description": "RabbitMQ-Patterns.ROUTING.producer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters()\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nmessage1 = \"this message for analytics\"\nmessage2 = \"this message for payments\"\nchannel.basic_publish(exchange=\"routing\", routing_key=\"analytics\", body=message1)\nchannel.basic_publish(exchange=\"routing\", routing_key=\"payments\", body=message2)\nprint(f\"sent message: {message1}\")\nprint(f\"sent message: {message2}\")",
+        "detail": "RabbitMQ-Patterns.ROUTING.producer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.producer",
+        "description": "RabbitMQ-Patterns.ROUTING.producer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nmessage1 = \"this message for analytics\"\nmessage2 = \"this message for payments\"\nchannel.basic_publish(exchange=\"routing\", routing_key=\"analytics\", body=message1)\nchannel.basic_publish(exchange=\"routing\", routing_key=\"payments\", body=message2)\nprint(f\"sent message: {message1}\")\nprint(f\"sent message: {message2}\")\nchannel.close()",
+        "detail": "RabbitMQ-Patterns.ROUTING.producer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.producer",
+        "description": "RabbitMQ-Patterns.ROUTING.producer",
+        "peekOfCode": "channel = connection.channel()\nchannel.exchange_declare(exchange=\"routing\", exchange_type=ExchangeType.direct)\nmessage1 = \"this message for analytics\"\nmessage2 = \"this message for payments\"\nchannel.basic_publish(exchange=\"routing\", routing_key=\"analytics\", body=message1)\nchannel.basic_publish(exchange=\"routing\", routing_key=\"payments\", body=message2)\nprint(f\"sent message: {message1}\")\nprint(f\"sent message: {message2}\")\nchannel.close()",
+        "detail": "RabbitMQ-Patterns.ROUTING.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message1",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.producer",
+        "description": "RabbitMQ-Patterns.ROUTING.producer",
+        "peekOfCode": "message1 = \"this message for analytics\"\nmessage2 = \"this message for payments\"\nchannel.basic_publish(exchange=\"routing\", routing_key=\"analytics\", body=message1)\nchannel.basic_publish(exchange=\"routing\", routing_key=\"payments\", body=message2)\nprint(f\"sent message: {message1}\")\nprint(f\"sent message: {message2}\")\nchannel.close()",
+        "detail": "RabbitMQ-Patterns.ROUTING.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message2",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.ROUTING.producer",
+        "description": "RabbitMQ-Patterns.ROUTING.producer",
+        "peekOfCode": "message2 = \"this message for payments\"\nchannel.basic_publish(exchange=\"routing\", routing_key=\"analytics\", body=message1)\nchannel.basic_publish(exchange=\"routing\", routing_key=\"payments\", body=message2)\nprint(f\"sent message: {message1}\")\nprint(f\"sent message: {message2}\")\nchannel.close()",
+        "detail": "RabbitMQ-Patterns.ROUTING.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "peekOfCode": "def message_recieved(ch, method, properties, body):\n    print(f\"consumer1, recieved message {body}\")\nconnection_parameters = pika.ConnectionParameters(\"localhost\")\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\n# channel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters(\"localhost\")\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\n# channel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"Start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\n# channel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"Start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "peekOfCode": "channel = connection.channel()\n# channel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"Start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "peekOfCode": "queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"Start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer1",
+        "documentation": {}
+    },
+    {
+        "label": "message_recieved",
+        "kind": 2,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "peekOfCode": "def message_recieved(ch, method, properties, body):\n    print(f\"consumer1, recieved message {body}\")\nconnection_parameters = pika.ConnectionParameters(\"localhost\")\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\n# channel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters(\"localhost\")\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\n# channel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"Start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\n# channel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"Start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "peekOfCode": "channel = connection.channel()\n# channel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nqueue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"Start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "peekOfCode": "queue = channel.queue_declare(queue=\"\", exclusive=True)\nchannel.queue_bind(exchange=\"pubsub\", queue=queue.method.queue)\nchannel.basic_consume(queue=queue.method.queue, auto_ack=True, on_message_callback=message_recieved)\nprint(\"Start consuming\")\nchannel.start_consuming()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.consumer2",
+        "documentation": {}
+    },
+    {
+        "label": "connection_parameters",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "peekOfCode": "connection_parameters = pika.ConnectionParameters('localhost')\nconnection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"\")\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nmessage = \"Hello from product.py!\"\nchannel.basic_publish(exchange=\"pubsub\", routing_key=\"\", body=message)\nprint(\"sent message: \", message)\nchannel.close()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "connection",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "peekOfCode": "connection = pika.BlockingConnection(connection_parameters)\nchannel = connection.channel()\nchannel.queue_declare(queue=\"\")\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nmessage = \"Hello from product.py!\"\nchannel.basic_publish(exchange=\"pubsub\", routing_key=\"\", body=message)\nprint(\"sent message: \", message)\nchannel.close()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "channel",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "peekOfCode": "channel = connection.channel()\nchannel.queue_declare(queue=\"\")\nchannel.exchange_declare(exchange=\"pubsub\", exchange_type=ExchangeType.fanout)\nmessage = \"Hello from product.py!\"\nchannel.basic_publish(exchange=\"pubsub\", routing_key=\"\", body=message)\nprint(\"sent message: \", message)\nchannel.close()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "description": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "peekOfCode": "message = \"Hello from product.py!\"\nchannel.basic_publish(exchange=\"pubsub\", routing_key=\"\", body=message)\nprint(\"sent message: \", message)\nchannel.close()",
+        "detail": "RabbitMQ-Patterns.SUBPUB_PATTERN.producer",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"artificial-intelligence\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"artificial-intelligence\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"artificial-intelligence\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"artificial-intelligence\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"artificial-intelligence\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "artificial_intelligence..venv.bin.activate_this",
+        "description": "artificial_intelligence..venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "artificial_intelligence..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "InMemoryAnswersRepository",
+        "kind": 6,
+        "importPath": "artificial_intelligence.1_chatbot_agent.adapters.infrastructure.answer_repository",
+        "description": "artificial_intelligence.1_chatbot_agent.adapters.infrastructure.answer_repository",
+        "peekOfCode": "class InMemoryAnswersRepository(AnswerRepositoryPort):\n    def get_all(self):\n        return [\n            Sentence(\"я люблю программирование\"),\n            Sentence(\"программирование на python очень удобно\"),\n            Sentence(\"я изучаю архитектуру программ\")\n        ]",
+        "detail": "artificial_intelligence.1_chatbot_agent.adapters.infrastructure.answer_repository",
+        "documentation": {}
+    },
+    {
+        "label": "CliController",
+        "kind": 6,
+        "importPath": "artificial_intelligence.1_chatbot_agent.adapters.interface.cli_controller",
+        "description": "artificial_intelligence.1_chatbot_agent.adapters.interface.cli_controller",
+        "peekOfCode": "class CliController:\n    def __init__(self, use_case):\n        self.use_case = use_case\n    def ask(self):\n        question = input(\"Ввдите вопрос: \")\n        answer = self.use_case.execute(question)\n        print(\"Ответ:\", answer)",
+        "detail": "artificial_intelligence.1_chatbot_agent.adapters.interface.cli_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AnswerRepositoryPort",
+        "kind": 6,
+        "importPath": "artificial_intelligence.1_chatbot_agent.core.application.ports",
+        "description": "artificial_intelligence.1_chatbot_agent.core.application.ports",
+        "peekOfCode": "class AnswerRepositoryPort(ABC):\n    @abstractclassmethod\n    def get_all(self):\n        ...",
+        "detail": "artificial_intelligence.1_chatbot_agent.core.application.ports",
+        "documentation": {}
+    },
+    {
+        "label": "GetAnswerUseCase",
+        "kind": 6,
+        "importPath": "artificial_intelligence.1_chatbot_agent.core.application.use_cases",
+        "description": "artificial_intelligence.1_chatbot_agent.core.application.use_cases",
+        "peekOfCode": "class GetAnswerUseCase:\n    def __init__(self, repository: AnswerRepositoryPort):\n        self.repository = repository\n        self.service = BestMatchService()\n    def execute(self, question: str) -> str:\n        sentences = self.repository.get_all()\n        result = self.service.find_best_match(question=question, sentences=sentences)\n        return result.text if result else \"Ответ не найден\"",
+        "detail": "artificial_intelligence.1_chatbot_agent.core.application.use_cases",
+        "documentation": {}
+    },
+    {
+        "label": "Sentence",
+        "kind": 6,
+        "importPath": "artificial_intelligence.1_chatbot_agent.core.domain.entities",
+        "description": "artificial_intelligence.1_chatbot_agent.core.domain.entities",
+        "peekOfCode": "class Sentence:\n    def __init__(self, text: str):\n        self.text = text\n    def words(self) -> set:\n        \"\"\"\n        Get the set of unique words in the sentence.\n        :param self: Description\n        :return: Description\n        :rtype: set\n        \"\"\"",
+        "detail": "artificial_intelligence.1_chatbot_agent.core.domain.entities",
+        "documentation": {}
+    },
+    {
+        "label": "BestMatchService",
+        "kind": 6,
+        "importPath": "artificial_intelligence.1_chatbot_agent.core.domain.services",
+        "description": "artificial_intelligence.1_chatbot_agent.core.domain.services",
+        "peekOfCode": "class BestMatchService:\n    def find_best_match(self, question: str, sentences: list[Sentence]) -> Sentence:\n        question_words = set(question.lower().split())\n        best_match = None\n        max_matches = 0\n        for sentence in sentences:\n            matches = len(sentence.words() & question_words)\n            if matches > max_matches:\n                best_match = sentence\n                max_matches = matches",
+        "detail": "artificial_intelligence.1_chatbot_agent.core.domain.services",
+        "documentation": {}
+    },
+    {
+        "label": "repo",
+        "kind": 5,
+        "importPath": "artificial_intelligence.1_chatbot_agent.main",
+        "description": "artificial_intelligence.1_chatbot_agent.main",
+        "peekOfCode": "repo = InMemoryAnswersRepository()\nuse_case = GetAnswerUseCase(repository=repo)\ncli_controller = CliController(use_case)\nwhile True:\n    cli_controller.ask()",
+        "detail": "artificial_intelligence.1_chatbot_agent.main",
+        "documentation": {}
+    },
+    {
+        "label": "use_case",
+        "kind": 5,
+        "importPath": "artificial_intelligence.1_chatbot_agent.main",
+        "description": "artificial_intelligence.1_chatbot_agent.main",
+        "peekOfCode": "use_case = GetAnswerUseCase(repository=repo)\ncli_controller = CliController(use_case)\nwhile True:\n    cli_controller.ask()",
+        "detail": "artificial_intelligence.1_chatbot_agent.main",
+        "documentation": {}
+    },
+    {
+        "label": "cli_controller",
+        "kind": 5,
+        "importPath": "artificial_intelligence.1_chatbot_agent.main",
+        "description": "artificial_intelligence.1_chatbot_agent.main",
+        "peekOfCode": "cli_controller = CliController(use_case)\nwhile True:\n    cli_controller.ask()",
+        "detail": "artificial_intelligence.1_chatbot_agent.main",
+        "documentation": {}
+    },
+    {
+        "label": "execute",
+        "kind": 2,
+        "importPath": "artificial_intelligence.2_carpet_cleaner.main",
+        "description": "artificial_intelligence.2_carpet_cleaner.main",
+        "peekOfCode": "def execute(N: int, dust: int = 9):\n    mat: list[list[int]] = [[0] * N for _ in range(N)]\n    def put_dust_random(room: list[list[int]], walls_count: int, size: int) -> list[list[int]]:\n        while walls_count > 0:\n            i, j = random.randint(0, size - 1), random.randint(0, size - 1)\n            if room[i][j] == 0:\n                walls_count -= 1\n                room[i][j] = 1\n        return room\n    mat = put_dust_random(mat, dust, N)",
+        "detail": "artificial_intelligence.2_carpet_cleaner.main",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "artificial_intelligence.2_carpet_cleaner.main",
+        "description": "artificial_intelligence.2_carpet_cleaner.main",
+        "peekOfCode": "res = []\nfor _ in range(100):\n    res.append(execute(7))\nprint(Counter(res))",
+        "detail": "artificial_intelligence.2_carpet_cleaner.main",
+        "documentation": {}
+    },
+    {
+        "label": "backtracking_bishops",
+        "kind": 2,
+        "importPath": "artificial_intelligence.3_bishops_chess.main",
+        "description": "artificial_intelligence.3_bishops_chess.main",
+        "peekOfCode": "def backtracking_bishops(n=4):\n    solutions = []\n    board = [-1] * n  # board[row] = column\n    def is_safe(row, col):\n        for prev_row in range(row):\n            prev_col = board[prev_row]\n            if abs(prev_row - row) == abs(prev_col - col):\n                return False\n        return True\n    def solve(row):",
+        "detail": "artificial_intelligence.3_bishops_chess.main",
+        "documentation": {}
+    },
+    {
+        "label": "solutions_backtracking",
+        "kind": 5,
+        "importPath": "artificial_intelligence.3_bishops_chess.main",
+        "description": "artificial_intelligence.3_bishops_chess.main",
+        "peekOfCode": "solutions_backtracking = backtracking_bishops(5)\nprint(\"Количество решений (1 слон в строке):\", len(solutions_backtracking))",
+        "detail": "artificial_intelligence.3_bishops_chess.main",
+        "documentation": {}
+    },
+    {
+        "label": "BenchmarkResult",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "description": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "peekOfCode": "class BenchmarkResult:\n    \"\"\"Container for benchmark results.\"\"\"\n    def __init__(self, name: str):\n        self.name = name\n        self.solution_length: int = -1\n        self.nodes_expanded: int = 0\n        self.max_frontier: int = 0\n        self.time_seconds: float = 0.0\n        self.solved: bool = False\n        self.optimal: bool = False",
+        "detail": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "documentation": {}
+    },
+    {
+        "label": "benchmark_test_case",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "description": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "peekOfCode": "def benchmark_test_case(\n    name: str,\n    initial_grid: List[List[int]],\n    goal_grid: List[List[int]] = None\n) -> BenchmarkResult:\n    \"\"\"\n    Benchmark a single test case using A* algorithm.\n    Args:\n        name: Test case name\n        initial_grid: Starting configuration",
+        "detail": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "documentation": {}
+    },
+    {
+        "label": "run_comprehensive_benchmarks",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "description": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "peekOfCode": "def run_comprehensive_benchmarks() -> None:\n    \"\"\"Run comprehensive benchmark suite.\"\"\"\n    print(\"=\"*80)\n    print(\"SLIDING PUZZLE SOLVER - COMPREHENSIVE BENCHMARKS\")\n    print(\"Using A* Search with Manhattan Distance Heuristic\")\n    print(\"=\"*80)\n    test_cases = [\n        {\n            \"name\": \"Already Solved\",\n            \"grid\": [[0, 1, 2], [3, 4, 5], [6, 7, 8]],",
+        "detail": "artificial_intelligence.4_sliding_puzzle.benchmark",
+        "documentation": {}
+    },
+    {
+        "label": "example_1_basic_usage",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.examples",
+        "description": "artificial_intelligence.4_sliding_puzzle.examples",
+        "peekOfCode": "def example_1_basic_usage():\n    \"\"\"Example 1: Basic usage with default goal.\"\"\"\n    print(\"=\"*80)\n    print(\"EXAMPLE 1: Basic Usage\")\n    print(\"=\"*80)\n    puzzle = [\n        [1, 2, 3],\n        [4, 0, 5],\n        [6, 7, 8]\n    ]",
+        "detail": "artificial_intelligence.4_sliding_puzzle.examples",
+        "documentation": {}
+    },
+    {
+        "label": "example_2_custom_goal",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.examples",
+        "description": "artificial_intelligence.4_sliding_puzzle.examples",
+        "peekOfCode": "def example_2_custom_goal():\n    \"\"\"Example 2: Solving with custom goal state.\"\"\"\n    print(\"\\n\\n\" + \"=\"*80)\n    print(\"EXAMPLE 2: Custom Goal State\")\n    print(\"=\"*80)\n    initial = [\n        [1, 2, 3],\n        [4, 5, 6],\n        [7, 8, 0]\n    ]",
+        "detail": "artificial_intelligence.4_sliding_puzzle.examples",
+        "documentation": {}
+    },
+    {
+        "label": "example_3_hard_puzzle",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.examples",
+        "description": "artificial_intelligence.4_sliding_puzzle.examples",
+        "peekOfCode": "def example_3_hard_puzzle():\n    \"\"\"Example 3: Solving a hard puzzle from the original code.\"\"\"\n    print(\"\\n\\n\" + \"=\"*80)\n    print(\"EXAMPLE 3: Hard Puzzle (24 moves)\")\n    print(\"=\"*80)\n    puzzle = [\n        [4, 6, 0],\n        [1, 8, 3],\n        [7, 2, 5]\n    ]",
+        "detail": "artificial_intelligence.4_sliding_puzzle.examples",
+        "documentation": {}
+    },
+    {
+        "label": "example_4_advanced_api",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.examples",
+        "description": "artificial_intelligence.4_sliding_puzzle.examples",
+        "peekOfCode": "def example_4_advanced_api():\n    \"\"\"Example 4: Using the advanced API with detailed control.\"\"\"\n    print(\"\\n\\n\" + \"=\"*80)\n    print(\"EXAMPLE 4: Advanced API Usage\")\n    print(\"=\"*80)\n    initial_grid = [\n        [7, 2, 4],\n        [5, 0, 6],\n        [8, 3, 1]\n    ]",
+        "detail": "artificial_intelligence.4_sliding_puzzle.examples",
+        "documentation": {}
+    },
+    {
+        "label": "example_5_unsolvable_detection",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.examples",
+        "description": "artificial_intelligence.4_sliding_puzzle.examples",
+        "peekOfCode": "def example_5_unsolvable_detection():\n    \"\"\"Example 5: Detecting unsolvable puzzles.\"\"\"\n    print(\"\\n\\n\" + \"=\"*80)\n    print(\"EXAMPLE 5: Unsolvable Puzzle Detection\")\n    print(\"=\"*80)\n    unsolvable = [\n        [1, 2, 3],\n        [4, 5, 6],\n        [8, 7, 0]\n    ]",
+        "detail": "artificial_intelligence.4_sliding_puzzle.examples",
+        "documentation": {}
+    },
+    {
+        "label": "example_6_different_sizes",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.examples",
+        "description": "artificial_intelligence.4_sliding_puzzle.examples",
+        "peekOfCode": "def example_6_different_sizes():\n    \"\"\"Example 6: Solving different puzzle sizes.\"\"\"\n    print(\"\\n\\n\" + \"=\"*80)\n    print(\"EXAMPLE 6: Different Puzzle Sizes\")\n    print(\"=\"*80)\n    # 2x2 puzzle\n    print(\"\\n2x2 Puzzle:\")\n    puzzle_2x2 = [\n        [1, 0],\n        [2, 3]",
+        "detail": "artificial_intelligence.4_sliding_puzzle.examples",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.examples",
+        "description": "artificial_intelligence.4_sliding_puzzle.examples",
+        "peekOfCode": "def main():\n    \"\"\"Run all examples.\"\"\"\n    print(\"\\n\")\n    print(\"╔\" + \"=\"*78 + \"╗\")\n    print(\"║\" + \" \"*78 + \"║\")\n    print(\"║\" + \"  SLIDING PUZZLE SOLVER - EXAMPLE DEMONSTRATIONS\".center(78) + \"║\")\n    print(\"║\" + \" \"*78 + \"║\")\n    print(\"╚\" + \"=\"*78 + \"╝\")\n    examples = [\n        (\"Basic Usage\", example_1_basic_usage),",
+        "detail": "artificial_intelligence.4_sliding_puzzle.examples",
+        "documentation": {}
+    },
+    {
+        "label": "Direction",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "description": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "peekOfCode": "class Direction(Enum):\n    \"\"\"Represents possible moves in the puzzle.\"\"\"\n    UP = (-1, 0)\n    DOWN = (1, 0)\n    LEFT = (0, -1)\n    RIGHT = (0, 1)\n    def __repr__(self) -> str:\n        return self.name\n@dataclass(frozen=True)\nclass PuzzleState:",
+        "detail": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "PuzzleState",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "description": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "peekOfCode": "class PuzzleState:\n    \"\"\"\n    Immutable representation of a puzzle state.\n    Uses tuple for efficient hashing and comparison.\n    Stores configuration in row-major order.\n    \"\"\"\n    grid: Tuple[int, ...]\n    rows: int\n    cols: int\n    blank_pos: Tuple[int, int]",
+        "detail": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "SearchNode",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "description": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "peekOfCode": "class SearchNode:\n    \"\"\"\n    Node in the A* search tree.\n    Ordered by f_score (g + h) for priority queue operations.\n    \"\"\"\n    f_score: int\n    g_score: int = field(compare=False)\n    state: PuzzleState = field(compare=False)\n    parent: Optional[SearchNode] = field(default=None, compare=False)\n    move: Optional[Direction] = field(default=None, compare=False)",
+        "detail": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "SlidingPuzzleSolver",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "description": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "peekOfCode": "class SlidingPuzzleSolver:\n    \"\"\"\n    Optimal sliding puzzle solver using A* search with Manhattan distance heuristic.\n    Features:\n    - Guaranteed optimal solution (shortest path)\n    - Efficient state representation and hashing\n    - State deduplication to avoid revisiting states\n    - Memory efficient - only stores necessary information\n    \"\"\"\n    def __init__(self, initial_state: PuzzleState, goal_state: PuzzleState):",
+        "detail": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "solve_puzzle",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "description": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "peekOfCode": "def solve_puzzle(\n    initial_grid: List[List[int]],\n    goal_grid: Optional[List[List[int]]] = None,\n    verbose: bool = False\n) -> Optional[List[Direction]]:\n    \"\"\"\n    Convenience function to solve a sliding puzzle.\n    Args:\n        initial_grid: Starting configuration (0 represents blank)\n        goal_grid: Target configuration (defaults to sorted tiles)",
+        "detail": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "visualize_solution",
+        "kind": 2,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "description": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "peekOfCode": "def visualize_solution(\n    initial_grid: List[List[int]],\n    moves: List[Direction],\n    goal_grid: Optional[List[List[int]]] = None\n) -> None:\n    \"\"\"\n    Print step-by-step visualization of solution.\n    Args:\n        initial_grid: Starting configuration\n        moves: Sequence of moves to apply",
+        "detail": "artificial_intelligence.4_sliding_puzzle.sliding_puzzle_solver",
+        "documentation": {}
+    },
+    {
+        "label": "TestPuzzleState",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "description": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "peekOfCode": "class TestPuzzleState(unittest.TestCase):\n    \"\"\"Test PuzzleState class.\"\"\"\n    def test_from_2d_list(self):\n        \"\"\"Test creation from 2D list.\"\"\"\n        grid = [[1, 2, 3], [4, 0, 5], [6, 7, 8]]\n        state = PuzzleState.from_2d_list(grid)\n        self.assertEqual(state.rows, 3)\n        self.assertEqual(state.cols, 3)\n        self.assertEqual(state.blank_pos, (1, 1))\n        self.assertEqual(state.get_value(0, 0), 1)",
+        "detail": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "documentation": {}
+    },
+    {
+        "label": "TestSlidingPuzzleSolver",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "description": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "peekOfCode": "class TestSlidingPuzzleSolver(unittest.TestCase):\n    \"\"\"Test SlidingPuzzleSolver class.\"\"\"\n    def setUp(self):\n        \"\"\"Set up common test fixtures.\"\"\"\n        self.goal_3x3 = [[0, 1, 2], [3, 4, 5], [6, 7, 8]]\n        self.goal_state_3x3 = PuzzleState.from_2d_list(self.goal_3x3)\n    def test_manhattan_distance_goal(self):\n        \"\"\"Test Manhattan distance for goal state is 0.\"\"\"\n        state = PuzzleState.from_2d_list(self.goal_3x3)\n        solver = SlidingPuzzleSolver(state, self.goal_state_3x3)",
+        "detail": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "documentation": {}
+    },
+    {
+        "label": "TestConvenienceFunctions",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "description": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "peekOfCode": "class TestConvenienceFunctions(unittest.TestCase):\n    \"\"\"Test convenience functions.\"\"\"\n    def test_solve_puzzle_default_goal(self):\n        \"\"\"Test solve_puzzle with default goal.\"\"\"\n        initial = [[1, 2, 3], [4, 0, 5], [6, 7, 8]]\n        solution = solve_puzzle(initial)\n        self.assertIsNotNone(solution)\n        self.assertIsInstance(solution, list)\n    def test_solve_puzzle_custom_goal(self):\n        \"\"\"Test solve_puzzle with custom goal.\"\"\"",
+        "detail": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "documentation": {}
+    },
+    {
+        "label": "TestEdgeCases",
+        "kind": 6,
+        "importPath": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "description": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "peekOfCode": "class TestEdgeCases(unittest.TestCase):\n    \"\"\"Test edge cases and error handling.\"\"\"\n    def test_incompatible_dimensions(self):\n        \"\"\"Test that incompatible dimensions raise error.\"\"\"\n        initial = [[1, 2, 3], [4, 0, 5], [6, 7, 8]]\n        goal = [[0, 1], [2, 3]]\n        initial_state = PuzzleState.from_2d_list(initial)\n        goal_state = PuzzleState.from_2d_list(goal)\n        with self.assertRaises(ValueError):\n            SlidingPuzzleSolver(initial_state, goal_state)",
+        "detail": "artificial_intelligence.4_sliding_puzzle.test_sliding_puzzle",
+        "documentation": {}
+    },
+    {
+        "label": "create_board",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def create_board(n):\n    return [[[] for _ in range(n)] for _ in range(n)]\ndef get_neighbors(n, r, c):\n    moves = [(-1,0),(1,0),(0,-1),(0,1)]\n    result = []\n    for dr, dc in moves:\n        nr, nc = r + dr, c + dc\n        if 0 <= nr < n and 0 <= nc < n:\n            result.append((nr, nc))\n    return result",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_neighbors",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def get_neighbors(n, r, c):\n    moves = [(-1,0),(1,0),(0,-1),(0,1)]\n    result = []\n    for dr, dc in moves:\n        nr, nc = r + dr, c + dc\n        if 0 <= nr < n and 0 <= nc < n:\n            result.append((nr, nc))\n    return result\ndef add_adjacent(board, n, r, c, symbol):\n    for nr, nc in get_neighbors(n, r, c):",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "add_adjacent",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def add_adjacent(board, n, r, c, symbol):\n    for nr, nc in get_neighbors(n, r, c):\n        if symbol not in board[nr][nc]:\n            board[nr][nc].append(symbol)\ndef generate_world(n, pit_count):\n    board = create_board(n)\n    positions = [(i,j) for i in range(n) for j in range(n)]\n    positions.remove((0,0))\n    pits = random.sample(positions, pit_count)\n    for r, c in pits:",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "generate_world",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def generate_world(n, pit_count):\n    board = create_board(n)\n    positions = [(i,j) for i in range(n) for j in range(n)]\n    positions.remove((0,0))\n    pits = random.sample(positions, pit_count)\n    for r, c in pits:\n        board[r][c].append(\"P\")\n        add_adjacent(board, n, r, c, \"B\")\n    remaining = [p for p in positions if p not in pits]\n    wr, wc = random.choice(remaining)",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "print_board",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def print_board(board):\n    for row in board:\n        print([\"\".join(cell) if cell else \".\" for cell in row])\n    print()\n# ==========================================\n# KNOWLEDGE\n# ==========================================\ndef create_knowledge(n):\n    return [[\"UNKNOWN\" for _ in range(n)] for _ in range(n)]\ndef update_knowledge(board, knowledge, n, pos):",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "create_knowledge",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def create_knowledge(n):\n    return [[\"UNKNOWN\" for _ in range(n)] for _ in range(n)]\ndef update_knowledge(board, knowledge, n, pos):\n    r, c = pos\n    percepts = board[r][c]\n    knowledge[r][c] = \"VISITED\"\n    neighbors = get_neighbors(n, r, c)\n    if \"B\" not in percepts and \"S\" not in percepts:\n        for nr, nc in neighbors:\n            if knowledge[nr][nc] == \"UNKNOWN\":",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "update_knowledge",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def update_knowledge(board, knowledge, n, pos):\n    r, c = pos\n    percepts = board[r][c]\n    knowledge[r][c] = \"VISITED\"\n    neighbors = get_neighbors(n, r, c)\n    if \"B\" not in percepts and \"S\" not in percepts:\n        for nr, nc in neighbors:\n            if knowledge[nr][nc] == \"UNKNOWN\":\n                knowledge[nr][nc] = \"SAFE\"\n    if \"B\" in percepts:",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "advanced_inference",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def advanced_inference(board, knowledge, n):\n    for _ in range(5):  # limit iterations (prevents freeze)\n        changed = False\n        for r in range(n):\n            for c in range(n):\n                if knowledge[r][c] != \"VISITED\":\n                    continue\n                percepts = board[r][c]\n                neighbors = get_neighbors(n, r, c)\n                unknown = []",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "choose_next_move",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def choose_next_move(board, knowledge, n, visited_stack):\n    # 1️⃣ Prefer SAFE unexplored\n    for i in range(n):\n        for j in range(n):\n            if knowledge[i][j] == \"SAFE\":\n                return (i, j)\n    # 2️⃣ If stuck → choose least risky cell (guess)\n    candidates = []\n    for i in range(n):\n        for j in range(n):",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "solve_wumpus",
+        "kind": 2,
+        "importPath": "artificial_intelligence.5_wumpus_world.main",
+        "description": "artificial_intelligence.5_wumpus_world.main",
+        "peekOfCode": "def solve_wumpus(n=4, pit_count=3):\n    board = generate_world(n, pit_count)\n    knowledge = create_knowledge(n)\n    pos = (0,0)\n    visited_stack = []\n    print(\"=== REAL BOARD (DEBUG) ===\")\n    print_board(board)\n    while True:\n        r, c = pos\n        cell = board[r][c]",
+        "detail": "artificial_intelligence.5_wumpus_world.main",
+        "documentation": {}
+    },
+    {
+        "label": "safe_eval",
+        "kind": 2,
+        "importPath": "artificial_intelligence.7_gradient_descent.app",
+        "description": "artificial_intelligence.7_gradient_descent.app",
+        "peekOfCode": "def safe_eval(fn, x, y):\n    try:\n        v = fn(x, y)\n        return min(v, 1e7) if math.isfinite(v) else 1e7\n    except Exception:\n        return 1e7\ndef central_diff_grad(fn, x, y, dx):\n    \"\"\"\n    Формула профессора (центральная разность):\n    ∂f/∂x ≈ [f(x+Δx) − f(x−Δx)] / (2·Δx)",
+        "detail": "artificial_intelligence.7_gradient_descent.app",
+        "documentation": {}
+    },
+    {
+        "label": "central_diff_grad",
+        "kind": 2,
+        "importPath": "artificial_intelligence.7_gradient_descent.app",
+        "description": "artificial_intelligence.7_gradient_descent.app",
+        "peekOfCode": "def central_diff_grad(fn, x, y, dx):\n    \"\"\"\n    Формула профессора (центральная разность):\n    ∂f/∂x ≈ [f(x+Δx) − f(x−Δx)] / (2·Δx)\n    \"\"\"\n    gx = (safe_eval(fn, x + dx, y) - safe_eval(fn, x - dx, y)) / (2 * dx)\n    gy = (safe_eval(fn, x, y + dx) - safe_eval(fn, x, y - dx)) / (2 * dx)\n    return gx, gy\n# ─────────────────────────────────────────────\n#  Алгоритмы",
+        "detail": "artificial_intelligence.7_gradient_descent.app",
+        "documentation": {}
+    },
+    {
+        "label": "run_optimizer",
+        "kind": 2,
+        "importPath": "artificial_intelligence.7_gradient_descent.app",
+        "description": "artificial_intelligence.7_gradient_descent.app",
+        "peekOfCode": "def run_optimizer(fn_key, algo, start_x, start_y,\n                  lr, max_iter, dx, beta=0.9):\n    fn_info = FUNCTIONS[fn_key]\n    fn = fn_info[\"fn\"]\n    R = fn_info[\"range\"] * 1.5\n    x, y = start_x, start_y\n    path = [{\"x\": x, \"y\": y, \"f\": safe_eval(fn, x, y), \"iter\": 0}]\n    # Algo state\n    vx = vy = 0.0\n    Gx = Gy = 0.0",
+        "detail": "artificial_intelligence.7_gradient_descent.app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "artificial_intelligence.7_gradient_descent.app",
+        "description": "artificial_intelligence.7_gradient_descent.app",
+        "peekOfCode": "def index():\n    return render_template(\"index.html\", functions=FUNCTIONS)\n@app.route(\"/api/surface\", methods=[\"POST\"])\ndef api_surface():\n    \"\"\"Возвращает сетку значений для 3D-поверхности.\"\"\"\n    data = request.get_json()\n    fn_key = data.get(\"fn\", \"sphere\")\n    steps = int(data.get(\"steps\", 60))\n    fn_info = FUNCTIONS.get(fn_key, FUNCTIONS[\"sphere\"])\n    fn = fn_info[\"fn\"]",
+        "detail": "artificial_intelligence.7_gradient_descent.app",
+        "documentation": {}
+    },
+    {
+        "label": "api_surface",
+        "kind": 2,
+        "importPath": "artificial_intelligence.7_gradient_descent.app",
+        "description": "artificial_intelligence.7_gradient_descent.app",
+        "peekOfCode": "def api_surface():\n    \"\"\"Возвращает сетку значений для 3D-поверхности.\"\"\"\n    data = request.get_json()\n    fn_key = data.get(\"fn\", \"sphere\")\n    steps = int(data.get(\"steps\", 60))\n    fn_info = FUNCTIONS.get(fn_key, FUNCTIONS[\"sphere\"])\n    fn = fn_info[\"fn\"]\n    R = fn_info[\"range\"]\n    xs = [round(-R + 2*R*i/steps, 5) for i in range(steps + 1)]\n    ys = [round(-R + 2*R*j/steps, 5) for j in range(steps + 1)]",
+        "detail": "artificial_intelligence.7_gradient_descent.app",
+        "documentation": {}
+    },
+    {
+        "label": "api_run",
+        "kind": 2,
+        "importPath": "artificial_intelligence.7_gradient_descent.app",
+        "description": "artificial_intelligence.7_gradient_descent.app",
+        "peekOfCode": "def api_run():\n    \"\"\"Запускает градиентный спуск и возвращает путь.\"\"\"\n    data = request.get_json()\n    fn_key  = data.get(\"fn\", \"sphere\")\n    algo    = data.get(\"algo\", \"gd\")\n    start_x = float(data.get(\"start_x\", 2.5))\n    start_y = float(data.get(\"start_y\", 2.0))\n    lr      = float(data.get(\"lr\", 0.05))\n    max_iter= int(data.get(\"max_iter\", 200))\n    dx      = float(data.get(\"dx\", 1e-4))",
+        "detail": "artificial_intelligence.7_gradient_descent.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "artificial_intelligence.7_gradient_descent.app",
+        "description": "artificial_intelligence.7_gradient_descent.app",
+        "peekOfCode": "app = Flask(__name__)\n# ─────────────────────────────────────────────\n#  Функции для оптимизации\n# ─────────────────────────────────────────────\nFUNCTIONS = {\n    \"sphere\": {\n        \"label\": \"Парабола x² + y²\",\n        \"fn\": lambda x, y: x**2 + y**2,\n        \"range\": 3.0,\n        \"minima\": [[0, 0]],",
+        "detail": "artificial_intelligence.7_gradient_descent.app",
+        "documentation": {}
+    },
+    {
+        "label": "FUNCTIONS",
+        "kind": 5,
+        "importPath": "artificial_intelligence.7_gradient_descent.app",
+        "description": "artificial_intelligence.7_gradient_descent.app",
+        "peekOfCode": "FUNCTIONS = {\n    \"sphere\": {\n        \"label\": \"Парабола x² + y²\",\n        \"fn\": lambda x, y: x**2 + y**2,\n        \"range\": 3.0,\n        \"minima\": [[0, 0]],\n    },\n    \"himmelblau\": {\n        \"label\": \"Himmelblau\",\n        \"fn\": lambda x, y: (x**2 + y - 11)**2 + (x + y**2 - 7)**2,",
+        "detail": "artificial_intelligence.7_gradient_descent.app",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"data-minining\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"data-minining\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"data-minining\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"data-minining\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"data-minining\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "data-minining..venv.bin.activate_this",
+        "description": "data-minining..venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"news-website\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"news-website\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"news-website\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"news-website\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"news-website\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "scripting_language.news_website..venv.bin.activate_this",
+        "description": "scripting_language.news_website..venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "scripting_language.news_website..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "scripting_language.news_website.main",
+        "description": "scripting_language.news_website.main",
+        "peekOfCode": "url = \"https://gazi.edu.tr/view/announcement-list?id={}&type=1&SearchString=&dates=&date=\"\nres = []\nfor i in range(1, 5):\n    url.format(i)\n    response = requests.get(url.format(i))\n    soup = BeautifulSoup(response.content, \"html.parser\")\n    announcements = soup.select(\".row.subpage-ann-single.flex-nowrap\")\n    for announcement in announcements:\n        day = announcement.select_one(\".ann-day\").get_text(strip=True)\n        month = announcement.select_one(\".ann-month\").get_text(strip=True)",
+        "detail": "scripting_language.news_website.main",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "scripting_language.news_website.main",
+        "description": "scripting_language.news_website.main",
+        "peekOfCode": "res = []\nfor i in range(1, 5):\n    url.format(i)\n    response = requests.get(url.format(i))\n    soup = BeautifulSoup(response.content, \"html.parser\")\n    announcements = soup.select(\".row.subpage-ann-single.flex-nowrap\")\n    for announcement in announcements:\n        day = announcement.select_one(\".ann-day\").get_text(strip=True)\n        month = announcement.select_one(\".ann-month\").get_text(strip=True)\n        year = announcement.select_one(\".ann-year\").get_text(strip=True)",
+        "detail": "scripting_language.news_website.main",
+        "documentation": {}
+    },
+    {
+        "label": "build_html",
+        "kind": 2,
+        "importPath": "scripting_language.xss_attack.make_poly_jpg",
+        "description": "scripting_language.xss_attack.make_poly_jpg",
+        "peekOfCode": "def build_html(message, embedded_path):\n    # Use a safe JSON string literal for the JS alert message\n    msg = json.dumps(message)\n    # If you want the image displayed via data URI, you'd base64-embed; keep simple here\n    embedded = embedded_path\n    return HTML_PAYLOAD_TEMPLATE.format(title=\"Polyglot JPG\", embedded=embedded, msg=msg)\ndef write_polyglot(jpg_in, out, message):\n    if not os.path.isfile(jpg_in):\n        raise SystemExit(f\"Input not found: {jpg_in}\")\n    html = build_html(message, os.path.basename(jpg_in))",
+        "detail": "scripting_language.xss_attack.make_poly_jpg",
+        "documentation": {}
+    },
+    {
+        "label": "write_polyglot",
+        "kind": 2,
+        "importPath": "scripting_language.xss_attack.make_poly_jpg",
+        "description": "scripting_language.xss_attack.make_poly_jpg",
+        "peekOfCode": "def write_polyglot(jpg_in, out, message):\n    if not os.path.isfile(jpg_in):\n        raise SystemExit(f\"Input not found: {jpg_in}\")\n    html = build_html(message, os.path.basename(jpg_in))\n    # Read the real image bytes\n    with open(jpg_in, \"rb\") as f:\n        img_bytes = f.read()\n    # Write real JPEG bytes, then newline + HTML text\n    with open(out, \"wb\") as f:\n        f.write(img_bytes)",
+        "detail": "scripting_language.xss_attack.make_poly_jpg",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripting_language.xss_attack.make_poly_jpg",
+        "description": "scripting_language.xss_attack.make_poly_jpg",
+        "peekOfCode": "def main():\n    p = argparse.ArgumentParser()\n    p.add_argument(\"input\", help=\"Input image (jpg/png/gif)\")\n    p.add_argument(\"-m\", \"--message\", default=\"Hello from polyglot alert\", help=\"Alert message\")\n    p.add_argument(\"-o\", \"--output\", default=None, help=\"Output .jpg filename\")\n    args = p.parse_args()\n    out = args.output or (os.path.splitext(args.input)[0] + \"_poly.jpg\")\n    if not out.lower().endswith(\".jpg\"):\n        out += \".jpg\"\n    write_polyglot(args.input, out, args.message)",
+        "detail": "scripting_language.xss_attack.make_poly_jpg",
+        "documentation": {}
+    },
+    {
+        "label": "HTML_PAYLOAD_TEMPLATE",
+        "kind": 5,
+        "importPath": "scripting_language.xss_attack.make_poly_jpg",
+        "description": "scripting_language.xss_attack.make_poly_jpg",
+        "peekOfCode": "HTML_PAYLOAD_TEMPLATE = \"\"\"<!doctype html>\n<html lang=\"en\">\n<head><meta charset=\"utf-8\"><title>{title}</title></head>\n<body>\n  <h1>{title}</h1>\n  <p>Polyglot JPG demo — HTML appended after JPEG bytes.</p>\n  <img src=\"{embedded}\" alt=\"embedded image\" style=\"max-width:50%;\">\n  <script>\n    (function() {{\n      alert({msg});",
+        "detail": "scripting_language.xss_attack.make_poly_jpg",
+        "documentation": {}
+    },
+    {
+        "label": "input_filename",
+        "kind": 5,
+        "importPath": "scripting_language.xss_attack.svg_named_jpg",
+        "description": "scripting_language.xss_attack.svg_named_jpg",
+        "peekOfCode": "input_filename = \"220401002.jpg\"\noutput_filename = \"220401002_converted.jpeg\"\n# Open image\nimage = Image.open(input_filename)\n# --- Step 2: Show an alert message ---\nroot = tk.Tk()\nroot.withdraw()  # Hide the main tkinter window\nmessagebox.showinfo(\"Conversion Notice\", \"Daniel Kanybekov 25118080902\")\n# --- Step 3: Save image as JPEG ---\nimage.save(output_filename, \"JPEG\")",
+        "detail": "scripting_language.xss_attack.svg_named_jpg",
+        "documentation": {}
+    },
+    {
+        "label": "output_filename",
+        "kind": 5,
+        "importPath": "scripting_language.xss_attack.svg_named_jpg",
+        "description": "scripting_language.xss_attack.svg_named_jpg",
+        "peekOfCode": "output_filename = \"220401002_converted.jpeg\"\n# Open image\nimage = Image.open(input_filename)\n# --- Step 2: Show an alert message ---\nroot = tk.Tk()\nroot.withdraw()  # Hide the main tkinter window\nmessagebox.showinfo(\"Conversion Notice\", \"Daniel Kanybekov 25118080902\")\n# --- Step 3: Save image as JPEG ---\nimage.save(output_filename, \"JPEG\")\nprint(f\"Image successfully converted and saved as {output_filename}\")",
+        "detail": "scripting_language.xss_attack.svg_named_jpg",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "scripting_language.xss_attack.svg_named_jpg",
+        "description": "scripting_language.xss_attack.svg_named_jpg",
+        "peekOfCode": "image = Image.open(input_filename)\n# --- Step 2: Show an alert message ---\nroot = tk.Tk()\nroot.withdraw()  # Hide the main tkinter window\nmessagebox.showinfo(\"Conversion Notice\", \"Daniel Kanybekov 25118080902\")\n# --- Step 3: Save image as JPEG ---\nimage.save(output_filename, \"JPEG\")\nprint(f\"Image successfully converted and saved as {output_filename}\")",
+        "detail": "scripting_language.xss_attack.svg_named_jpg",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "scripting_language.xss_attack.svg_named_jpg",
+        "description": "scripting_language.xss_attack.svg_named_jpg",
+        "peekOfCode": "root = tk.Tk()\nroot.withdraw()  # Hide the main tkinter window\nmessagebox.showinfo(\"Conversion Notice\", \"Daniel Kanybekov 25118080902\")\n# --- Step 3: Save image as JPEG ---\nimage.save(output_filename, \"JPEG\")\nprint(f\"Image successfully converted and saved as {output_filename}\")",
+        "detail": "scripting_language.xss_attack.svg_named_jpg",
+        "documentation": {}
+    }
+]
