@@ -1,1 +1,9 @@
 data-minining/data/customers-100000.csv
+**/*.jpg
+**/*.png
+**/*.jpeg
+**/*.gif
+**/*.bmp
+**/*.svg
+**/*.webpz
+**/*.csv

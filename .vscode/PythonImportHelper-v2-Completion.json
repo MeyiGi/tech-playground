@@ -49,6 +49,14 @@
         "documentation": {}
     },
     {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -268,6 +276,217 @@
         "importPath": "uuid",
         "description": "uuid",
         "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "keras",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "keras",
+        "description": "keras",
+        "detail": "keras",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "keras",
+        "description": "keras",
+        "isExtraImport": true,
+        "detail": "keras",
+        "documentation": {}
+    },
+    {
+        "label": "layers",
+        "importPath": "keras",
+        "description": "keras",
+        "isExtraImport": true,
+        "detail": "keras",
+        "documentation": {}
+    },
+    {
+        "label": "Sequential",
+        "importPath": "keras.models",
+        "description": "keras.models",
+        "isExtraImport": true,
+        "detail": "keras.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sequential",
+        "importPath": "keras.models",
+        "description": "keras.models",
+        "isExtraImport": true,
+        "detail": "keras.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sequential",
+        "importPath": "keras.models",
+        "description": "keras.models",
+        "isExtraImport": true,
+        "detail": "keras.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sequential",
+        "importPath": "keras.models",
+        "description": "keras.models",
+        "isExtraImport": true,
+        "detail": "keras.models",
+        "documentation": {}
+    },
+    {
+        "label": "Dense",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Activation",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Dense",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Activation",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Dense",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Activation",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "Conv2D",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "UpSampling2D",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "InputLayer",
+        "importPath": "keras.layers",
+        "description": "keras.layers",
+        "isExtraImport": true,
+        "detail": "keras.layers",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "mnist",
+        "importPath": "keras.datasets",
+        "description": "keras.datasets",
+        "isExtraImport": true,
+        "detail": "keras.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDraw",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "to_categorical",
+        "importPath": "keras.utils",
+        "description": "keras.utils",
+        "isExtraImport": true,
+        "detail": "keras.utils",
+        "documentation": {}
+    },
+    {
+        "label": "rgb2lab",
+        "importPath": "skimage.color",
+        "description": "skimage.color",
+        "isExtraImport": true,
+        "detail": "skimage.color",
+        "documentation": {}
+    },
+    {
+        "label": "lab2rgb",
+        "importPath": "skimage.color",
+        "description": "skimage.color",
+        "isExtraImport": true,
+        "detail": "skimage.color",
         "documentation": {}
     },
     {
@@ -602,6 +821,32 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "pylab",
+        "description": "pylab",
+        "isExtraImport": true,
+        "detail": "pylab",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.font_manager",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.font_manager",
+        "description": "matplotlib.font_manager",
+        "detail": "matplotlib.font_manager",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
         "label": "urljoin",
         "importPath": "urllib.parse",
         "description": "urllib.parse",
@@ -633,14 +878,6 @@
         "importPath": "json",
         "description": "json",
         "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "Image",
-        "importPath": "PIL",
-        "description": "PIL",
-        "isExtraImport": true,
-        "detail": "PIL",
         "documentation": {}
     },
     {
@@ -739,6 +976,357 @@
         "description": "100-pandas-problems..venv.bin.activate_this",
         "peekOfCode": "sys.prefix = base",
         "detail": "100-pandas-problems..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def fibonacci(n):\n    \"\"\"Generate fibonacci sequence up to n terms.\"\"\"\n    if n <= 0:\n        return []\n    elif n == 1:\n        return [0]\n    fib_list = [0, 1]\n    for i in range(2, n):\n        fib_list.append(fib_list[i-1] + fib_list[i-2])\n    return fib_list",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def is_prime(num):\n    \"\"\"Check if a number is prime.\"\"\"\n    if num < 2:\n        return False\n    for i in range(2, int(num ** 0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\ndef reverse_string(s):\n    \"\"\"Reverse a string.\"\"\"",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_string",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def reverse_string(s):\n    \"\"\"Reverse a string.\"\"\"\n    return s[::-1]\ndef count_vowels(text):\n    \"\"\"Count vowels in a text.\"\"\"\n    vowels = 'aeiouAEIOU'\n    return sum(1 for char in text if char in vowels)\ndef factorial(n):\n    \"\"\"Calculate factorial of n.\"\"\"\n    if n < 0:",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "count_vowels",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def count_vowels(text):\n    \"\"\"Count vowels in a text.\"\"\"\n    vowels = 'aeiouAEIOU'\n    return sum(1 for char in text if char in vowels)\ndef factorial(n):\n    \"\"\"Calculate factorial of n.\"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial not defined for negative numbers\")\n    if n == 0 or n == 1:\n        return 1",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "factorial",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def factorial(n):\n    \"\"\"Calculate factorial of n.\"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial not defined for negative numbers\")\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n - 1)\ndef list_intersection(list1, list2):\n    \"\"\"Find common elements between two lists.\"\"\"\n    return list(set(list1) & set(list2))",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "list_intersection",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def list_intersection(list1, list2):\n    \"\"\"Find common elements between two lists.\"\"\"\n    return list(set(list1) & set(list2))\ndef list_union(list1, list2):\n    \"\"\"Find union of two lists.\"\"\"\n    return list(set(list1) | set(list2))\ndef remove_duplicates(lst):\n    \"\"\"Remove duplicate elements while preserving order.\"\"\"\n    seen = set()\n    result = []",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "list_union",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def list_union(list1, list2):\n    \"\"\"Find union of two lists.\"\"\"\n    return list(set(list1) | set(list2))\ndef remove_duplicates(lst):\n    \"\"\"Remove duplicate elements while preserving order.\"\"\"\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "remove_duplicates",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def remove_duplicates(lst):\n    \"\"\"Remove duplicate elements while preserving order.\"\"\"\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\ndef find_max(lst):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "find_max",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def find_max(lst):\n    \"\"\"Find maximum value in a list.\"\"\"\n    if not lst:\n        return None\n    return max(lst)\ndef find_min(lst):\n    \"\"\"Find minimum value in a list.\"\"\"\n    if not lst:\n        return None\n    return min(lst)",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "find_min",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def find_min(lst):\n    \"\"\"Find minimum value in a list.\"\"\"\n    if not lst:\n        return None\n    return min(lst)\ndef sum_list(lst):\n    \"\"\"Calculate sum of all elements in a list.\"\"\"\n    return sum(lst)\ndef average(lst):\n    \"\"\"Calculate average of a list.\"\"\"",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "sum_list",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def sum_list(lst):\n    \"\"\"Calculate sum of all elements in a list.\"\"\"\n    return sum(lst)\ndef average(lst):\n    \"\"\"Calculate average of a list.\"\"\"\n    if not lst:\n        return 0\n    return sum(lst) / len(lst)\ndef capitalize_words(text):\n    \"\"\"Capitalize first letter of each word.\"\"\"",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "average",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def average(lst):\n    \"\"\"Calculate average of a list.\"\"\"\n    if not lst:\n        return 0\n    return sum(lst) / len(lst)\ndef capitalize_words(text):\n    \"\"\"Capitalize first letter of each word.\"\"\"\n    return ' '.join(word.capitalize() for word in text.split())\ndef is_palindrome(text):\n    \"\"\"Check if text is a palindrome.\"\"\"",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "capitalize_words",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def capitalize_words(text):\n    \"\"\"Capitalize first letter of each word.\"\"\"\n    return ' '.join(word.capitalize() for word in text.split())\ndef is_palindrome(text):\n    \"\"\"Check if text is a palindrome.\"\"\"\n    clean = ''.join(char.lower() for char in text if char.isalnum())\n    return clean == clean[::-1]\ndef sort_by_length(lst):\n    \"\"\"Sort list of strings by length.\"\"\"\n    return sorted(lst, key=len)",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_palindrome",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def is_palindrome(text):\n    \"\"\"Check if text is a palindrome.\"\"\"\n    clean = ''.join(char.lower() for char in text if char.isalnum())\n    return clean == clean[::-1]\ndef sort_by_length(lst):\n    \"\"\"Sort list of strings by length.\"\"\"\n    return sorted(lst, key=len)\ndef merge_dicts(dict1, dict2):\n    \"\"\"Merge two dictionaries.\"\"\"\n    result = dict1.copy()",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "sort_by_length",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def sort_by_length(lst):\n    \"\"\"Sort list of strings by length.\"\"\"\n    return sorted(lst, key=len)\ndef merge_dicts(dict1, dict2):\n    \"\"\"Merge two dictionaries.\"\"\"\n    result = dict1.copy()\n    result.update(dict2)\n    return result\ndef filter_even(lst):\n    \"\"\"Filter even numbers from a list.\"\"\"",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "merge_dicts",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def merge_dicts(dict1, dict2):\n    \"\"\"Merge two dictionaries.\"\"\"\n    result = dict1.copy()\n    result.update(dict2)\n    return result\ndef filter_even(lst):\n    \"\"\"Filter even numbers from a list.\"\"\"\n    return [num for num in lst if num % 2 == 0]\ndef filter_odd(lst):\n    \"\"\"Filter odd numbers from a list.\"\"\"",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "filter_even",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def filter_even(lst):\n    \"\"\"Filter even numbers from a list.\"\"\"\n    return [num for num in lst if num % 2 == 0]\ndef filter_odd(lst):\n    \"\"\"Filter odd numbers from a list.\"\"\"\n    return [num for num in lst if num % 2 != 0]\ndef power(base, exp):\n    \"\"\"Calculate base raised to power exp.\"\"\"\n    return base ** exp\ndef square(num):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "filter_odd",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def filter_odd(lst):\n    \"\"\"Filter odd numbers from a list.\"\"\"\n    return [num for num in lst if num % 2 != 0]\ndef power(base, exp):\n    \"\"\"Calculate base raised to power exp.\"\"\"\n    return base ** exp\ndef square(num):\n    \"\"\"Calculate square of a number.\"\"\"\n    return num ** 2\ndef cube(num):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "power",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def power(base, exp):\n    \"\"\"Calculate base raised to power exp.\"\"\"\n    return base ** exp\ndef square(num):\n    \"\"\"Calculate square of a number.\"\"\"\n    return num ** 2\ndef cube(num):\n    \"\"\"Calculate cube of a number.\"\"\"\n    return num ** 3\ndef celsius_to_fahrenheit(celsius):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def square(num):\n    \"\"\"Calculate square of a number.\"\"\"\n    return num ** 2\ndef cube(num):\n    \"\"\"Calculate cube of a number.\"\"\"\n    return num ** 3\ndef celsius_to_fahrenheit(celsius):\n    \"\"\"Convert temperature from Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9/5) + 32\ndef fahrenheit_to_celsius(fahrenheit):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "cube",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def cube(num):\n    \"\"\"Calculate cube of a number.\"\"\"\n    return num ** 3\ndef celsius_to_fahrenheit(celsius):\n    \"\"\"Convert temperature from Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9/5) + 32\ndef fahrenheit_to_celsius(fahrenheit):\n    \"\"\"Convert temperature from Fahrenheit to Celsius.\"\"\"\n    return (fahrenheit - 32) * 5/9\ndef miles_to_km(miles):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "celsius_to_fahrenheit",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def celsius_to_fahrenheit(celsius):\n    \"\"\"Convert temperature from Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9/5) + 32\ndef fahrenheit_to_celsius(fahrenheit):\n    \"\"\"Convert temperature from Fahrenheit to Celsius.\"\"\"\n    return (fahrenheit - 32) * 5/9\ndef miles_to_km(miles):\n    \"\"\"Convert miles to kilometers.\"\"\"\n    return miles * 1.60934\ndef km_to_miles(km):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "fahrenheit_to_celsius",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def fahrenheit_to_celsius(fahrenheit):\n    \"\"\"Convert temperature from Fahrenheit to Celsius.\"\"\"\n    return (fahrenheit - 32) * 5/9\ndef miles_to_km(miles):\n    \"\"\"Convert miles to kilometers.\"\"\"\n    return miles * 1.60934\ndef km_to_miles(km):\n    \"\"\"Convert kilometers to miles.\"\"\"\n    return km * 0.621371\ndef string_to_list(text, delimiter=' '):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "miles_to_km",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def miles_to_km(miles):\n    \"\"\"Convert miles to kilometers.\"\"\"\n    return miles * 1.60934\ndef km_to_miles(km):\n    \"\"\"Convert kilometers to miles.\"\"\"\n    return km * 0.621371\ndef string_to_list(text, delimiter=' '):\n    \"\"\"Convert string to list using delimiter.\"\"\"\n    return text.split(delimiter)\ndef list_to_string(lst, delimiter=' '):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "km_to_miles",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def km_to_miles(km):\n    \"\"\"Convert kilometers to miles.\"\"\"\n    return km * 0.621371\ndef string_to_list(text, delimiter=' '):\n    \"\"\"Convert string to list using delimiter.\"\"\"\n    return text.split(delimiter)\ndef list_to_string(lst, delimiter=' '):\n    \"\"\"Convert list to string using delimiter.\"\"\"\n    return delimiter.join(str(item) for item in lst)\ndef is_even(num):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "string_to_list",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def string_to_list(text, delimiter=' '):\n    \"\"\"Convert string to list using delimiter.\"\"\"\n    return text.split(delimiter)\ndef list_to_string(lst, delimiter=' '):\n    \"\"\"Convert list to string using delimiter.\"\"\"\n    return delimiter.join(str(item) for item in lst)\ndef is_even(num):\n    \"\"\"Check if number is even.\"\"\"\n    return num % 2 == 0\ndef is_odd(num):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "list_to_string",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def list_to_string(lst, delimiter=' '):\n    \"\"\"Convert list to string using delimiter.\"\"\"\n    return delimiter.join(str(item) for item in lst)\ndef is_even(num):\n    \"\"\"Check if number is even.\"\"\"\n    return num % 2 == 0\ndef is_odd(num):\n    \"\"\"Check if number is odd.\"\"\"\n    return num % 2 != 0\ndef get_file_extension(filename):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_even",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def is_even(num):\n    \"\"\"Check if number is even.\"\"\"\n    return num % 2 == 0\ndef is_odd(num):\n    \"\"\"Check if number is odd.\"\"\"\n    return num % 2 != 0\ndef get_file_extension(filename):\n    \"\"\"Get file extension from filename.\"\"\"\n    return filename.split('.')[-1] if '.' in filename else ''\ndef remove_file_extension(filename):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_odd",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def is_odd(num):\n    \"\"\"Check if number is odd.\"\"\"\n    return num % 2 != 0\ndef get_file_extension(filename):\n    \"\"\"Get file extension from filename.\"\"\"\n    return filename.split('.')[-1] if '.' in filename else ''\ndef remove_file_extension(filename):\n    \"\"\"Remove file extension from filename.\"\"\"\n    return filename.rsplit('.', 1)[0] if '.' in filename else filename\ndef repeat_string(text, count):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_extension",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def get_file_extension(filename):\n    \"\"\"Get file extension from filename.\"\"\"\n    return filename.split('.')[-1] if '.' in filename else ''\ndef remove_file_extension(filename):\n    \"\"\"Remove file extension from filename.\"\"\"\n    return filename.rsplit('.', 1)[0] if '.' in filename else filename\ndef repeat_string(text, count):\n    \"\"\"Repeat string count times.\"\"\"\n    return text * count\ndef flatten_list(nested_list):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "remove_file_extension",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def remove_file_extension(filename):\n    \"\"\"Remove file extension from filename.\"\"\"\n    return filename.rsplit('.', 1)[0] if '.' in filename else filename\ndef repeat_string(text, count):\n    \"\"\"Repeat string count times.\"\"\"\n    return text * count\ndef flatten_list(nested_list):\n    \"\"\"Flatten a nested list.\"\"\"\n    result = []\n    for item in nested_list:",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "repeat_string",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def repeat_string(text, count):\n    \"\"\"Repeat string count times.\"\"\"\n    return text * count\ndef flatten_list(nested_list):\n    \"\"\"Flatten a nested list.\"\"\"\n    result = []\n    for item in nested_list:\n        if isinstance(item, list):\n            result.extend(flatten_list(item))\n        else:",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "flatten_list",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def flatten_list(nested_list):\n    \"\"\"Flatten a nested list.\"\"\"\n    result = []\n    for item in nested_list:\n        if isinstance(item, list):\n            result.extend(flatten_list(item))\n        else:\n            result.append(item)\n    return result\ndef chunk_list(lst, chunk_size):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "chunk_list",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def chunk_list(lst, chunk_size):\n    \"\"\"Divide list into chunks of specified size.\"\"\"\n    return [lst[i:i + chunk_size] for i in range(0, len(lst), chunk_size)]\ndef rotate_list(lst, steps):\n    \"\"\"Rotate list by n steps.\"\"\"\n    if not lst:\n        return lst\n    steps = steps % len(lst)\n    return lst[-steps:] + lst[:-steps]\ndef contains_duplicate(lst):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "rotate_list",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def rotate_list(lst, steps):\n    \"\"\"Rotate list by n steps.\"\"\"\n    if not lst:\n        return lst\n    steps = steps % len(lst)\n    return lst[-steps:] + lst[:-steps]\ndef contains_duplicate(lst):\n    \"\"\"Check if list contains duplicates.\"\"\"\n    return len(lst) != len(set(lst))\ndef is_sorted(lst):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "contains_duplicate",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def contains_duplicate(lst):\n    \"\"\"Check if list contains duplicates.\"\"\"\n    return len(lst) != len(set(lst))\ndef is_sorted(lst):\n    \"\"\"Check if list is sorted in ascending order.\"\"\"\n    return all(lst[i] <= lst[i + 1] for i in range(len(lst) - 1))\ndef unique_count(lst):\n    \"\"\"Count unique elements in a list.\"\"\"\n    return len(set(lst))\ndef mode_value(lst):",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_sorted",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def is_sorted(lst):\n    \"\"\"Check if list is sorted in ascending order.\"\"\"\n    return all(lst[i] <= lst[i + 1] for i in range(len(lst) - 1))\ndef unique_count(lst):\n    \"\"\"Count unique elements in a list.\"\"\"\n    return len(set(lst))\ndef mode_value(lst):\n    \"\"\"Find most common element in a list.\"\"\"\n    if not lst:\n        return None",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "unique_count",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def unique_count(lst):\n    \"\"\"Count unique elements in a list.\"\"\"\n    return len(set(lst))\ndef mode_value(lst):\n    \"\"\"Find most common element in a list.\"\"\"\n    if not lst:\n        return None\n    return max(set(lst), key=lst.count)\nif __name__ == \"__main__\":\n    # Example usage",
+        "detail": "AI-Assisted_Coding.main",
+        "documentation": {}
+    },
+    {
+        "label": "mode_value",
+        "kind": 2,
+        "importPath": "AI-Assisted_Coding.main",
+        "description": "AI-Assisted_Coding.main",
+        "peekOfCode": "def mode_value(lst):\n    \"\"\"Find most common element in a list.\"\"\"\n    if not lst:\n        return None\n    return max(set(lst), key=lst.count)\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Functions loaded successfully!\")\n    print(f\"Fibonacci(10): {fibonacci(10)}\")\n    print(f\"Is 17 prime?: {is_prime(17)}\")",
+        "detail": "AI-Assisted_Coding.main",
         "documentation": {}
     },
     {
@@ -1885,6 +2473,555 @@
         "documentation": {}
     },
     {
+        "label": "x",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "x = data = np.linspace(-1.0, 1.0, 1000)\ny = 20.0*x -30.0 +np.random.randn(*x.shape) * 0.5\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=1, activation='linear'))\nmodel.compile(optimizer='sgd', loss='mse', metrics=['mse']) #Стохастический градиентный спуск ,среднеквадратическая ошибка\nweights = model.layers[0].get_weights()\nw_init = weights[0][0][0]\nb_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \nmodel.fit(x,y, batch_size=10, epochs=10, shuffle=True)",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "y = 20.0*x -30.0 +np.random.randn(*x.shape) * 0.5\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=1, activation='linear'))\nmodel.compile(optimizer='sgd', loss='mse', metrics=['mse']) #Стохастический градиентный спуск ,среднеквадратическая ошибка\nweights = model.layers[0].get_weights()\nw_init = weights[0][0][0]\nb_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \nmodel.fit(x,y, batch_size=10, epochs=10, shuffle=True)\nweights = model.layers[0].get_weights()",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "model = Sequential()\nmodel.add(Dense(1, input_dim=1, activation='linear'))\nmodel.compile(optimizer='sgd', loss='mse', metrics=['mse']) #Стохастический градиентный спуск ,среднеквадратическая ошибка\nweights = model.layers[0].get_weights()\nw_init = weights[0][0][0]\nb_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \nmodel.fit(x,y, batch_size=10, epochs=10, shuffle=True)\nweights = model.layers[0].get_weights()\nw_final = weights[0][0][0]",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "weights",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "weights = model.layers[0].get_weights()\nw_init = weights[0][0][0]\nb_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \nmodel.fit(x,y, batch_size=10, epochs=10, shuffle=True)\nweights = model.layers[0].get_weights()\nw_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "w_init",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "w_init = weights[0][0][0]\nb_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \nmodel.fit(x,y, batch_size=10, epochs=10, shuffle=True)\nweights = model.layers[0].get_weights()\nw_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)\nplt.plot(data, predict, 'r', data , y, 'k.')",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "b_init",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "b_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \nmodel.fit(x,y, batch_size=10, epochs=10, shuffle=True)\nweights = model.layers[0].get_weights()\nw_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)\nplt.plot(data, predict, 'r', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "weights",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "weights = model.layers[0].get_weights()\nw_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)\nplt.plot(data, predict, 'r', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "w_final",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "w_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)\nplt.plot(data, predict, 'r', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "b_final",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "b_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)\nplt.plot(data, predict, 'r', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.LinProg",
+        "description": "artificial_intelligence.11_keras.LinProg",
+        "peekOfCode": "predict = model.predict(data)\nplt.plot(data, predict, 'r', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.LinProg",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "x = data = np.linspace(-1.0, 1.0, 200)\ny = 4.0*x +4.0 +np.random.randn(*x.shape) * 0.5\n# simple model layer by layer\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=1, activation='linear')) # input_dim - quantity of inputs\n# choosing specific model for our training\nmodel.compile(optimizer='sgd', loss='mse', metrics=['mse']) # sgd is gradient decent model and mse is quadratic loss\nmodel.summary()\n# setting up weights for them usually we use zero\nweights = model.layers[0].get_weights()",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "y = 4.0*x +4.0 +np.random.randn(*x.shape) * 0.5\n# simple model layer by layer\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=1, activation='linear')) # input_dim - quantity of inputs\n# choosing specific model for our training\nmodel.compile(optimizer='sgd', loss='mse', metrics=['mse']) # sgd is gradient decent model and mse is quadratic loss\nmodel.summary()\n# setting up weights for them usually we use zero\nweights = model.layers[0].get_weights()\nw_init = weights[0][0][0]",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "model = Sequential()\nmodel.add(Dense(1, input_dim=1, activation='linear')) # input_dim - quantity of inputs\n# choosing specific model for our training\nmodel.compile(optimizer='sgd', loss='mse', metrics=['mse']) # sgd is gradient decent model and mse is quadratic loss\nmodel.summary()\n# setting up weights for them usually we use zero\nweights = model.layers[0].get_weights()\nw_init = weights[0][0][0]\nb_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) ",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "weights",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "weights = model.layers[0].get_weights()\nw_init = weights[0][0][0]\nb_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \n# actual training of our model\nmodel.fit(x,y, batch_size=1, epochs=30, shuffle=True)\n# outputs \nweights = model.layers[0].get_weights()\nw_final = weights[0][0][0]\nb_final = weights[1][0]",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "w_init",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "w_init = weights[0][0][0]\nb_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \n# actual training of our model\nmodel.fit(x,y, batch_size=1, epochs=30, shuffle=True)\n# outputs \nweights = model.layers[0].get_weights()\nw_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "b_init",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "b_init = weights[1][0]\nprint('Linear regression model is initialized with weights w: %.2f, b: %.2f' % (w_init, b_init)) \n# actual training of our model\nmodel.fit(x,y, batch_size=1, epochs=30, shuffle=True)\n# outputs \nweights = model.layers[0].get_weights()\nw_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "weights",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "weights = model.layers[0].get_weights()\nw_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)\nplt.plot(data, predict, 'b', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "w_final",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "w_final = weights[0][0][0]\nb_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)\nplt.plot(data, predict, 'b', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "b_final",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "b_final = weights[1][0]\nprint('Linear regression model is trained to have weight w: %.2f, b: %.2f' % (w_final, b_final))\npredict = model.predict(data)\nplt.plot(data, predict, 'b', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimer",
+        "description": "artificial_intelligence.11_keras.kerasPrimer",
+        "peekOfCode": "predict = model.predict(data)\nplt.plot(data, predict, 'b', data , y, 'k.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.kerasPrimer",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "x = data = np.linspace(-1.0, 1.0, 500)\nx1 = x\nx2 = x*x\nx3 = x*x*x # we are trying to convert our function to linear\nt = np.array([[j,k,l] for j,k,l in zip(x1,x2,x3)])\ny = x3 - x1 + np.random.randn(*x.shape) * 0.05\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=3, activation='linear')) # Чыгыш - 1, кириш -3 \noptimayzer1 = keras.optimizers.SGD(learning_rate=0.01)\nmodel.compile(optimizer=optimayzer1, loss='mse', metrics=['mse'])",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "x1",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "x1 = x\nx2 = x*x\nx3 = x*x*x # we are trying to convert our function to linear\nt = np.array([[j,k,l] for j,k,l in zip(x1,x2,x3)])\ny = x3 - x1 + np.random.randn(*x.shape) * 0.05\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=3, activation='linear')) # Чыгыш - 1, кириш -3 \noptimayzer1 = keras.optimizers.SGD(learning_rate=0.01)\nmodel.compile(optimizer=optimayzer1, loss='mse', metrics=['mse'])\nmodel.fit(t,y, batch_size=1, epochs=50, shuffle=True)",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "x2",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "x2 = x*x\nx3 = x*x*x # we are trying to convert our function to linear\nt = np.array([[j,k,l] for j,k,l in zip(x1,x2,x3)])\ny = x3 - x1 + np.random.randn(*x.shape) * 0.05\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=3, activation='linear')) # Чыгыш - 1, кириш -3 \noptimayzer1 = keras.optimizers.SGD(learning_rate=0.01)\nmodel.compile(optimizer=optimayzer1, loss='mse', metrics=['mse'])\nmodel.fit(t,y, batch_size=1, epochs=50, shuffle=True)\nweights = model.layers[0].get_weights() # Найденные веса графа",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "x3",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "x3 = x*x*x # we are trying to convert our function to linear\nt = np.array([[j,k,l] for j,k,l in zip(x1,x2,x3)])\ny = x3 - x1 + np.random.randn(*x.shape) * 0.05\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=3, activation='linear')) # Чыгыш - 1, кириш -3 \noptimayzer1 = keras.optimizers.SGD(learning_rate=0.01)\nmodel.compile(optimizer=optimayzer1, loss='mse', metrics=['mse'])\nmodel.fit(t,y, batch_size=1, epochs=50, shuffle=True)\nweights = model.layers[0].get_weights() # Найденные веса графа\npredict = model.predict(t)",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "t = np.array([[j,k,l] for j,k,l in zip(x1,x2,x3)])\ny = x3 - x1 + np.random.randn(*x.shape) * 0.05\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=3, activation='linear')) # Чыгыш - 1, кириш -3 \noptimayzer1 = keras.optimizers.SGD(learning_rate=0.01)\nmodel.compile(optimizer=optimayzer1, loss='mse', metrics=['mse'])\nmodel.fit(t,y, batch_size=1, epochs=50, shuffle=True)\nweights = model.layers[0].get_weights() # Найденные веса графа\npredict = model.predict(t)\nplt.plot(x, predict, 'b', x , y, 'r.')",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "y = x3 - x1 + np.random.randn(*x.shape) * 0.05\nmodel = Sequential()\nmodel.add(Dense(1, input_dim=3, activation='linear')) # Чыгыш - 1, кириш -3 \noptimayzer1 = keras.optimizers.SGD(learning_rate=0.01)\nmodel.compile(optimizer=optimayzer1, loss='mse', metrics=['mse'])\nmodel.fit(t,y, batch_size=1, epochs=50, shuffle=True)\nweights = model.layers[0].get_weights() # Найденные веса графа\npredict = model.predict(t)\nplt.plot(x, predict, 'b', x , y, 'r.')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "model = Sequential()\nmodel.add(Dense(1, input_dim=3, activation='linear')) # Чыгыш - 1, кириш -3 \noptimayzer1 = keras.optimizers.SGD(learning_rate=0.01)\nmodel.compile(optimizer=optimayzer1, loss='mse', metrics=['mse'])\nmodel.fit(t,y, batch_size=1, epochs=50, shuffle=True)\nweights = model.layers[0].get_weights() # Найденные веса графа\npredict = model.predict(t)\nplt.plot(x, predict, 'b', x , y, 'r.')\nplt.show()\n# =============================================================================",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "optimayzer1",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "optimayzer1 = keras.optimizers.SGD(learning_rate=0.01)\nmodel.compile(optimizer=optimayzer1, loss='mse', metrics=['mse'])\nmodel.fit(t,y, batch_size=1, epochs=50, shuffle=True)\nweights = model.layers[0].get_weights() # Найденные веса графа\npredict = model.predict(t)\nplt.plot(x, predict, 'b', x , y, 'r.')\nplt.show()\n# =============================================================================\n# #Тестируем программу\n# for k in range(10):",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "weights",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "weights = model.layers[0].get_weights() # Найденные веса графа\npredict = model.predict(t)\nplt.plot(x, predict, 'b', x , y, 'r.')\nplt.show()\n# =============================================================================\n# #Тестируем программу\n# for k in range(10):\n#     i=np.random.randint(0,len(x))\n#     print(i,t[i])\n#     print(weights[0][0]*t[i][0]+weights[0][1]*t[i][1]+weights[0][2]*t[i][2]+weights[1][0]-predict[i])",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "description": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "peekOfCode": "predict = model.predict(t)\nplt.plot(x, predict, 'b', x , y, 'r.')\nplt.show()\n# =============================================================================\n# #Тестируем программу\n# for k in range(10):\n#     i=np.random.randint(0,len(x))\n#     print(i,t[i])\n#     print(weights[0][0]*t[i][0]+weights[0][1]*t[i][1]+weights[0][2]*t[i][2]+weights[1][0]-predict[i])\n# =============================================================================",
+        "detail": "artificial_intelligence.11_keras.kerasPrimerNelin",
+        "documentation": {}
+    },
+    {
+        "label": "imagen",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "imagen = Image.fromarray(train_images[5])\nnumbertrain = train_images.shape\n# Берилиштерди даярдоо\ntrain_images = train_images.reshape((60000, 28 * 28))\ntrain_images = train_images.astype('float32') / 255\ntest_images = test_images.reshape((10000, 28 * 28))\ntest_images = test_images.astype('float32') / 255\n# Вывод n-цифры на экран\ndigit = train_images[10].reshape((28,28))\nimport matplotlib.pyplot as plt",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "numbertrain",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "numbertrain = train_images.shape\n# Берилиштерди даярдоо\ntrain_images = train_images.reshape((60000, 28 * 28))\ntrain_images = train_images.astype('float32') / 255\ntest_images = test_images.reshape((10000, 28 * 28))\ntest_images = test_images.astype('float32') / 255\n# Вывод n-цифры на экран\ndigit = train_images[10].reshape((28,28))\nimport matplotlib.pyplot as plt\nplt.imshow(digit, cmap=plt.cm.binary)",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "train_images",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "train_images = train_images.reshape((60000, 28 * 28))\ntrain_images = train_images.astype('float32') / 255\ntest_images = test_images.reshape((10000, 28 * 28))\ntest_images = test_images.astype('float32') / 255\n# Вывод n-цифры на экран\ndigit = train_images[10].reshape((28,28))\nimport matplotlib.pyplot as plt\nplt.imshow(digit, cmap=plt.cm.binary)\nplt.show()\n# Модел тузүү",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "train_images",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "train_images = train_images.astype('float32') / 255\ntest_images = test_images.reshape((10000, 28 * 28))\ntest_images = test_images.astype('float32') / 255\n# Вывод n-цифры на экран\ndigit = train_images[10].reshape((28,28))\nimport matplotlib.pyplot as plt\nplt.imshow(digit, cmap=plt.cm.binary)\nplt.show()\n# Модел тузүү\nfrom keras import models",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "test_images",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "test_images = test_images.reshape((10000, 28 * 28))\ntest_images = test_images.astype('float32') / 255\n# Вывод n-цифры на экран\ndigit = train_images[10].reshape((28,28))\nimport matplotlib.pyplot as plt\nplt.imshow(digit, cmap=plt.cm.binary)\nplt.show()\n# Модел тузүү\nfrom keras import models\nfrom keras import layers",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "test_images",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "test_images = test_images.astype('float32') / 255\n# Вывод n-цифры на экран\ndigit = train_images[10].reshape((28,28))\nimport matplotlib.pyplot as plt\nplt.imshow(digit, cmap=plt.cm.binary)\nplt.show()\n# Модел тузүү\nfrom keras import models\nfrom keras import layers\nnetwork = models.Sequential()",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "digit",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "digit = train_images[10].reshape((28,28))\nimport matplotlib.pyplot as plt\nplt.imshow(digit, cmap=plt.cm.binary)\nplt.show()\n# Модел тузүү\nfrom keras import models\nfrom keras import layers\nnetwork = models.Sequential()\nnetwork.add(layers.Dense(512, activation='relu', input_shape=(28 * 28,)))\nnetwork.add(layers.Dense(512, activation='relu'))",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "network",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "network = models.Sequential()\nnetwork.add(layers.Dense(512, activation='relu', input_shape=(28 * 28,)))\nnetwork.add(layers.Dense(512, activation='relu'))\nnetwork.add(layers.Dropout(0.3))\nnetwork.add(layers.Dense(32, activation='relu'))\nnetwork.add(layers.Dense(10, activation='softmax'))\n# Комптляция жасоо\nnetwork.compile(optimizer='rmsprop', loss='categorical_crossentropy', metrics=['accuracy'])\n# Категрияны түзүү\nfrom keras.utils import to_categorical",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "train_labels",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "train_labels = to_categorical(train_labels)\ntest_labels = to_categorical(test_labels)\n# тармакты үйрөтүү\nhistory = network.fit(train_images, train_labels, epochs=5, batch_size=128) \n# тармакты тест берилишинде текшерүү\ntest_loss, test_acc = network.evaluate(test_images, test_labels)\n# Үйрөтүү процесси\nplt.figure(100)\nplt.plot(history.history['loss'],label = 'loss')\nplt.plot(history.history['accuracy'],label = 'accuracy')",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "test_labels",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "test_labels = to_categorical(test_labels)\n# тармакты үйрөтүү\nhistory = network.fit(train_images, train_labels, epochs=5, batch_size=128) \n# тармакты тест берилишинде текшерүү\ntest_loss, test_acc = network.evaluate(test_images, test_labels)\n# Үйрөтүү процесси\nplt.figure(100)\nplt.plot(history.history['loss'],label = 'loss')\nplt.plot(history.history['accuracy'],label = 'accuracy')\nplt.xlabel('Epochs')",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "history = network.fit(train_images, train_labels, epochs=5, batch_size=128) \n# тармакты тест берилишинде текшерүү\ntest_loss, test_acc = network.evaluate(test_images, test_labels)\n# Үйрөтүү процесси\nplt.figure(100)\nplt.plot(history.history['loss'],label = 'loss')\nplt.plot(history.history['accuracy'],label = 'accuracy')\nplt.xlabel('Epochs')\nplt.ylabel('loss and accuracy')\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "plt.plot(history.history['loss'],label",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "plt.plot(history.history['loss'],label = 'loss')\nplt.plot(history.history['accuracy'],label = 'accuracy')\nplt.xlabel('Epochs')\nplt.ylabel('loss and accuracy')\nplt.show()\n'''\n# Проверим:\ndigit = test_images[11].reshape((28,28))\nplt.imshow(digit, cmap=plt.cm.binary)\nplt.show()",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "plt.plot(history.history['accuracy'],label",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "plt.plot(history.history['accuracy'],label = 'accuracy')\nplt.xlabel('Epochs')\nplt.ylabel('loss and accuracy')\nplt.show()\n'''\n# Проверим:\ndigit = test_images[11].reshape((28,28))\nplt.imshow(digit, cmap=plt.cm.binary)\nplt.show()\nimport numpy as np",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "digit",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "digit = test_images[11].reshape((28,28))\nplt.imshow(digit, cmap=plt.cm.binary)\nplt.show()\nimport numpy as np\nres = network(digit.reshape((1,28*28)))\nprint(res)\nprint(np.argmax(res))\n'''",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "artificial_intelligence.11_keras.number_recognition",
+        "description": "artificial_intelligence.11_keras.number_recognition",
+        "peekOfCode": "res = network(digit.reshape((1,28*28)))\nprint(res)\nprint(np.argmax(res))\n'''",
+        "detail": "artificial_intelligence.11_keras.number_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "processed_image",
+        "kind": 2,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "def processed_image(img):\n    if img.mode != 'RGB': img = img.convert(\"RGB\")        \n    image = img.resize( (256, 256), Image.BILINEAR)\n    image = np.array(image, dtype=float)\n    size = image.shape\n    lab = rgb2lab(1.0/255*image)\n    X, Y = lab[:,:,0], lab[:,:,1:]\n    Y /= 128    # нормируем выходные значение в диапазон от -1 до 1\n    X = X.reshape(1, size[0], size[1], 1)\n    Y = Y.reshape(1, size[0], size[1], 2)",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "img = Image.open('facegirl2Color.jpg')\nplt.figure(0)\nplt.imshow(img)\nplt.show()\nX, Y, size = processed_image(img)\nmodel = Sequential()\nmodel.add(InputLayer(input_shape=(None, None, 1)))\nmodel.add(Conv2D(64, (3, 3), activation='relu', padding='same'))\nmodel.add(Conv2D(64, (3, 3), activation='relu', padding='same', strides=2))\nmodel.add(Conv2D(128, (3, 3), activation='relu', padding='same'))",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "model = Sequential()\nmodel.add(InputLayer(input_shape=(None, None, 1)))\nmodel.add(Conv2D(64, (3, 3), activation='relu', padding='same'))\nmodel.add(Conv2D(64, (3, 3), activation='relu', padding='same', strides=2))\nmodel.add(Conv2D(128, (3, 3), activation='relu', padding='same'))\nmodel.add(Conv2D(128, (3, 3), activation='relu', padding='same', strides=2))\nmodel.add(Conv2D(256, (3, 3), activation='relu', padding='same'))\nmodel.add(Conv2D(256, (3, 3), activation='relu', padding='same', strides=2))\nmodel.add(Conv2D(512, (3, 3), activation='relu', padding='same'))\nmodel.add(Conv2D(256, (3, 3), activation='relu', padding='same'))",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "imgColor",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "imgColor = Image.open('facegirl2Color.jpg')  \nimgGrey = imgColor.convert(\"L\")\nimgGrey.save('facegirl2Grey.jpg')\n'''\nimgColor = Image.open('facegirl2Grey.jpg') # facegirl2Color.jpg WB_Big2\nimgGrey = imgColor # .convert(\"1\")\nsizeimgGrey = np.array(imgGrey, dtype=float).shape\nX, Y, size = processed_image(imgGrey)\noutput = model.predict(X)\noutput *= 128",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "imgGrey",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "imgGrey = imgColor.convert(\"L\")\nimgGrey.save('facegirl2Grey.jpg')\n'''\nimgColor = Image.open('facegirl2Grey.jpg') # facegirl2Color.jpg WB_Big2\nimgGrey = imgColor # .convert(\"1\")\nsizeimgGrey = np.array(imgGrey, dtype=float).shape\nX, Y, size = processed_image(imgGrey)\noutput = model.predict(X)\noutput *= 128\nmin_vals, max_vals = -128, 127",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "imgColor",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "imgColor = Image.open('facegirl2Grey.jpg') # facegirl2Color.jpg WB_Big2\nimgGrey = imgColor # .convert(\"1\")\nsizeimgGrey = np.array(imgGrey, dtype=float).shape\nX, Y, size = processed_image(imgGrey)\noutput = model.predict(X)\noutput *= 128\nmin_vals, max_vals = -128, 127\nab = np.clip(output[0], min_vals, max_vals)\ncur = np.zeros((size[0], size[1], 3))\ncur[:,:,0] = np.clip(X[0][:,:,0], 0, 255)",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "imgGrey",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "imgGrey = imgColor # .convert(\"1\")\nsizeimgGrey = np.array(imgGrey, dtype=float).shape\nX, Y, size = processed_image(imgGrey)\noutput = model.predict(X)\noutput *= 128\nmin_vals, max_vals = -128, 127\nab = np.clip(output[0], min_vals, max_vals)\ncur = np.zeros((size[0], size[1], 3))\ncur[:,:,0] = np.clip(X[0][:,:,0], 0, 255)\ncur[:,:,1:] = ab",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "sizeimgGrey",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "sizeimgGrey = np.array(imgGrey, dtype=float).shape\nX, Y, size = processed_image(imgGrey)\noutput = model.predict(X)\noutput *= 128\nmin_vals, max_vals = -128, 127\nab = np.clip(output[0], min_vals, max_vals)\ncur = np.zeros((size[0], size[1], 3))\ncur[:,:,0] = np.clip(X[0][:,:,0], 0, 255)\ncur[:,:,1:] = ab\nlab2rgbArray = lab2rgb(cur) # lab2rgb(cur).shape = (256, 256, 3)",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "output = model.predict(X)\noutput *= 128\nmin_vals, max_vals = -128, 127\nab = np.clip(output[0], min_vals, max_vals)\ncur = np.zeros((size[0], size[1], 3))\ncur[:,:,0] = np.clip(X[0][:,:,0], 0, 255)\ncur[:,:,1:] = ab\nlab2rgbArray = lab2rgb(cur) # lab2rgb(cur).shape = (256, 256, 3)\nimgC = Image.fromarray(np.uint8((lab2rgbArray)*255)) \nimgColorAI = imgC.resize((sizeimgGrey[1],sizeimgGrey[0]), Image.BILINEAR) # (256, 256, 3) дан эскисине өтөбүз",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "ab",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "ab = np.clip(output[0], min_vals, max_vals)\ncur = np.zeros((size[0], size[1], 3))\ncur[:,:,0] = np.clip(X[0][:,:,0], 0, 255)\ncur[:,:,1:] = ab\nlab2rgbArray = lab2rgb(cur) # lab2rgb(cur).shape = (256, 256, 3)\nimgC = Image.fromarray(np.uint8((lab2rgbArray)*255)) \nimgColorAI = imgC.resize((sizeimgGrey[1],sizeimgGrey[0]), Image.BILINEAR) # (256, 256, 3) дан эскисине өтөбүз\n# =============================================================================\n#Image.open('ColorPole.jpg').convert(\"L\").save(\"ColorPoleGrey.jpg\")\nimgColorAI.save(\"WB_Big\"+\"AI.jpg\")",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "cur",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "cur = np.zeros((size[0], size[1], 3))\ncur[:,:,0] = np.clip(X[0][:,:,0], 0, 255)\ncur[:,:,1:] = ab\nlab2rgbArray = lab2rgb(cur) # lab2rgb(cur).shape = (256, 256, 3)\nimgC = Image.fromarray(np.uint8((lab2rgbArray)*255)) \nimgColorAI = imgC.resize((sizeimgGrey[1],sizeimgGrey[0]), Image.BILINEAR) # (256, 256, 3) дан эскисине өтөбүз\n# =============================================================================\n#Image.open('ColorPole.jpg').convert(\"L\").save(\"ColorPoleGrey.jpg\")\nimgColorAI.save(\"WB_Big\"+\"AI.jpg\")\n# =============================================================================",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "cur[:,:,0]",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "cur[:,:,0] = np.clip(X[0][:,:,0], 0, 255)\ncur[:,:,1:] = ab\nlab2rgbArray = lab2rgb(cur) # lab2rgb(cur).shape = (256, 256, 3)\nimgC = Image.fromarray(np.uint8((lab2rgbArray)*255)) \nimgColorAI = imgC.resize((sizeimgGrey[1],sizeimgGrey[0]), Image.BILINEAR) # (256, 256, 3) дан эскисине өтөбүз\n# =============================================================================\n#Image.open('ColorPole.jpg').convert(\"L\").save(\"ColorPoleGrey.jpg\")\nimgColorAI.save(\"WB_Big\"+\"AI.jpg\")\n# =============================================================================\nplt.figure(2)",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "cur[:,:,1:]",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "cur[:,:,1:] = ab\nlab2rgbArray = lab2rgb(cur) # lab2rgb(cur).shape = (256, 256, 3)\nimgC = Image.fromarray(np.uint8((lab2rgbArray)*255)) \nimgColorAI = imgC.resize((sizeimgGrey[1],sizeimgGrey[0]), Image.BILINEAR) # (256, 256, 3) дан эскисине өтөбүз\n# =============================================================================\n#Image.open('ColorPole.jpg').convert(\"L\").save(\"ColorPoleGrey.jpg\")\nimgColorAI.save(\"WB_Big\"+\"AI.jpg\")\n# =============================================================================\nplt.figure(2)\nplt.subplot(1, 2, 1)",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "lab2rgbArray",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "lab2rgbArray = lab2rgb(cur) # lab2rgb(cur).shape = (256, 256, 3)\nimgC = Image.fromarray(np.uint8((lab2rgbArray)*255)) \nimgColorAI = imgC.resize((sizeimgGrey[1],sizeimgGrey[0]), Image.BILINEAR) # (256, 256, 3) дан эскисине өтөбүз\n# =============================================================================\n#Image.open('ColorPole.jpg').convert(\"L\").save(\"ColorPoleGrey.jpg\")\nimgColorAI.save(\"WB_Big\"+\"AI.jpg\")\n# =============================================================================\nplt.figure(2)\nplt.subplot(1, 2, 1)\nplt.imshow(imgGrey) ",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "imgC",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "imgC = Image.fromarray(np.uint8((lab2rgbArray)*255)) \nimgColorAI = imgC.resize((sizeimgGrey[1],sizeimgGrey[0]), Image.BILINEAR) # (256, 256, 3) дан эскисине өтөбүз\n# =============================================================================\n#Image.open('ColorPole.jpg').convert(\"L\").save(\"ColorPoleGrey.jpg\")\nimgColorAI.save(\"WB_Big\"+\"AI.jpg\")\n# =============================================================================\nplt.figure(2)\nplt.subplot(1, 2, 1)\nplt.imshow(imgGrey) \nplt.subplot(1, 2, 2)",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
+        "label": "imgColorAI",
+        "kind": 5,
+        "importPath": "artificial_intelligence.14_colorization.main",
+        "description": "artificial_intelligence.14_colorization.main",
+        "peekOfCode": "imgColorAI = imgC.resize((sizeimgGrey[1],sizeimgGrey[0]), Image.BILINEAR) # (256, 256, 3) дан эскисине өтөбүз\n# =============================================================================\n#Image.open('ColorPole.jpg').convert(\"L\").save(\"ColorPoleGrey.jpg\")\nimgColorAI.save(\"WB_Big\"+\"AI.jpg\")\n# =============================================================================\nplt.figure(2)\nplt.subplot(1, 2, 1)\nplt.imshow(imgGrey) \nplt.subplot(1, 2, 2)\nplt.imshow(imgColorAI)",
+        "detail": "artificial_intelligence.14_colorization.main",
+        "documentation": {}
+    },
+    {
         "label": "InMemoryAnswersRepository",
         "kind": 6,
         "importPath": "artificial_intelligence.1_chatbot_agent.adapters.infrastructure.answer_repository",
@@ -2422,6 +3559,123 @@
         "description": "data-minining..venv.bin.activate_this",
         "peekOfCode": "sys.prefix = base",
         "detail": "data-minining..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"jmeter\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"jmeter\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"jmeter\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"jmeter\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"jmeter\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.13/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "jmeter..venv.bin.activate_this",
+        "description": "jmeter..venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "jmeter..venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "elapsed",
+        "kind": 5,
+        "importPath": "jmeter.main",
+        "description": "jmeter.main",
+        "peekOfCode": "elapsed = {}\ntimestamps = {}\nstarttimes = {}\nerrors = {}\n# Parse the CSV files\nfor file in sys.argv[1:]:\n  threads = int(file.split('-')[0])\n  for row in csv.DictReader(open(file)):\n    if (not row['label'] in elapsed):\n      elapsed[row['label']] = {}",
+        "detail": "jmeter.main",
+        "documentation": {}
+    },
+    {
+        "label": "timestamps",
+        "kind": 5,
+        "importPath": "jmeter.main",
+        "description": "jmeter.main",
+        "peekOfCode": "timestamps = {}\nstarttimes = {}\nerrors = {}\n# Parse the CSV files\nfor file in sys.argv[1:]:\n  threads = int(file.split('-')[0])\n  for row in csv.DictReader(open(file)):\n    if (not row['label'] in elapsed):\n      elapsed[row['label']] = {}\n      timestamps[row['label']] = {}",
+        "detail": "jmeter.main",
+        "documentation": {}
+    },
+    {
+        "label": "starttimes",
+        "kind": 5,
+        "importPath": "jmeter.main",
+        "description": "jmeter.main",
+        "peekOfCode": "starttimes = {}\nerrors = {}\n# Parse the CSV files\nfor file in sys.argv[1:]:\n  threads = int(file.split('-')[0])\n  for row in csv.DictReader(open(file)):\n    if (not row['label'] in elapsed):\n      elapsed[row['label']] = {}\n      timestamps[row['label']] = {}\n      starttimes[row['label']] = {}",
+        "detail": "jmeter.main",
+        "documentation": {}
+    },
+    {
+        "label": "errors",
+        "kind": 5,
+        "importPath": "jmeter.main",
+        "description": "jmeter.main",
+        "peekOfCode": "errors = {}\n# Parse the CSV files\nfor file in sys.argv[1:]:\n  threads = int(file.split('-')[0])\n  for row in csv.DictReader(open(file)):\n    if (not row['label'] in elapsed):\n      elapsed[row['label']] = {}\n      timestamps[row['label']] = {}\n      starttimes[row['label']] = {}\n      errors[row['label']] = {}",
+        "detail": "jmeter.main",
         "documentation": {}
     },
     {

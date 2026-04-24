@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "kagglehub>=1.0.0",
     "matplotlib>=3.10.8",
+    "mlxtend>=0.24.0",
     "numpy>=2.4.2",
     "pandas>=3.0.0",
     "python-docs>=0.1.0",

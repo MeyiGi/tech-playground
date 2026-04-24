@@ -16,4 +16,7 @@ dependencies = [
     "seaborn>=0.13.2",
     "keras>=3.13.2",
     "tensorflow>=2.21.0",
+    "openai>=2.30.0",
+    "opencv-python>=4.13.0.92",
+    "scikit-image>=0.26.0",
 ]

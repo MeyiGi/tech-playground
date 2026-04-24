@@ -57,3 +57,8 @@ backup/
 htmlcov/
 .pytest_cache/
 **/*.csv
+
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
