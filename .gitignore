@@ -7,3 +7,5 @@ data-minining/data/customers-100000.csv
 **/*.svg
 **/*.webpz
 **/*.csv
+**/*.keras
+**/*.h5
