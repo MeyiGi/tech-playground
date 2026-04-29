@@ -9,3 +9,7 @@ data-minining/data/customers-100000.csv
 **/*.csv
 **/*.keras
 **/*.h5
+**/*.mp4
+**/*.mov
+**/*.avi
+**/*.mkv
