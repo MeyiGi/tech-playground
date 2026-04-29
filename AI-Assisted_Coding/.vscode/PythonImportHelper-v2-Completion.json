@@ -1,0 +1,353 @@
+[
+    {
+        "label": "fibonacci",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def fibonacci(n):\n    \"\"\"Generate fibonacci sequence up to n terms.\"\"\"\n    if n <= 0:\n        return []\n    elif n == 1:\n        return [0]\n    fib_list = [0, 1]\n    for i in range(2, n):\n        fib_list.append(fib_list[i-1] + fib_list[i-2])\n    return fib_list",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def is_prime(num):\n    \"\"\"Check if a number is prime.\"\"\"\n    if num < 2:\n        return False\n    for i in range(2, int(num ** 0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\ndef reverse_string(s):\n    \"\"\"Reverse a string.\"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_string",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def reverse_string(s):\n    \"\"\"Reverse a string.\"\"\"\n    return s[::-1]\ndef count_vowels(text):\n    \"\"\"Count vowels in a text.\"\"\"\n    vowels = 'aeiouAEIOU'\n    return sum(1 for char in text if char in vowels)\ndef factorial(n):\n    \"\"\"Calculate factorial of n.\"\"\"\n    if n < 0:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "count_vowels",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def count_vowels(text):\n    \"\"\"Count vowels in a text.\"\"\"\n    vowels = 'aeiouAEIOU'\n    return sum(1 for char in text if char in vowels)\ndef factorial(n):\n    \"\"\"Calculate factorial of n.\"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial not defined for negative numbers\")\n    if n == 0 or n == 1:\n        return 1",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "factorial",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def factorial(n):\n    \"\"\"Calculate factorial of n.\"\"\"\n    if n < 0:\n        raise ValueError(\"Factorial not defined for negative numbers\")\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n - 1)\ndef list_intersection(list1, list2):\n    \"\"\"Find common elements between two lists.\"\"\"\n    return list(set(list1) & set(list2))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "list_intersection",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def list_intersection(list1, list2):\n    \"\"\"Find common elements between two lists.\"\"\"\n    return list(set(list1) & set(list2))\ndef list_union(list1, list2):\n    \"\"\"Find union of two lists.\"\"\"\n    return list(set(list1) | set(list2))\ndef remove_duplicates(lst):\n    \"\"\"Remove duplicate elements while preserving order.\"\"\"\n    seen = set()\n    result = []",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "list_union",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def list_union(list1, list2):\n    \"\"\"Find union of two lists.\"\"\"\n    return list(set(list1) | set(list2))\ndef remove_duplicates(lst):\n    \"\"\"Remove duplicate elements while preserving order.\"\"\"\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "remove_duplicates",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def remove_duplicates(lst):\n    \"\"\"Remove duplicate elements while preserving order.\"\"\"\n    seen = set()\n    result = []\n    for item in lst:\n        if item not in seen:\n            seen.add(item)\n            result.append(item)\n    return result\ndef find_max(lst):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "find_max",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def find_max(lst):\n    \"\"\"Find maximum value in a list.\"\"\"\n    if not lst:\n        return None\n    return max(lst)\ndef find_min(lst):\n    \"\"\"Find minimum value in a list.\"\"\"\n    if not lst:\n        return None\n    return min(lst)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "find_min",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def find_min(lst):\n    \"\"\"Find minimum value in a list.\"\"\"\n    if not lst:\n        return None\n    return min(lst)\ndef sum_list(lst):\n    \"\"\"Calculate sum of all elements in a list.\"\"\"\n    return sum(lst)\ndef average(lst):\n    \"\"\"Calculate average of a list.\"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "sum_list",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def sum_list(lst):\n    \"\"\"Calculate sum of all elements in a list.\"\"\"\n    return sum(lst)\ndef average(lst):\n    \"\"\"Calculate average of a list.\"\"\"\n    if not lst:\n        return 0\n    return sum(lst) / len(lst)\ndef capitalize_words(text):\n    \"\"\"Capitalize first letter of each word.\"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "average",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def average(lst):\n    \"\"\"Calculate average of a list.\"\"\"\n    if not lst:\n        return 0\n    return sum(lst) / len(lst)\ndef capitalize_words(text):\n    \"\"\"Capitalize first letter of each word.\"\"\"\n    return ' '.join(word.capitalize() for word in text.split())\ndef is_palindrome(text):\n    \"\"\"Check if text is a palindrome.\"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "capitalize_words",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def capitalize_words(text):\n    \"\"\"Capitalize first letter of each word.\"\"\"\n    return ' '.join(word.capitalize() for word in text.split())\ndef is_palindrome(text):\n    \"\"\"Check if text is a palindrome.\"\"\"\n    clean = ''.join(char.lower() for char in text if char.isalnum())\n    return clean == clean[::-1]\ndef sort_by_length(lst):\n    \"\"\"Sort list of strings by length.\"\"\"\n    return sorted(lst, key=len)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "is_palindrome",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def is_palindrome(text):\n    \"\"\"Check if text is a palindrome.\"\"\"\n    clean = ''.join(char.lower() for char in text if char.isalnum())\n    return clean == clean[::-1]\ndef sort_by_length(lst):\n    \"\"\"Sort list of strings by length.\"\"\"\n    return sorted(lst, key=len)\ndef merge_dicts(dict1, dict2):\n    \"\"\"Merge two dictionaries.\"\"\"\n    result = dict1.copy()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "sort_by_length",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def sort_by_length(lst):\n    \"\"\"Sort list of strings by length.\"\"\"\n    return sorted(lst, key=len)\ndef merge_dicts(dict1, dict2):\n    \"\"\"Merge two dictionaries.\"\"\"\n    result = dict1.copy()\n    result.update(dict2)\n    return result\ndef filter_even(lst):\n    \"\"\"Filter even numbers from a list.\"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "merge_dicts",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def merge_dicts(dict1, dict2):\n    \"\"\"Merge two dictionaries.\"\"\"\n    result = dict1.copy()\n    result.update(dict2)\n    return result\ndef filter_even(lst):\n    \"\"\"Filter even numbers from a list.\"\"\"\n    return [num for num in lst if num % 2 == 0]\ndef filter_odd(lst):\n    \"\"\"Filter odd numbers from a list.\"\"\"",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "filter_even",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def filter_even(lst):\n    \"\"\"Filter even numbers from a list.\"\"\"\n    return [num for num in lst if num % 2 == 0]\ndef filter_odd(lst):\n    \"\"\"Filter odd numbers from a list.\"\"\"\n    return [num for num in lst if num % 2 != 0]\ndef power(base, exp):\n    \"\"\"Calculate base raised to power exp.\"\"\"\n    return base ** exp\ndef square(num):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "filter_odd",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def filter_odd(lst):\n    \"\"\"Filter odd numbers from a list.\"\"\"\n    return [num for num in lst if num % 2 != 0]\ndef power(base, exp):\n    \"\"\"Calculate base raised to power exp.\"\"\"\n    return base ** exp\ndef square(num):\n    \"\"\"Calculate square of a number.\"\"\"\n    return num ** 2\ndef cube(num):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "power",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def power(base, exp):\n    \"\"\"Calculate base raised to power exp.\"\"\"\n    return base ** exp\ndef square(num):\n    \"\"\"Calculate square of a number.\"\"\"\n    return num ** 2\ndef cube(num):\n    \"\"\"Calculate cube of a number.\"\"\"\n    return num ** 3\ndef celsius_to_fahrenheit(celsius):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def square(num):\n    \"\"\"Calculate square of a number.\"\"\"\n    return num ** 2\ndef cube(num):\n    \"\"\"Calculate cube of a number.\"\"\"\n    return num ** 3\ndef celsius_to_fahrenheit(celsius):\n    \"\"\"Convert temperature from Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9/5) + 32\ndef fahrenheit_to_celsius(fahrenheit):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "cube",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def cube(num):\n    \"\"\"Calculate cube of a number.\"\"\"\n    return num ** 3\ndef celsius_to_fahrenheit(celsius):\n    \"\"\"Convert temperature from Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9/5) + 32\ndef fahrenheit_to_celsius(fahrenheit):\n    \"\"\"Convert temperature from Fahrenheit to Celsius.\"\"\"\n    return (fahrenheit - 32) * 5/9\ndef miles_to_km(miles):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "celsius_to_fahrenheit",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def celsius_to_fahrenheit(celsius):\n    \"\"\"Convert temperature from Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9/5) + 32\ndef fahrenheit_to_celsius(fahrenheit):\n    \"\"\"Convert temperature from Fahrenheit to Celsius.\"\"\"\n    return (fahrenheit - 32) * 5/9\ndef miles_to_km(miles):\n    \"\"\"Convert miles to kilometers.\"\"\"\n    return miles * 1.60934\ndef km_to_miles(km):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "fahrenheit_to_celsius",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def fahrenheit_to_celsius(fahrenheit):\n    \"\"\"Convert temperature from Fahrenheit to Celsius.\"\"\"\n    return (fahrenheit - 32) * 5/9\ndef miles_to_km(miles):\n    \"\"\"Convert miles to kilometers.\"\"\"\n    return miles * 1.60934\ndef km_to_miles(km):\n    \"\"\"Convert kilometers to miles.\"\"\"\n    return km * 0.621371\ndef string_to_list(text, delimiter=' '):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "miles_to_km",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def miles_to_km(miles):\n    \"\"\"Convert miles to kilometers.\"\"\"\n    return miles * 1.60934\ndef km_to_miles(km):\n    \"\"\"Convert kilometers to miles.\"\"\"\n    return km * 0.621371\ndef string_to_list(text, delimiter=' '):\n    \"\"\"Convert string to list using delimiter.\"\"\"\n    return text.split(delimiter)\ndef list_to_string(lst, delimiter=' '):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "km_to_miles",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def km_to_miles(km):\n    \"\"\"Convert kilometers to miles.\"\"\"\n    return km * 0.621371\ndef string_to_list(text, delimiter=' '):\n    \"\"\"Convert string to list using delimiter.\"\"\"\n    return text.split(delimiter)\ndef list_to_string(lst, delimiter=' '):\n    \"\"\"Convert list to string using delimiter.\"\"\"\n    return delimiter.join(str(item) for item in lst)\ndef is_even(num):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "string_to_list",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def string_to_list(text, delimiter=' '):\n    \"\"\"Convert string to list using delimiter.\"\"\"\n    return text.split(delimiter)\ndef list_to_string(lst, delimiter=' '):\n    \"\"\"Convert list to string using delimiter.\"\"\"\n    return delimiter.join(str(item) for item in lst)\ndef is_even(num):\n    \"\"\"Check if number is even.\"\"\"\n    return num % 2 == 0\ndef is_odd(num):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "list_to_string",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def list_to_string(lst, delimiter=' '):\n    \"\"\"Convert list to string using delimiter.\"\"\"\n    return delimiter.join(str(item) for item in lst)\ndef is_even(num):\n    \"\"\"Check if number is even.\"\"\"\n    return num % 2 == 0\ndef is_odd(num):\n    \"\"\"Check if number is odd.\"\"\"\n    return num % 2 != 0\ndef get_file_extension(filename):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "is_even",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def is_even(num):\n    \"\"\"Check if number is even.\"\"\"\n    return num % 2 == 0\ndef is_odd(num):\n    \"\"\"Check if number is odd.\"\"\"\n    return num % 2 != 0\ndef get_file_extension(filename):\n    \"\"\"Get file extension from filename.\"\"\"\n    return filename.split('.')[-1] if '.' in filename else ''\ndef remove_file_extension(filename):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "is_odd",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def is_odd(num):\n    \"\"\"Check if number is odd.\"\"\"\n    return num % 2 != 0\ndef get_file_extension(filename):\n    \"\"\"Get file extension from filename.\"\"\"\n    return filename.split('.')[-1] if '.' in filename else ''\ndef remove_file_extension(filename):\n    \"\"\"Remove file extension from filename.\"\"\"\n    return filename.rsplit('.', 1)[0] if '.' in filename else filename\ndef repeat_string(text, count):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_extension",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def get_file_extension(filename):\n    \"\"\"Get file extension from filename.\"\"\"\n    return filename.split('.')[-1] if '.' in filename else ''\ndef remove_file_extension(filename):\n    \"\"\"Remove file extension from filename.\"\"\"\n    return filename.rsplit('.', 1)[0] if '.' in filename else filename\ndef repeat_string(text, count):\n    \"\"\"Repeat string count times.\"\"\"\n    return text * count\ndef flatten_list(nested_list):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "remove_file_extension",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def remove_file_extension(filename):\n    \"\"\"Remove file extension from filename.\"\"\"\n    return filename.rsplit('.', 1)[0] if '.' in filename else filename\ndef repeat_string(text, count):\n    \"\"\"Repeat string count times.\"\"\"\n    return text * count\ndef flatten_list(nested_list):\n    \"\"\"Flatten a nested list.\"\"\"\n    result = []\n    for item in nested_list:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "repeat_string",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def repeat_string(text, count):\n    \"\"\"Repeat string count times.\"\"\"\n    return text * count\ndef flatten_list(nested_list):\n    \"\"\"Flatten a nested list.\"\"\"\n    result = []\n    for item in nested_list:\n        if isinstance(item, list):\n            result.extend(flatten_list(item))\n        else:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "flatten_list",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def flatten_list(nested_list):\n    \"\"\"Flatten a nested list.\"\"\"\n    result = []\n    for item in nested_list:\n        if isinstance(item, list):\n            result.extend(flatten_list(item))\n        else:\n            result.append(item)\n    return result\ndef chunk_list(lst, chunk_size):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "chunk_list",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def chunk_list(lst, chunk_size):\n    \"\"\"Divide list into chunks of specified size.\"\"\"\n    return [lst[i:i + chunk_size] for i in range(0, len(lst), chunk_size)]\ndef rotate_list(lst, steps):\n    \"\"\"Rotate list by n steps.\"\"\"\n    if not lst:\n        return lst\n    steps = steps % len(lst)\n    return lst[-steps:] + lst[:-steps]\ndef contains_duplicate(lst):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "rotate_list",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def rotate_list(lst, steps):\n    \"\"\"Rotate list by n steps.\"\"\"\n    if not lst:\n        return lst\n    steps = steps % len(lst)\n    return lst[-steps:] + lst[:-steps]\ndef contains_duplicate(lst):\n    \"\"\"Check if list contains duplicates.\"\"\"\n    return len(lst) != len(set(lst))\ndef is_sorted(lst):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "contains_duplicate",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def contains_duplicate(lst):\n    \"\"\"Check if list contains duplicates.\"\"\"\n    return len(lst) != len(set(lst))\ndef is_sorted(lst):\n    \"\"\"Check if list is sorted in ascending order.\"\"\"\n    return all(lst[i] <= lst[i + 1] for i in range(len(lst) - 1))\ndef unique_count(lst):\n    \"\"\"Count unique elements in a list.\"\"\"\n    return len(set(lst))\ndef mode_value(lst):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "is_sorted",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def is_sorted(lst):\n    \"\"\"Check if list is sorted in ascending order.\"\"\"\n    return all(lst[i] <= lst[i + 1] for i in range(len(lst) - 1))\ndef unique_count(lst):\n    \"\"\"Count unique elements in a list.\"\"\"\n    return len(set(lst))\ndef mode_value(lst):\n    \"\"\"Find most common element in a list.\"\"\"\n    if not lst:\n        return None",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "unique_count",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def unique_count(lst):\n    \"\"\"Count unique elements in a list.\"\"\"\n    return len(set(lst))\ndef mode_value(lst):\n    \"\"\"Find most common element in a list.\"\"\"\n    if not lst:\n        return None\n    return max(set(lst), key=lst.count)\nif __name__ == \"__main__\":\n    # Example usage",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "mode_value",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def mode_value(lst):\n    \"\"\"Find most common element in a list.\"\"\"\n    if not lst:\n        return None\n    return max(set(lst), key=lst.count)\nif __name__ == \"__main__\":\n    # Example usage\n    print(\"Functions loaded successfully!\")\n    print(f\"Fibonacci(10): {fibonacci(10)}\")\n    print(f\"Is 17 prime?: {is_prime(17)}\")",
+        "detail": "main",
+        "documentation": {}
+    }
+]
