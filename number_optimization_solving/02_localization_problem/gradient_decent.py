@@ -6,7 +6,7 @@ weights = [3, 3.5, 1]
 tariff = 10
 
 learning_rate = 0.01
-iterations = 10000
+iterations = 1000
 
 
 def derivative(f, x, h=1e-5) -> callable:
