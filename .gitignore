@@ -13,3 +13,8 @@ data-minining/data/customers-100000.csv
 **/*.mov
 **/*.avi
 **/*.mkv
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.vscode/PythonImportHelper-v2-Completion.json
