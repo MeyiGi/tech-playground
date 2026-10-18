@@ -32,6 +32,15 @@ def compare(image):
         ("nonflat_dilation", m.dilation(image, kernel, heights=heights),
          ndimage.grey_dilation(gray, structure=heights, mode="constant", cval=0)),
     ]
+    cross = np.array([[0, 1, 0], [1, 1, 1], [0, 1, 0]], dtype="uint8")
+    current = binary.copy()
+    skeleton = np.zeros_like(binary)
+    while current.any():
+        eroded = cv2.erode(current, cross, borderType=cv2.BORDER_CONSTANT, borderValue=0)
+        restored = cv2.dilate(eroded, cross, borderType=cv2.BORDER_CONSTANT, borderValue=0)
+        skeleton = np.maximum(skeleton, current - restored)
+        current = eroded
+    checks.append(("skeleton", m.morphological_skeleton(binary), skeleton))
     for name, own, reference in checks:
         different = np.count_nonzero(own != reference)
         print(f"{name}: несовпадающих пикселей — {different}")

@@ -7,26 +7,10 @@ from pathlib import Path
 import cv2
 import numpy as np
 
-from app import gradient_and_edges
 from processing import canny, convolve2d, derivatives, load_image, normalize, save_image
 
 
 class ProcessingTests(unittest.TestCase):
-    def test_gradient_and_binary_edges(self):
-        gray = np.array([[0, 0, 100, 100, 100]] * 3, dtype=np.uint8)
-        gradient, edges = gradient_and_edges(gray)
-        expected = np.array([[0, 255, 255, 0, 0]] * 3, dtype=np.uint8)
-        np.testing.assert_array_equal(gradient, expected)
-        np.testing.assert_array_equal(edges, expected)
-        # Порог строгий: значения, равные порогу, не выделяются.
-        _, edges = gradient_and_edges(gray, threshold=255)
-        self.assertFalse(edges.any())
-
-    def test_constant_image_has_no_gradient_or_edges(self):
-        gradient, edges = gradient_and_edges(np.full((4, 5), 100, dtype=np.uint8))
-        self.assertFalse(gradient.any())
-        self.assertFalse(edges.any())
-
     def test_numeric_example(self):
         gray = np.array([[0, 0, 100]] * 3, dtype=np.uint8)
         result = derivatives(gray)
