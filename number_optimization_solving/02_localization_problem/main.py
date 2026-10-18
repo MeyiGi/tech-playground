@@ -1,37 +1,48 @@
-
-import numpy as np
+import math
 import matplotlib.pyplot as plt
-from scipy.optimize import minimize
 
-# Надо три метода как в прошлом и как монта карла и метод градиента 
-
-# Настройки
-points = np.array([[0, 0], [10, 0], [5, 8]])
-weights = [3, 3, 1]
+points = [(0, 0), (10, 0), (5, 8)]
+weights = [3, 3.5, 1]
 tariff = 10
-levels = 50
-method = "Nelder-Mead"
 
-def cost(p):
-    return tariff * np.dot(weights, np.linalg.norm(points - p, axis=1))
+learning_rate = 0.000001
+iterations = 10000000
 
-result = minimize(cost, [5, 3], method=method)
-best = min([result.x, *points], key=cost)
 
-print(f"Завод: {best.round(2)}, затраты: {cost(best):.2f} сом")
+def derivative(f, x, h=1e-5) -> callable:
+    return (f(x + h) - f(x - h)) / (2 * h)
 
-x, y = np.meshgrid(np.linspace(-2, 12, 150), np.linspace(-2, 10, 150))
-z = sum(tariff * w * np.hypot(x-a, y-b) for (a, b), w in zip(points, weights))
+def loss(x, y):
+    return tariff * sum(
+        w * math.hypot(x - a, y - b)
+        for (a, b), w in zip(points, weights)
+    )
 
-plt.contourf(x, y, z, levels=levels, cmap="viridis")
-plt.colorbar(label="Затраты (сом)")
-plt.plot(*np.vstack([points, points[0]]).T, "w--")
+x, y = 5.0, 3.0 # random value but center is best option
 
-for name, (a, b), w in zip("ABC", points, weights):
-    plt.scatter(a, b, color="white")
-    plt.text(a+.2, b+.2, f"{name}: {w} т", color="white")
+for i in range(iterations):
+    dx = derivative(lambda v: loss(v, y), x)
+    dy = derivative(lambda v: loss(x, v), y)
+    
+    step = learning_rate / math.sqrt(i + 1)
 
-plt.scatter(*best, color="red", marker="*", s=250, label="Завод")
+    x -= step * dx
+    y -= step * dy
+
+print(f"Завод: ({x:.4f}, {y:.4f})")
+print(f"Минимальные затраты: {loss(x, y):.2f} сом")
+
+triangle = points + [points[0]]
+
+plt.plot(*zip(*triangle), "b--", label="Треугольник")
+plt.scatter(*zip(*points), color="blue")
+plt.scatter(x, y, color="red", marker="*", s=250, label="Завод")
+
+for name, (a, b) in zip("ABC", points):
+    plt.annotate(name, (a, b), xytext=(5, 5),
+                 textcoords="offset points")
+
 plt.axis("equal")
+plt.grid()
 plt.legend()
-plt.show()
+plt.show()  
