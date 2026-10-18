@@ -1,19 +1,14 @@
-import matplotlib.pyplot as plt
 import cv2
-import numpy as np
+import matplotlib.pyplot as plt
 
+im = cv2.imread('image_for_equalizer.png', 0)
+result = cv2.equalizeHist(im)
 
-# Build histogram of current image
-im = cv2.imread('./image_for_equalizer.png')
-# calculate mean value from RGB channels and flatten to 1D array
-vals = im.mean(axis=2).flatten()
-# plot histogram with 255 bins
-b, bins, patches = plt.hist(vals, 255)
-plt.xlim([0,255])
-plt.show()
+for i, image in enumerate([im, result]):
+    plt.subplot(2, 2, i + 1)
+    plt.imshow(image, cmap='gray', vmin=0, vmax=255)
+    plt.title(['До', 'После'][i])
+    plt.subplot(2, 2, i + 3)
+    plt.hist(image.flatten(), 256, (0, 256))
 
-
-# (CDF) for calculating cumilative distribution function
-cdf = np.cumsum(np.histogram(vals, 256, (0, 256))[0])
-plt.plot(cdf); 
 plt.show()

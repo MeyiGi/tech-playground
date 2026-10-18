@@ -5,5 +5,5 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "cimage>=2.0.2",
+    "pillow>=12.3.0",
 ]

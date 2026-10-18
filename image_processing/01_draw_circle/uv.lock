@@ -7,22 +7,11 @@ name = "01-draw-circle"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "cimage" },
+    { name = "pillow" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "cimage", specifier = ">=2.0.2" }]
-
-[[package]]
-name = "cimage"
-version = "2.0.2"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pillow" },
-]
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/b9/fa/8ad6f8847199294138c288333441c9714c0d518fbf216afc2d9d6a990481/cImage-2.0.2-py3-none-any.whl", hash = "sha256:607f5eb4805d4939400bf28cd97c8d556f0b21c8e53d496dcc50afb481e4b6dd", size = 8619, upload-time = "2019-09-05T13:10:01.569Z" },
-]
+requires-dist = [{ name = "pillow", specifier = ">=12.3.0" }]
 
 [[package]]
 name = "pillow"
